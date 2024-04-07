@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Itim&display=swap');
+
+/* ######################## menu catagory  ############################# */
+.menu-cont{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ######################## menu catagory nav  ############################# */
+.menu-search{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.menu-search i{
+    font-size: 25px;
+}
+
+.menu-search input{
+    width: 450px;
+    padding: 10px;
+    border: 1px solid #f6b319;
+    border-radius: 10px;
+
+    font-size: 15px;
+    font-family: "Itim", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.menu-search i span{
+    font-size: 15px;
+    font-family: "Itim", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* ######################## menu catagory list  ############################# */
+.all-food-cat{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.menu-cat-list h1{
+    font-size: 35px;
+    font-family: "Itim", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.menu-card-list{
+    width: 100%;
+    height: auto;
+    padding-left: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.menu-card{
+    width: 200px;
+    height: 300px;
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu-card img{
+    width: 200px;
+    height: 150px;
+}
+
+.menu-card h3{
+    font-size: 25px;
+    font-family: "Itim", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.menu-card button{
+    width: 150px;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: #f6b319;
+
+    font-size: 15px;
+    font-family: "Itim", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.menu-card button:hover{
+    background-color: #ffb700;
+    transform: translateY(-3px);
+}
