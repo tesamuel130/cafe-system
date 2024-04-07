@@ -1,0 +1,114 @@
+/* ############## this file is used to style the common part of the wab ################# */
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Itim&display=swap');
+
+body{
+    padding: 0;
+    margin: 0;
+}
+
+/* ################  Header Style  ##################### */
+
+.header {
+    width: 100%;
+    height: auto;
+    position: fixed;
+}
+
+.nav-bar{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: #f6b319;
+}
+
+.nav-bar .logo{
+    margin-left: 30px;
+    text-align: center;
+    line-height: 5px;
+    font-size: 10px;
+    font-family: "Cedarville Cursive", cursive;
+}
+
+.nav-bar .logo i{
+    font-weight: bolder;
+}
+
+.nav-link{
+    padding: 10px;
+}
+
+.nav-link a{
+    text-decoration: none;
+    color: black;
+
+    font-size: 15px;
+    font-weight: 800;
+    font-style: normal;
+    margin-right: 50px;
+}
+
+.nav-link a i{
+    margin-right: 5px;
+}
+
+.nav-link a:hover{
+    color: #fff;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: #e9c25f;
+}
+
+
+/* ################  Main Container Style  ##################### */
+.container{
+    padding: 10px 50px;
+}
+
+
+/* ################  Footer Style  ##################### */
+footer{
+    width: 100%;
+    height: auto;
+    background-color: #f6b319;
+}
+
+.foot-cont{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-top: 10px;
+}
+
+.foot-cont h3 i{
+    color: #fff;
+    margin-right: 7px;
+}
+
+.foot-cont h3 span{
+    font-size: 25px;
+    font-family: "Cedarville Cursive", cursive;
+    font-weight: 800;
+    font-style: normal;
+}
+
+.foot-cont p{
+    margin-left: 20px;
+    line-height: 20px;
+
+    font-size: 15px;
+    font-family: "Itim", cursive;
+    font-weight: 800;
+    font-style: normal;
+}
+
+.foot-cont p span{
+    color: #fff;
+    font-size: 17px;
+}
