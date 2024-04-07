@@ -88,6 +88,37 @@
     font-style: normal;
 }
 
+.price-rating{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 55px;
+    margin-top: -15px;
+}
+
+.price-rating p{
+    font-size: 15px;
+    font-family: "Itim", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.price-rating p span{
+    text-decoration: underline;
+    font-weight: bolder;
+}
+
+.price-rating a{
+    text-align: center;
+    text-decoration: none;
+    color: #f6b319;
+}
+
+.price-rating a:hover{
+    transform: rotateY(180deg);
+}
+
 .menu-card button{
     width: 150px;
     padding: 10px;
