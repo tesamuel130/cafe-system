@@ -71,8 +71,19 @@
 }
 
 .ord-info form button{
-    width: 300px;
-    padding: 15px;
+    width: 200px;
+    padding: 10px;
     border: none;
     border-radius: 10px;
+    /* background-color: #f6b319; */
+
+    font-size: 15px;
+    font-family: "Itim", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.ord-info form button:hover{
+    background-color: #ffb700;
+    transform: translateY(-3px);
 }
