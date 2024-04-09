@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Itim&display=swap');
+
+/* ######################## menu catagory  ############################# */
+.cart-order-cont{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.carts{
+    width: 100%;
+    height: auto;
+    background-color: #f6b319;
+    display: grid;
+    grid-template-columns: 1fr 1fr;   
+}
+
+.cart-card-list{
+    display: flex;
+    flex-direction: row;
+    margin: 30px;
+}
+
+.cart-card{
+    background-color: #fff;
+    width: 500px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.cart-card img{
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+}
+
+
+
+.order{
+    width: 100%;
+    height: auto;
+    background-color: #f6b319;
+}
+
+.ord-info{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.ord-info form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.ord-info form input{
+    width: 500px;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+}
+
+.ord-info form button{
+    width: 300px;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+}
