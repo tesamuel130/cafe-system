@@ -6,27 +6,33 @@
     width: 100%;
     height: auto;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     gap: 20px;
 }
 
 .carts{
     width: 100%;
-    height: auto;
+    height: 600px;
+    overflow: scroll;
     background-color: #f6b319;
-    display: grid;
-    grid-template-columns: 1fr 1fr;   
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
 }
 
 .cart-card-list{
+    height: 90px;
     display: flex;
     flex-direction: row;
-    margin: 30px;
+    margin: 10px;
 }
 
 .cart-card{
-    background-color: #fff;
     width: 500px;
+    border-radius: 10px;
+    background-color: #fff;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -44,6 +50,7 @@
     width: 100%;
     height: auto;
     background-color: #f6b319;
+    border-radius: 10px;
 }
 
 .ord-info{
