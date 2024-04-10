@@ -11,6 +11,7 @@ table{
     border-collapse: collapse;
     margin: 50px auto;
 }
+
 tr{
     padding:5px 5px;
     text-align: center;
@@ -51,7 +52,7 @@ th{
     position: relative;
 }
 
-i{
+.last i{
     position:absolute;
     margin-left:100px;
     margin-top: -43px;
