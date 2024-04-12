@@ -44,8 +44,8 @@ body{
     gap: 40px;
 }
 
-.admin-link i{
-    padding-right: 30px;
+.admin-link{
+    margin-right: 30px;
     color: white;
 }
 
