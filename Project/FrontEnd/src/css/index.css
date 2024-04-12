@@ -38,7 +38,15 @@ body{
 }
 
 .nav-link{
-    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.admin-link i{
+    padding-right: 30px;
+    color: white;
 }
 
 .nav-link a{
@@ -48,7 +56,6 @@ body{
     font-size: 15px;
     font-weight: 800;
     font-style: normal;
-    margin-right: 50px;
 }
 
 .nav-link a i{
