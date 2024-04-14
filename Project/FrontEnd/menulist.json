@@ -1,0 +1,56 @@
+[
+    {
+        "id": 1,
+        "name": "Today's Special",
+        "image": "src/css/img/tdspetial.png",
+        "alt": "todays special food picture"
+    },
+    {
+        "id": 2,
+        "name": "appetizer",
+        "image": "src/css/img/appetizer.png",
+        "alt": "appetizer food pictuer"
+    },
+    {
+        "id": 3,
+        "name": "Dessrts",
+        "image": "src/css/img/dessert.png",
+        "alt": "dessert food picture"
+    },
+    {
+        "id": 4,
+        "name": "Luanchs",
+        "image": "src/css/img/luanch.png",
+        "alt": "luanch food picture"
+    },
+    {
+        "id": 5,
+        "name": "Diners",
+        "image": "src/css/img/diner.png",
+        "alt": "diner food picture"
+    },
+    {
+        "id": 6,
+        "name": "Fruits",
+        "image": "src/css/img/fruits.png",
+        "alt": "Fruits picture"
+    },
+    {
+        "id": 7,
+        "name": "Juices",
+        "image": "src/css/img/juice.png",
+        "alt": "Juices picture"
+    },
+    {
+        "id": 8,
+        "name": "Softdrinks",
+        "image": "src/css/img/softdrink.png",
+        "alt": "Softdrinks picture"
+    },
+    {
+        "id": 8,
+        "name": "Alcoholic Drinks",
+        "image": "src/css/img/alcohol.png",
+        "alt": "Alcoholic Drinks picture"
+    }
+]

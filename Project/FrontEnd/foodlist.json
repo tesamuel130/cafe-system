@@ -1,0 +1,31 @@
+[
+    {
+        "id": 1,
+        "name": "Today's Special",
+        "price": "25$",
+        "image": "src/css/img/tdspetial.png",
+        "alt": "todays special food picture",
+        "catagorys": "Cakes"
+    },
+    {
+        "id": 1,
+        "name": "Today's Special",
+        "price": "25$",
+        "image": "src/css/img/tdspetial.png",
+        "alt": "todays special food picture"
+    },
+    {
+        "id": 1,
+        "name": "Today's Special",
+        "price": "25$",
+        "image": "src/css/img/tdspetial.png",
+        "alt": "todays special food picture"
+    },
+    {
+        "id": 1,
+        "name": "Today's Special",
+        "price": "25$",
+        "image": "src/css/img/tdspetial.png",
+        "alt": "todays special food picture"
+    }
+]
