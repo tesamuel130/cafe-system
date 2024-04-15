@@ -93,22 +93,115 @@ httpF.send();
 
 httpF.onload = function() {
     if (this.readyState == 4 && this.status == 200) {
-        let lists = JSON.parse(this.responseText);
+        let listsF = JSON.parse(this.responseText);
 
         let output = '';
-        let catagory = `${lists.catagorys}`
+        // let catagory = `${lists.catagorys}`
 
-        for (let item of lists) {
-            output += `
-                <div class="menu-card">
-                    <img src="${item.image}" alt="${item.alt}">
-                    <h3>${item.name}</h3>
-                    <a href="foodlist.html"><button>See More</button></a>
-                </div>
-            `;
+        for (let item of listsF) {
+            let catagory = `${item.catagorys}`
+            let capCatagory = catagory.toUpperCase()
+
+            switch (capCatagory){
+                case "TODAYS-SPECIAL":
+                    output += `
+                        <div class="menu-card">
+                            <img src="${item.image}" alt="${item.alt}">
+                            <h3>${item.name}</h3>
+                            <a href="foodlist.html"><button>See More</button></a>
+                        </div>
+                    `;
+
+                    document.querySelector('.food-card-list').innerHTML = output;
+                    break;
+                case "APPETIZER":
+                    output += `
+                        <div class="menu-card">
+                            <img src="${item.image}" alt="${item.alt}">
+                            <h3>${item.name}</h3>
+                            <a href="foodlist.html"><button>See More</button></a>
+                        </div>
+                    `;
+                    break;
+                case "DESSRTS":
+                    output += `
+                        <div class="menu-card">
+                            <img src="${item.image}" alt="${item.alt}">
+                            <h3>${item.name}</h3>
+                            <a href="foodlist.html"><button>See More</button></a>
+                        </div>
+                    `;
+                    break;
+                case "LUANCHS":
+                    output += `
+                        <div class="menu-card">
+                            <img src="${item.image}" alt="${item.alt}">
+                            <h3>${item.name}</h3>
+                            <a href="foodlist.html"><button>See More</button></a>
+                        </div>
+                    `;
+                    break;
+                case "DINERS":
+                    output += `
+                        <div class="menu-card">
+                            <img src="${item.image}" alt="${item.alt}">
+                            <h3>${item.name}</h3>
+                            <a href="foodlist.html"><button>See More</button></a>
+                        </div>
+                    `;
+                    break;
+                case "FRUITS":
+                    output += `
+                        <div class="menu-card">
+                            <img src="${item.image}" alt="${item.alt}">
+                            <h3>${item.name}</h3>
+                            <a href="foodlist.html"><button>See More</button></a>
+                        </div>
+                    `;
+                    break;
+                case "JUICES":
+                    output += `
+                        <div class="menu-card">
+                            <img src="${item.image}" alt="${item.alt}">
+                            <h3>${item.name}</h3>
+                            <a href="foodlist.html"><button>See More</button></a>
+                        </div>
+                    `;
+                    break;
+                case "SOFTDRINKS":
+                    output += `
+                        <div class="menu-card">
+                            <img src="${item.image}" alt="${item.alt}">
+                            <h3>${item.name}</h3>
+                            <a href="foodlist.html"><button>See More</button></a>
+                        </div>
+                    `;
+                    break;
+                case "aLCOHOLIC-DRINKS":
+                    output += `
+                        <div class="menu-card">
+                            <img src="${item.image}" alt="${item.alt}">
+                            <h3>${item.name}</h3>
+                            <a href="foodlist.html"><button>See More</button></a>
+                        </div>
+                    `;
+                    break;
+                default:
+                    break;
+            }
+
+
+
+            // output += `
+            //     <div class="menu-card">
+            //         <img src="${item.image}" alt="${item.alt}">
+            //         <h3>${item.name}</h3>
+            //         <a href="foodlist.html"><button>See More</button></a>
+            //     </div>
+            // `;
         }
 
         // output the code on the menucat.html folder
-        document.querySelector('.food-card-list').innerHTML = output;
+        // document.querySelector('.food-card-list').innerHTML = output;
     }
 };

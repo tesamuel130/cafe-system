@@ -5,14 +5,15 @@
         "price": "25$",
         "image": "src/css/img/tdspetial.png",
         "alt": "todays special food picture",
-        "catagorys": "Cakes"
+        "catagorys": "TODAYS-SPECIAL"
     },
     {
         "id": 1,
         "name": "Today's Special",
         "price": "25$",
         "image": "src/css/img/tdspetial.png",
-        "alt": "todays special food picture"
+        "alt": "todays special food picture",
+        "catagorys": "APPETIZER"
     },
     {
         "id": 1,
