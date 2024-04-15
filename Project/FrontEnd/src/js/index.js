@@ -94,9 +94,9 @@ httpF.send();
 httpF.onload = function() {
     if (this.readyState == 4 && this.status == 200) {
         let listsF = JSON.parse(this.responseText);
-
-        let output = '';
-        // let catagory = `${lists.catagorys}`
+        
+        // food catahory varibles
+        let tdsList, cakeList, appList, desList, luncList, dinList, fruList, jucList, sdirList, alcoList = '';
 
         for (let item of listsF) {
             let catagory = `${item.catagorys}`
@@ -104,18 +104,25 @@ httpF.onload = function() {
 
             switch (capCatagory){
                 case "TODAYS-SPECIAL":
-                    output += `
+                    tdsList += `
                         <div class="menu-card">
                             <img src="${item.image}" alt="${item.alt}">
                             <h3>${item.name}</h3>
                             <a href="foodlist.html"><button>See More</button></a>
                         </div>
                     `;
-
-                    document.querySelector('.food-card-list').innerHTML = output;
+                    break;
+                case "CAKE":
+                    cakeList += `
+                        <div class="menu-card">
+                            <img src="${item.image}" alt="${item.alt}">
+                            <h3>${item.name}</h3>
+                            <a href="foodlist.html"><button>See More</button></a>
+                        </div>
+                    `;
                     break;
                 case "APPETIZER":
-                    output += `
+                    appList += `
                         <div class="menu-card">
                             <img src="${item.image}" alt="${item.alt}">
                             <h3>${item.name}</h3>
@@ -124,7 +131,7 @@ httpF.onload = function() {
                     `;
                     break;
                 case "DESSRTS":
-                    output += `
+                    desList += `
                         <div class="menu-card">
                             <img src="${item.image}" alt="${item.alt}">
                             <h3>${item.name}</h3>
@@ -133,7 +140,7 @@ httpF.onload = function() {
                     `;
                     break;
                 case "LUANCHS":
-                    output += `
+                    luncList += `
                         <div class="menu-card">
                             <img src="${item.image}" alt="${item.alt}">
                             <h3>${item.name}</h3>
@@ -142,7 +149,7 @@ httpF.onload = function() {
                     `;
                     break;
                 case "DINERS":
-                    output += `
+                    dinList += `
                         <div class="menu-card">
                             <img src="${item.image}" alt="${item.alt}">
                             <h3>${item.name}</h3>
@@ -151,7 +158,7 @@ httpF.onload = function() {
                     `;
                     break;
                 case "FRUITS":
-                    output += `
+                    fruList += `
                         <div class="menu-card">
                             <img src="${item.image}" alt="${item.alt}">
                             <h3>${item.name}</h3>
@@ -160,7 +167,7 @@ httpF.onload = function() {
                     `;
                     break;
                 case "JUICES":
-                    output += `
+                    jucList += `
                         <div class="menu-card">
                             <img src="${item.image}" alt="${item.alt}">
                             <h3>${item.name}</h3>
@@ -169,7 +176,7 @@ httpF.onload = function() {
                     `;
                     break;
                 case "SOFTDRINKS":
-                    output += `
+                    sdirList += `
                         <div class="menu-card">
                             <img src="${item.image}" alt="${item.alt}">
                             <h3>${item.name}</h3>
@@ -177,8 +184,8 @@ httpF.onload = function() {
                         </div>
                     `;
                     break;
-                case "aLCOHOLIC-DRINKS":
-                    output += `
+                case "ALCOHOLIC-DRINKS":
+                    alcoList += `
                         <div class="menu-card">
                             <img src="${item.image}" alt="${item.alt}">
                             <h3>${item.name}</h3>
@@ -189,19 +196,19 @@ httpF.onload = function() {
                 default:
                     break;
             }
-
-
-
-            // output += `
-            //     <div class="menu-card">
-            //         <img src="${item.image}" alt="${item.alt}">
-            //         <h3>${item.name}</h3>
-            //         <a href="foodlist.html"><button>See More</button></a>
-            //     </div>
-            // `;
         }
 
-        // output the code on the menucat.html folder
-        // document.querySelector('.food-card-list').innerHTML = output;
+        // output the foodlist on the foodlist.html folder
+
+        document.querySelector('.tdsList').innerHTML = tdsList;
+        document.querySelector('.cakeList').innerHTML = cakeList;
+        document.querySelector('.appetizerList').innerHTML = appList;
+        document.querySelector('.dessertList').innerHTML = desList;
+        document.querySelector('.luanchList').innerHTML = luncList;
+        document.querySelector('.dinerList').innerHTML = dinList;
+        document.querySelector('.fruitsList').innerHTML = fruList;
+        document.querySelector('.juicesList').innerHTML = jucList;
+        document.querySelector('.softdrinkList').innerHTML = sdirList;
+        document.querySelector('.alcoholdrinkList').innerHTML = alcoList;
     }
 };

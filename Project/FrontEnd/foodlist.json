@@ -8,7 +8,15 @@
         "catagorys": "TODAYS-SPECIAL"
     },
     {
-        "id": 1,
+        "id": 2,
+        "name": "Today's Special",
+        "price": "25$",
+        "image": "src/css/img/tdspetial.png",
+        "alt": "todays special food picture",
+        "catagorys": "CAKE"
+    },
+    {
+        "id": 3,
         "name": "Today's Special",
         "price": "25$",
         "image": "src/css/img/tdspetial.png",
@@ -16,17 +24,59 @@
         "catagorys": "APPETIZER"
     },
     {
-        "id": 1,
+        "id": 4,
         "name": "Today's Special",
         "price": "25$",
         "image": "src/css/img/tdspetial.png",
-        "alt": "todays special food picture"
+        "alt": "todays special food picture",
+        "catagorys": "DESSRTS"
     },
     {
-        "id": 1,
+        "id": 5,
         "name": "Today's Special",
         "price": "25$",
         "image": "src/css/img/tdspetial.png",
-        "alt": "todays special food picture"
+        "alt": "todays special food picture",
+        "catagorys": "LUANCHS"
+    },
+    {
+        "id": 6,
+        "name": "Today's Special",
+        "price": "25$",
+        "image": "src/css/img/tdspetial.png",
+        "alt": "todays special food picture",
+        "catagorys": "DINERS"
+    },
+    {
+        "id": 7,
+        "name": "Today's Special",
+        "price": "25$",
+        "image": "src/css/img/tdspetial.png",
+        "alt": "todays special food picture",
+        "catagorys": "FRUITS"
+    },
+    {
+        "id": 8,
+        "name": "Today's Special",
+        "price": "25$",
+        "image": "src/css/img/tdspetial.png",
+        "alt": "todays special food picture",
+        "catagorys": "JUICES"
+    },
+    {
+        "id": 9,
+        "name": "Today's Special",
+        "price": "25$",
+        "image": "src/css/img/tdspetial.png",
+        "alt": "todays special food picture",
+        "catagorys": "SOFTDRINKS"
+    },
+    {
+        "id": 10,
+        "name": "Today's Special",
+        "price": "25$",
+        "image": "src/css/img/tdspetial.png",
+        "alt": "todays special food picture",
+        "catagorys": "ALCOHOLIC-DRINKS"
     }
 ]
