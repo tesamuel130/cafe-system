@@ -1,3 +1,5 @@
+// data featching for the food list 
+
 function FoodList(){
     let httpF = new XMLHttpRequest();
 

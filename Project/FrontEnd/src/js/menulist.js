@@ -1,3 +1,5 @@
+// data featching for the menu list 
+
 function MenuList(){
     let httpM = new XMLHttpRequest();
 
@@ -33,6 +35,6 @@ httpM.onload = function() {
         console.error('Request failed:', this.status);
     }
 };
-}
+};
 
 export default MenuList;
