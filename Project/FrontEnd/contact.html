@@ -21,54 +21,44 @@
                 <h3>Resturant</h3>
             </div>
             <div class="nav-link">
-                <a href="#"><i class="fa-solid fa-house"></i>Home</a>
-                <a href="#"><i class="fa-solid fa-bowl-food"></i>Menu</a>
-                <a href="#"><i class="fa-solid fa-cart-shopping"></i>Order</a>
-                <a href="#"><i class="fa-solid fa-address-card"></i>About</a>
-                <a href="#"><i class="fa-solid fa-address-book"></i>Contact</a>
+                <a href="home.html" class="act-home"><i class="fa-solid fa-house"></i>Home</a>
+                <a href="menucat.html" class="act-menu"><i class="fa-solid fa-bowl-food"></i>Menu</a>
+                <a href="cartorder.html" class="act-order"><i class="fa-solid fa-cart-shopping"></i>Order</a>
+                <a href="about.html" class="act-about"><i class="fa-solid fa-address-card"></i>About</a>
+                <a href="#" class="act-contact"><i class="fa-solid fa-address-book"></i>Contact</a>
+                <a href="#" class="admin-link"><i class="fa-solid fa-user-tie"></i></a>
             </div>
         </div>
     </header>
     <main id="contact">
         <div class="contact-all">
 
-        <div class="contact-text">
-            <span>Contact-us</span>
+            <div class="contact-text">
+                <span>Contact-us</span>
+            </div>
+            <form class="contct-form">
+                <div class="contact-row" id="contact-nms">
+                    <div class="contact-form">
+                        <input class="contact-inpt" type="text" name="f-name" placeholder="First-Name" required>
+                    </div>
+                    <div class="contact-form">
+                        <input class="contact-inpt" type="text" name="l-name" placeholder="Last-Name" required>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <input class="contact-inpt" type="email" name="email" placeholder="Email"  required>
+                </div>
+                <div class="contact-form" >
+                    <input class="contact-inpt" type="text" name="subject"placeholder="Subject" required>
+                </div>
+                <div class="contact-form">
+                    <textarea>Message...</textarea>
+                </div>
+                <div class="btn">
+                    <button type="submit" >Send</button>
+                </div>
+            </form>
         </div>
-        <form class="contct-form">
-            <div class="contact-row" id="contact-nms">
-                <div class="contact-form">
-                    
-                    <input class="contact-inpt" type="text" name="f-name" placeholder="First-Name" required>
-                </div>
-                
-                <div class="contact-form">
-                    
-                    <input class="contact-inpt" type="text" name="l-name" placeholder="Last-Name" required>
-                </div>
-            </div>
-            <div class="contact-form">
-                
-                <input class="contact-inpt" type="email" name="email" placeholder="Email"  required>
-                
-            </div>
-            <div class="contact-form" >
-                
-                <input class="contact-inpt" type="text" name="subject"placeholder="Subject" required>
-            </div>
-            
-            <div class="contact-form">
-                <textarea>Message...</textarea>
-            </div>
-            <div class="btn">
-                <button type="submit" >Send</button>
-            </div>
-            
-            
-
-        </form>
-    </div>
-
     </main>
 
     <footer>

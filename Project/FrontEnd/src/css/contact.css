@@ -21,7 +21,6 @@
     background-position: center;
     background-repeat: none;
     background-size: cover;
-    /* border-radius:25px; */
     padding:30px;
 }
 .contact-all{
@@ -89,89 +88,4 @@ textarea{
     border:none;
     font-weight: 700;
     
-}
-
-/* Drink-List  Page */
-
-.drink-main{
-    width:100%;
-    height:auto;
-    padding:30px auto;
-}
-.drink-nav{
-    width:30%;
-    height:auto;
-    margin-top:30px;
-    margin-left: 455px;
-    display: inline-flex;
-    justify-content: center;
-    background-color: rgb(216, 222, 228);
-    border:1px solid black;
-}
-.drink-form{
-    width:300px;
-    height:30px;
-    background-color: rgb(196, 204, 211);
-}
-.fa-search{
-    right:5px;
-    margin-top:5px;
-}
-#drink-inpt{
-    width:90%;
-    height:20px;
-    border:none;
-    background-color: rgb(196, 204, 211);
-}
-.drink-nav button{
-    width:45px;
-}
-.fa-filter{
-    padding-top:5px;
-    font-size:22px;
-    margin-left:5px;
-}
-.drink-nav button:hover{
-    background-color: #f6b319;
-    color: #fff;
-    border: none;
-}
-
-.fa-list{
-    padding-top:5px;
-    font-size:22px;
-    margin-right:5px;
-}
-
-section{
-    width:100%;
-    margin-top:50px;
-}
-.drink-h1{
-    text-align: center;
-    font-weight: 800;
-    margin-bottom: 50px;
-    font-size: 28px;
-}
-.drink-row{
-    width:90%;
-    height:auto;
-}
-.drink-card{
-    width:35%;
-    height:200px;
-    padding:0 10px;
-    display:inline-block;
-    margin-left:70px;
-}
-.drink-name{
-    position:relative;
-}
-.drink-id{
-    display:inline-block;
-    position: absolute;
-    left:180px;
-}
-.drink-price{
-    margin-left:100px;
 }
