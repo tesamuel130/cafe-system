@@ -26,11 +26,12 @@ httpF.onload = function() {
         for (let item of listsF) {
             let catagory = `${item.catagorys}`
             let capCatagory = catagory.toUpperCase()
+            // let products = document.getElementById(`${capCatagory}`)
 
             switch (capCatagory){
                 case "TODAYS-SPECIAL":
                     tdsList += `
-                        <div class="menu-card">
+                        <div class="menu-card" data-id="${item.id}">
                             <img src="${item.image}" alt="${item.alt}">
                             <h3>${item.name}</h3>
                             <a href="foodlist.html"><button>See More</button></a>
@@ -39,7 +40,7 @@ httpF.onload = function() {
                     break;
                 case "CAKE":
                     cakeList += `
-                        <div class="menu-card">
+                        <div class="menu-card" data-id="${item.id}">
                             <img src="${item.image}" alt="${item.alt}">
                             <h3>${item.name}</h3>
                             <a href="foodlist.html"><button>See More</button></a>
@@ -48,7 +49,7 @@ httpF.onload = function() {
                     break;
                 case "APPETIZER":
                     appList += `
-                        <div class="menu-card">
+                        <div class="menu-card" data-id="${item.id}">
                             <img src="${item.image}" alt="${item.alt}">
                             <h3>${item.name}</h3>
                             <a href="foodlist.html"><button>See More</button></a>
@@ -57,7 +58,7 @@ httpF.onload = function() {
                     break;
                 case "DESSRTS":
                     desList += `
-                        <div class="menu-card">
+                        <div class="menu-card" data-id="${item.id}">
                             <img src="${item.image}" alt="${item.alt}">
                             <h3>${item.name}</h3>
                             <a href="foodlist.html"><button>See More</button></a>
@@ -66,7 +67,7 @@ httpF.onload = function() {
                     break;
                 case "LUANCHS":
                     luncList += `
-                        <div class="menu-card">
+                        <div class="menu-card" data-id="${item.id}">
                             <img src="${item.image}" alt="${item.alt}">
                             <h3>${item.name}</h3>
                             <a href="foodlist.html"><button>See More</button></a>
@@ -75,7 +76,7 @@ httpF.onload = function() {
                     break;
                 case "DINERS":
                     dinList += `
-                        <div class="menu-card">
+                        <div class="menu-card" data-id="${item.id}">
                             <img src="${item.image}" alt="${item.alt}">
                             <h3>${item.name}</h3>
                             <a href="foodlist.html"><button>See More</button></a>
@@ -84,7 +85,7 @@ httpF.onload = function() {
                     break;
                 case "FRUITS":
                     fruList += `
-                        <div class="menu-card">
+                        <div class="menu-card" data-id="${item.id}">
                             <img src="${item.image}" alt="${item.alt}">
                             <h3>${item.name}</h3>
                             <a href="foodlist.html"><button>See More</button></a>
@@ -93,7 +94,7 @@ httpF.onload = function() {
                     break;
                 case "JUICES":
                     jucList += `
-                        <div class="menu-card">
+                        <div class="menu-card" data-id="${item.id}">
                             <img src="${item.image}" alt="${item.alt}">
                             <h3>${item.name}</h3>
                             <a href="foodlist.html"><button>See More</button></a>
@@ -102,7 +103,7 @@ httpF.onload = function() {
                     break;
                 case "SOFTDRINKS":
                     sdirList += `
-                    <div class="menu-card">
+                    <div class="menu-card" data-id="${item.id}">
                         <img src="${item.image}" alt="${item.alt}">
                         <h3>${item.name}</h3>
                         <div class="price-rating">
@@ -115,7 +116,7 @@ httpF.onload = function() {
                     break;
                 case "ALCOHOLIC-DRINKS":
                     alcoList += `
-                    <div class="menu-card">
+                    <div class="menu-card" data-id="${item.id}">
                         <img src="${item.image}" alt="${item.alt}">
                         <h3>${item.name}</h3>
                         <div class="price-rating">

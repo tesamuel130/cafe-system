@@ -18,7 +18,7 @@ httpM.onload = function() {
 
             for (let item of lists) {
                 menulist += `
-                    <div class="menu-card">
+                    <div class="menu-card" data-id="${item.id}">
                         <img src="${item.image}" alt="${item.alt}">
                         <h3>${item.name}</h3>
                         <a href="foodlist.html"><button>See More</button></a>
