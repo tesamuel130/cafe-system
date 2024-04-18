@@ -3,80 +3,139 @@
 
 
 /* ##################### nav content ####################### */
-.act-about{
+.act-contact{
     padding: 5px;
     border-radius: 5px;
     background-color: #e9c25f;
 }
 
-.act-about i{
+.act-contact i{
     color: #fff;
 }
 
 /* ######################## contact page  ############################# */
-#contact{
+.contact{
     width:100%;
-    height:auto;
+    height: auto;
     background-image:url('./img/hom2.jpg');
     background-position: center;
     background-repeat: none;
     background-size: cover;
-    padding:30px;
+    
+    display: flex;
+    justify-content: center;
 }
-.contact-all{
-    width:780px;
-    height:auto;
-    margin:25px auto;
+.contact-cont{
+    width: 1000px;
+    height: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 30px;
+
     background: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0));
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     border: none;
     border-radius: 10px;
     box-shadow: 0 8px 32px 0;
+
+    display: flex;
+    justify-content: space-between;
 }
-.contact-text{
-    font-weight: 900;
-    font-style: normal;
-    font-size: 32px;
-    text-align:center;
+
+
+/* ############################### contact us  form #################################*/
+.contact-us{
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+}
+
+.contact-us h1{
+    color: #fff;
+    font-size: 35px;
     font-family: "Itim", cursive;
-    margin:30px 30px 0 30px;
-    padding:30px;
+    font-weight: 700;
+
 }
-.contct-form{
-    width:100%;
-    max-width: 600px;
-    margin:auto;
+
+.f-cont{
+    display: flex;
+    flex-direction: column;
+}
+
+.f-cont a{
+    text-decoration: none;
+    color: #f6b319;
+    font-size: 20px;
+    line-height: 50px;
+}
+
+.f-cont a i span{
+    color: #fff;
+    margin-left: 10px;
+    font-size: 15px;
+}
+
+.s-cont{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 10px;
+}
+
+.s-cont a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 30px;
+}
+
+
+/* ############################### feed back form #################################*/
+.feedback{
+    padding: 30px;
 }
 
 .contact-row{
     display:flex;
-    align-items: center;
     justify-content: center;
+    gap: 20px;
 }
-.contact-row .contact-form{
-    flex-basis: 50%;
-}
+
 .contact-row .contact-form > .contact-inpt{
     width:90%;
 }
-.contact-form{
-    margin-bottom:30px;
+
+.contact-inpt{
+    color: #7c7575;
+    font-size: 15px;
+    font-family: "Itim", cursive;
 }
+
+.contact-form{
+    margin-bottom: 20px;
+}
+
 .contact-inpt,textarea{
     width:95%;
     padding:10px;
     border-radius:10px;
     border:none;
-    
 }
-textarea{
+
+.contact-form textarea{
     height:200px;
+    color: #7c7575;
+    font-size: 15px;
+    font-family: "Itim", cursive;
     resize: none;
 }
+
 .btn{
     width:100%;
 }
+
 .btn button{
     width:200px;
     padding:10px;
@@ -84,8 +143,6 @@ textarea{
     background-color: #f6b319;
     color:#000;
     left:250px;
-    margin-bottom: 20px;
     border:none;
     font-weight: 700;
-    
 }
