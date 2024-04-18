@@ -1,6 +1,6 @@
 function AddCart(){
     let listProductHTML = document.querySelector(".carts")
-    let kasjdf
+    let list = []
 
 }
 
