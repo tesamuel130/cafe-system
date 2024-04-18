@@ -1,4 +1,6 @@
 function AddCart(){
+    let listProductHTML = document.querySelector(".carts")
+
     
 }
 
