@@ -34,7 +34,11 @@ httpF.onload = function() {
                         <div class="menu-card" data-id="${item.id}">
                             <img src="${item.image}" alt="${item.alt}">
                             <h3>${item.name}</h3>
-                            <a href="foodlist.html"><button>See More</button></a>
+                            <div class="price-rating">
+                                <p>price: <span>${item.price}</span></p>
+                                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                            </div>
+                            <button>Order Now!</button>
                         </div>
                     `;
                     break;
@@ -43,7 +47,11 @@ httpF.onload = function() {
                         <div class="menu-card" data-id="${item.id}">
                             <img src="${item.image}" alt="${item.alt}">
                             <h3>${item.name}</h3>
-                            <a href="foodlist.html"><button>See More</button></a>
+                            <div class="price-rating">
+                                <p>price: <span>${item.price}</span></p>
+                                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                            </div>
+                            <button>Order Now!</button>
                         </div>
                     `;
                     break;
@@ -52,7 +60,11 @@ httpF.onload = function() {
                         <div class="menu-card" data-id="${item.id}">
                             <img src="${item.image}" alt="${item.alt}">
                             <h3>${item.name}</h3>
-                            <a href="foodlist.html"><button>See More</button></a>
+                            <div class="price-rating">
+                                <p>price: <span>${item.price}</span></p>
+                                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                            </div>
+                            <button>Order Now!</button>
                         </div>
                     `;
                     break;
@@ -61,7 +73,11 @@ httpF.onload = function() {
                         <div class="menu-card" data-id="${item.id}">
                             <img src="${item.image}" alt="${item.alt}">
                             <h3>${item.name}</h3>
-                            <a href="foodlist.html"><button>See More</button></a>
+                            <div class="price-rating">
+                                <p>price: <span>${item.price}</span></p>
+                                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                            </div>
+                            <button>Order Now!</button>
                         </div>
                     `;
                     break;
@@ -70,7 +86,11 @@ httpF.onload = function() {
                         <div class="menu-card" data-id="${item.id}">
                             <img src="${item.image}" alt="${item.alt}">
                             <h3>${item.name}</h3>
-                            <a href="foodlist.html"><button>See More</button></a>
+                            <div class="price-rating">
+                                <p>price: <span>${item.price}</span></p>
+                                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                            </div>
+                            <button>Order Now!</button>
                         </div>
                     `;
                     break;
@@ -79,7 +99,11 @@ httpF.onload = function() {
                         <div class="menu-card" data-id="${item.id}">
                             <img src="${item.image}" alt="${item.alt}">
                             <h3>${item.name}</h3>
-                            <a href="foodlist.html"><button>See More</button></a>
+                            <div class="price-rating">
+                                <p>price: <span>${item.price}</span></p>
+                                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                            </div>
+                            <button>Order Now!</button>
                         </div>
                     `;
                     break;
@@ -88,7 +112,11 @@ httpF.onload = function() {
                         <div class="menu-card" data-id="${item.id}">
                             <img src="${item.image}" alt="${item.alt}">
                             <h3>${item.name}</h3>
-                            <a href="foodlist.html"><button>See More</button></a>
+                            <div class="price-rating">
+                                <p>price: <span>${item.price}</span></p>
+                                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                            </div>
+                            <button>Order Now!</button>
                         </div>
                     `;
                     break;
@@ -97,7 +125,11 @@ httpF.onload = function() {
                         <div class="menu-card" data-id="${item.id}">
                             <img src="${item.image}" alt="${item.alt}">
                             <h3>${item.name}</h3>
-                            <a href="foodlist.html"><button>See More</button></a>
+                            <div class="price-rating">
+                                <p>price: <span>${item.price}</span></p>
+                                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                            </div>
+                            <button>Order Now!</button>
                         </div>
                     `;
                     break;
@@ -107,7 +139,7 @@ httpF.onload = function() {
                         <img src="${item.image}" alt="${item.alt}">
                         <h3>${item.name}</h3>
                         <div class="price-rating">
-                            <p>price: <span>$50</span></p>
+                            <p>price: <span>${item.price}</span></p>
                             <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
                         </div>
                         <button>Order Now!</button>
@@ -120,10 +152,10 @@ httpF.onload = function() {
                         <img src="${item.image}" alt="${item.alt}">
                         <h3>${item.name}</h3>
                         <div class="price-rating">
-                            <p>price: <span>$50</span></p>
+                            <p>price: <span>${item.price}</span></p>
                             <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
                         </div>
-                        <button>Order Now!</button>
+                        <button class='trycl'>Order Now!</button>
                     </div>
                     `;
                     break;
