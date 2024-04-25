@@ -40,7 +40,7 @@
           <a href="contact.html" class="act-contact"
             ><i class="fa-solid fa-address-book"></i>Contact</a
           >
-          <a href="#" class="admin-link" onclick="toggleMenu()"
+          <a href="#" class="admin-link" id="openAdminModalBtn"
             ><i class="fa-solid fa-user-tie"></i
           ></a>
         </div>
@@ -153,13 +153,5 @@
     </footer>
 
     <script type="module" src="src/js/index.js"></script>
-
-    <script>
-      let subMenu = document.getElementById("subMenu");
-
-      function toggleMenu() {
-        subMenu.classList.toggle("open-menu");
-      }
-    </script>
   </body>
 </html>
