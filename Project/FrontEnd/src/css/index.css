@@ -116,6 +116,31 @@ body{
     transition: transform 0.5s;
 }
 
+/* ##################### cart button ######################## */
+
+.cart-btn{
+    position: fixed;
+    top: 80%;
+    right: 8%;
+}
+
+.cart-btn button{
+    padding: 15px;
+    border: none;
+    border-radius: 50%;
+    background-color: #f6b319;
+    box-shadow: 3px 0px 3px #000;
+}
+
+.cart-btn button i{
+    font-size: 25px;
+    /* box-shadow: 3px 3px 3px #000; */
+}
+
+.cart-btn button:hover{
+    color: #fff;
+    transform: translateY(-5px);
+}
 
 
 /* ################  Main Container Style  ##################### */
