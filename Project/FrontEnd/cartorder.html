@@ -40,9 +40,21 @@
           <a href="contact.html" class="act-contact"
             ><i class="fa-solid fa-address-book"></i>Contact</a
           >
-          <a href="#" class="admin-link"
+          <a href="#" class="admin-link" onclick="toggleMenu()"
             ><i class="fa-solid fa-user-tie"></i
           ></a>
+        </div>
+
+        <div class="sub-menu-wrap" id="subMenu">
+          <div class="sub-menu">
+            <div class="user-info">
+              <a href="#"><i class="fa-solid fa-right-to-bracket"></i>LogIn</a>
+            </div>
+
+            <div class="user-info">
+              <a href="#"><i class="fa-solid fa-user"></i>SignUp</a>
+            </div>
+          </div>
         </div>
       </div>
     </header>
@@ -141,5 +153,13 @@
     </footer>
 
     <script type="module" src="src/js/index.js"></script>
+
+    <script>
+      let subMenu = document.getElementById("subMenu");
+
+      function toggleMenu() {
+        subMenu.classList.toggle("open-menu");
+      }
+    </script>
   </body>
 </html>

@@ -69,6 +69,54 @@ body{
     background-color: #e9c25f;
 }
 
+.sub-menu-wrap{
+    position: absolute;
+    right: 0;
+    width: 160px;
+    margin-top: 130px;
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 0.5s;
+}
+
+
+
+.sub-menu-wrap.open-menu{
+    max-height: 400px;
+}
+
+.sub-menu{
+    background-color: #e0d7bf;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.login-info{
+    display: flex;
+    align-items: center;
+}
+
+.user-info a{
+    color: #000;
+    font-family: "Itim", cursive;
+    font-weight: bold;
+    text-decoration: none;
+    line-height: 30px;
+}
+
+.user-info a i{
+    color: #fff;
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.user-info a:hover{
+    font-size: 18px;
+    transition: transform 0.5s;
+}
+
+
 
 /* ################  Main Container Style  ##################### */
 .container{
