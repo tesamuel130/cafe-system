@@ -1,113 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- ################  CSS LINK   ################# -->
-    <link rel="stylesheet" href="src/css/index.css">
-    <link rel="stylesheet" href="src/css/cartorder.css">
+    <link rel="stylesheet" href="src/css/index.css" />
+    <link rel="stylesheet" href="src/css/cartorder.css" />
 
-     <!-- ################  Icon LINK   ################# -->
-     <script src="https://kit.fontawesome.com/3d68b6bc01.js" crossorigin="anonymous"></script>
+    <!-- ################  Icon LINK   ################# -->
+    <script
+      src="https://kit.fontawesome.com/3d68b6bc01.js"
+      crossorigin="anonymous"
+    ></script>
 
     <title>cart order paget</title>
-</head>
-<body>
+  </head>
+  <body>
     <!-- ##################### Header ######################## -->
     <header>
-        <div class="nav-bar">
-            <div class="logo">
-                <h2><i class="fa-solid fa-utensils"></i></h2>
-                <h3>Resturant</h3>
-            </div>
-            <div class="nav-link">
-                <a href="home.html" class="act-home"><i class="fa-solid fa-house"></i>Home</a>
-                <a href="menucat.html" class="act-menu"><i class="fa-solid fa-bowl-food"></i>Menu</a>
-                <a href="#" class="act-order"><i class="fa-solid fa-cart-shopping"></i>Order</a>
-                <a href="about.html" class="act-about"><i class="fa-solid fa-address-card"></i>About</a>
-                <a href="contact.html" class="act-contact"><i class="fa-solid fa-address-book"></i>Contact</a>
-                <a href="#" class="admin-link"><i class="fa-solid fa-user-tie"></i></a>
-            </div>
+      <div class="nav-bar">
+        <div class="logo">
+          <h2><i class="fa-solid fa-utensils"></i></h2>
+          <h3>Resturant</h3>
         </div>
+        <div class="nav-link">
+          <a href="home.html" class="act-home"
+            ><i class="fa-solid fa-house"></i>Home</a
+          >
+          <a href="menucat.html" class="act-menu"
+            ><i class="fa-solid fa-bowl-food"></i>Menu</a
+          >
+          <a href="#" class="act-order"
+            ><i class="fa-solid fa-cart-shopping"></i>Order</a
+          >
+          <a href="about.html" class="act-about"
+            ><i class="fa-solid fa-address-card"></i>About</a
+          >
+          <a href="contact.html" class="act-contact"
+            ><i class="fa-solid fa-address-book"></i>Contact</a
+          >
+          <a href="#" class="admin-link"
+            ><i class="fa-solid fa-user-tie"></i
+          ></a>
+        </div>
+      </div>
     </header>
-
 
     <!-- ##################### Main body ######################## -->
     <main>
-        <div class="container">
-            <div class="cart-order-cont">
-                <div class="carts">
-                    <div class="cart-card-list">
-                        <div class="cart-card">
-                            <img src="/Project/FrontEnd/src/css/img/appetizer.png" alt="food image">
-                            <div class="ord-dit">
-                                <h1>appetizer</h1>
-                                <p>price: 20$</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="cart-card-list">
-                        <div class="cart-card">
-                            <img src="/Project/FrontEnd/src/css/img/appetizer.png" alt="food image">
-                            <div class="ord-dit">
-                                <h1>appetizer</h1>
-                                <p>price: 20$</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="cart-card-list">
-                        <div class="cart-card">
-                            <img src="/Project/FrontEnd/src/css/img/appetizer.png" alt="food image">
-                            <div class="ord-dit">
-                                <h1>appetizer</h1>
-                                <p>price: 20$</p>
-                            </div>
-                        </div>
-                    </div>
+      <div class="container">
+        <div class="cart-order-cont">
+          <div class="carts">
+            <div class="cart-card-list">
+              <div class="cart-card">
+                <img
+                  src="/Project/FrontEnd/src/css/img/appetizer.png"
+                  alt="food image"
+                />
+                <div class="ord-dit">
+                  <h1>appetizer</h1>
+                  <p>
+                    <span>price:</span> $20<br />
+                    <span>vat:</span> +$3<br />
+                    <span>Total: </span>$23
+                  </p>
                 </div>
-
-                <div class="order">
-                    <div class="ord-info">
-                        <form action="/" method="post">
-                            <input type="text" placeholder="Full Name" required>
-                            <input type="text" placeholder="Table No." required>
-                            <input type="text" placeholder="Amount Of Price" required>
-                            <input type="text" placeholder="Discription">
-                            <input type="text" placeholder="Payment Method">
-                            <button>Order Now</button>
-                        </form>
-                    </div>
+                <div class="pl-btn">
+                  <button>+</button>
+                  <p>1</p>
+                  <button>-</button>
                 </div>
+              </div>
             </div>
+
+            <div class="cart-card-list">
+              <div class="cart-card">
+                <img
+                  src="/Project/FrontEnd/src/css/img/appetizer.png"
+                  alt="food image"
+                />
+                <div class="ord-dit">
+                  <h1>appetizer</h1>
+                  <p>
+                    <span>price:</span> $20<br />
+                    <span>vat:</span> +$3<br />
+                    <span>Total: </span>$23
+                  </p>
+                </div>
+                <div class="pl-btn">
+                  <button>+</button>
+                  <p>1</p>
+                  <button>-</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="order">
+            <div class="ord-info">
+              <form action="/" method="post">
+                <input type="text" placeholder="Full Name" required />
+                <input type="text" placeholder="Table No." required />
+                <input type="text" placeholder="Amount Of Price" required />
+                <input type="text" placeholder="Discription" />
+                <input type="text" placeholder="Payment Method" />
+                <button>Order Now</button>
+              </form>
+            </div>
+          </div>
         </div>
+      </div>
     </main>
-
-
 
     <!-- ##################### Footer ######################## -->
     <footer>
-        <div class="foot-cont">
-            <div class="f-cont">
-                <h3><i class="fa-regular fa-clock"></i><span>Hours:</span></h3>
-                <p>Sun-Thur: <span>11:15am - 10:00pm</span><br>Fri: <span>11:15am - 2:30pm</span>
-                <br>Saturday Closed</p>
-            </div>
-            <div class="f-cont">
-                <h3><i class="fa-solid fa-location-dot"></i><span>Address:</span></h3>
-                <p>Addis Ababa, Ethiopia<br>4Kilo Univercity</p>
-            </div>
-            <div class="f-cont">
-                <p>"The Ethiopians Restorant I'v been to! And<br>
-                    that's saying a lot , since I've been to many!"</p>
-                <p>"Amazing food! Great service! could not ask for<br>
-                    more! I'll be back again and again!"</p>
-            </div>
+      <div class="foot-cont">
+        <div class="f-cont">
+          <h3><i class="fa-regular fa-clock"></i><span>Hours:</span></h3>
+          <p>
+            Sun-Thur: <span>11:15am - 10:00pm</span><br />Fri:
+            <span>11:15am - 2:30pm</span> <br />Saturday Closed
+          </p>
         </div>
+        <div class="f-cont">
+          <h3><i class="fa-solid fa-location-dot"></i><span>Address:</span></h3>
+          <p>Addis Ababa, Ethiopia<br />4Kilo Univercity</p>
+        </div>
+        <div class="f-cont">
+          <p>
+            "The Ethiopians Restorant I'v been to! And<br />
+            that's saying a lot , since I've been to many!"
+          </p>
+          <p>
+            "Amazing food! Great service! could not ask for<br />
+            more! I'll be back again and again!"
+          </p>
+        </div>
+      </div>
     </footer>
 
     <script type="module" src="src/js/index.js"></script>
-</body>
+  </body>
 </html>

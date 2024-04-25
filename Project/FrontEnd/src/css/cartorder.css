@@ -12,8 +12,8 @@
 
 .carts{
     width: 100%;
-    height: 600px;
-    overflow: scroll;
+    height: 450px;
+    overflow-y: auto;
     background-color: #f6b319;
     border-radius: 10px;
     display: flex;
@@ -22,26 +22,87 @@
     padding-top: 30px;
 }
 
+.carts::-webkit-scrollbar{
+    width: 10px;
+}
+
+.carts::-webkit-scrollbar-track{
+    background-color: rgb(119, 118, 118);
+    border-radius: 10px;
+}
+
+.carts::-webkit-scrollbar-thumb{
+    background-color: antiquewhite;
+    border-radius: 10px;
+}
+
 .cart-card-list{
-    height: 90px;
+    height: 100px;
     display: flex;
     flex-direction: row;
     margin: 10px;
 }
 
 .cart-card{
-    width: 500px;
+    width: 450px;
     border-radius: 10px;
     background-color: #fff;
     display: flex;
     flex-direction: row;
-    align-items: center;
 }
 
 .cart-card img{
-    width: 100px;
-    height: 100px;
+    width: 70px;
+    height: 70px;
     padding: 10px;
+}
+
+.ord-dit{
+   width: 150px;
+   margin-left: 10px;
+   line-height: 0px; 
+   display: flex;
+   flex-direction: column;
+}
+
+.ord-dit h1{
+    font-size: 25px;
+    font-family: "Itim", cursive;
+}
+
+.ord-dit p{
+    font-size: 15px;
+    font-family: "Itim", cursive;
+    padding-left: 5px;
+    margin-top: 3px;
+    line-height: 19px;
+}
+
+.ord-dit p span{
+    font-weight: 600;
+    margin-right: 10px;
+}
+
+.pl-btn{
+    height: 30px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    align-self: center;
+    margin-left: 30px;
+}
+
+.pl-btn button{
+    width: 25px;
+    padding: 5px;
+    border: none;
+    border-radius: 50%;
+    background-color: #ffb700;
+    font-weight: 600;
+}
+
+.pl-btn button:hover{
+    transform: scale(1.1);
 }
 
 
@@ -71,7 +132,7 @@
 }
 
 .ord-info form input{
-    width: 500px;
+    width: 450px;
     padding: 15px;
     border: none;
     border-radius: 10px;
