@@ -13,13 +13,54 @@
     display: flex;
 }
 
+/* ########################### admin sidebar ######################## */
+
 .admin-cont-left{
     width: 20%;
     height: 100vh;
     background-color: #f6b319;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.side-header{
+    margin-top: 20px;
+}
+
+.side-header button{
+    width: 70px;
+    height: 70px;
+    border: none;
+    border-radius: 50%;
+    background-color: #ebebeb;
+    text-align: center;
+    line-height: 5px;
+    font-size: 10px;
+    font-family: "Cedarville Cursive", cursive;
+}
+
+.side-list{
+    display: flex;
+    flex-direction: column;
+}
+
+.side-list a{
+    width: 200px;
+    padding: 15px;
+    color: black;
+    border: none;
+    border-radius: 10px;
+    background-color: #fff;
+    text-decoration: none;
+    margin-top: 10px;
 }
 
 
+
+/* ######################### admin bodybar ######################## */
 .admin-cont-right{
     width: 80%;
     display: flex;
