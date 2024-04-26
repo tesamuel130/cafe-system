@@ -5,5 +5,135 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>admin signup page</title>
   </head>
-  <body></body>
+  <body>
+    <!-- ##################### Header ######################## -->
+    <header>
+      <div class="nav-bar">
+        <div class="logo">
+          <h2><i class="fa-solid fa-utensils"></i></h2>
+          <h3>Resturant</h3>
+        </div>
+        <div class="nav-link">
+          <a href="#" class="act-home"><i class="fa-solid fa-house"></i>Home</a>
+          <a href="menucat.html" class="act-menu"
+            ><i class="fa-solid fa-bowl-food"></i>Menu</a
+          >
+          <a href="cartorder.html" class="act-order"
+            ><i class="fa-solid fa-cart-shopping"></i>Order</a
+          >
+          <a href="about.html" class="act-about"
+            ><i class="fa-solid fa-address-card"></i>About</a
+          >
+          <a href="contact.html" class="act-contact"
+            ><i class="fa-solid fa-address-book"></i>Contact</a
+          >
+          <a href="#" class="admin-link" id="openAdminModalBtn"
+            ><i class="fa-solid fa-user-tie"></i
+          ></a>
+        </div>
+
+        <div class="sub-menu-wrap" id="subMenu">
+          <div class="sub-menu">
+            <div class="user-info">
+              <a href="loginUser.html"
+                ><i class="fa-solid fa-right-to-bracket"></i>LogIn</a
+              >
+            </div>
+
+            <div class="user-info">
+              <a href="#"><i class="fa-solid fa-user"></i>SignUp</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!--  ##################### Main body ######################## -->
+
+    <main>
+      <div class="login-body">
+        <div class="form-cont">
+          <form action="/Project/FrontEnd/home.html" method="get">
+            <h1>SignUp</h1>
+            <div class="form-header-par-one">
+              <p>
+                Does you have account before?
+                <a href="loginUser.html">SignIn</a>
+              </p>
+            </div>
+            <div class="form-header-input-one">
+              <p>Email or Username</p>
+              <input type="text" placeholder="your@example.com" />
+            </div>
+            <div class="form-header-input-two">
+              <div class="form-header-par-two">
+                <p>Password</p>
+              </div>
+              <input type="password" placeholder="enter  your password" />
+            </div>
+            <div class="form-header-input-two">
+              <div class="form-header-par-two">
+                <p>Confirm Password</p>
+              </div>
+              <input type="password" placeholder="enter  your password" />
+            </div>
+            <div class="form-header-par-three">
+              <input type="checkbox" />
+              <p>Remember me</p>
+            </div>
+            <div class="form-btn-one">
+              <button type="submit">Login</button>
+            </div>
+            <div class="form-header-par-four">
+              <p>--------------- signup with ---------------</p>
+            </div>
+            <div class="form-btn-two">
+              <button>
+                <img
+                  src="/Project/FrontEnd/src/css/img/facebook-icon.png"
+                  alt="facebook icon image"
+                />facebook
+              </button>
+              <button>
+                <img
+                  src="/Project/FrontEnd/src/css/img/google-icon.png"
+                  alt="google icon image"
+                />google
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <!-- ##################### Footer ######################## -->
+
+    <footer>
+      <div class="foot-cont">
+        <div class="f-cont">
+          <h3><i class="fa-regular fa-clock"></i><span>Hours:</span></h3>
+          <p>
+            Sun-Thur: <span>11:15am - 10:00pm</span><br />Fri:
+            <span>11:15am - 2:30pm</span> <br />Saturday Closed
+          </p>
+        </div>
+        <div class="f-cont">
+          <h3><i class="fa-solid fa-location-dot"></i><span>Address:</span></h3>
+          <p>Addis Ababa, Ethiopia<br />4Kilo Univercity</p>
+        </div>
+        <div class="f-cont">
+          <p>
+            "The Ethiopians Restorant I'v been to! And<br />
+            that's saying a lot , since I've been to many!"
+          </p>
+          <p>
+            "Amazing food! Great service! could not ask for<br />
+            more! I'll be back again and again!"
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script type="module" src="src/js/index.js"></script>
+  </body>
 </html>
