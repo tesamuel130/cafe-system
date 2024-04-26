@@ -21,9 +21,6 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-
-    display: flex;
-    justify-content: flex-end;
 }
 
 .form-cont{
@@ -72,6 +69,24 @@
     color: #fff;
     line-height: 0;
     margin-top: 5px;
+}
+
+.form-cont form .form-header-input-one select{
+    width: 100%;
+    padding: 13px;
+    border: none;
+    border-radius: 10px;
+}
+
+.form-cont form .form-header-input-one select option{
+    width: 100%;
+    padding: 13px;
+    border: none;
+    border-radius: 10px;
+}
+
+.form-cont form .form-header-input-one select .op-one{
+    display: none;
 }
 
 .form-cont form .form-header-input-one p{
