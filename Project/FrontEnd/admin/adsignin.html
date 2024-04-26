@@ -57,7 +57,7 @@
     <main>
       <div class="login-body">
         <div class="form-cont">
-          <form action="/Project/FrontEnd/home.html" method="get">
+          <form action="adminpan.html" method="get">
             <h1>SignIn</h1>
             <div class="form-header-par-one">
               <p>
@@ -68,7 +68,7 @@
             <div class="form-header-input-one">
               <p>Restorant Branch</p>
               <!-- <input type="text" placeholder="your@example.com" /> -->
-              <select name="branch" id="branch">
+              <select name="branch" id="branch" required>
                 <option class="op-one" value="0">Select a branch...</option>
                 <option value="1">A.A 4Kilo</option>
                 <option value="2">A.A Bole</option>
@@ -79,14 +79,18 @@
             </div>
             <div class="form-header-input-one">
               <p>Email or Username</p>
-              <input type="text" placeholder="your@example.com" />
+              <input type="text" placeholder="your@example.com" required />
             </div>
             <div class="form-header-input-two">
               <div class="form-header-par-two">
                 <p>Password</p>
                 <a href="#">forget password?</a>
               </div>
-              <input type="password" placeholder="enter  your password" />
+              <input
+                type="password"
+                placeholder="enter  your password"
+                required
+              />
             </div>
             <div class="form-header-par-three">
               <input type="checkbox" />
