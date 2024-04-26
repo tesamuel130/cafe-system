@@ -6,7 +6,7 @@
 
     <!-- ################  CSS LINK   ################# -->
     <link rel="stylesheet" href="src/css/index.css" />
-    <link rel="stylesheet" href="src/css/home.css" />
+    <link rel="stylesheet" href="src/css/loginUser.css" />
 
     <!-- ################  Icon LINK   ################# -->
     <script
@@ -14,7 +14,7 @@
       crossorigin="anonymous"
     ></script>
 
-    <title>signupuser</title>
+    <title>loginUser</title>
   </head>
   <body>
     <!-- ##################### Header ######################## -->
@@ -46,9 +46,7 @@
         <div class="sub-menu-wrap" id="subMenu">
           <div class="sub-menu">
             <div class="user-info">
-              <a href="loginUser.html"
-                ><i class="fa-solid fa-right-to-bracket"></i>LogIn</a
-              >
+              <a href="#"><i class="fa-solid fa-right-to-bracket"></i>LogIn</a>
             </div>
 
             <div class="user-info">
@@ -60,6 +58,56 @@
         </div>
       </div>
     </header>
+
+    <!--  ##################### Main body ######################## -->
+
+    <main>
+      <div class="login-body">
+        <div class="form-cont">
+          <form action="/Project/FrontEnd/home.html" method="get">
+            <h1>SignIn</h1>
+            <div class="form-header-par-one">
+              <p>Doesn't have account before? <a href="#">SignUp</a></p>
+            </div>
+            <div class="form-header-input-one">
+              <p>Email or Username</p>
+              <input type="text" placeholder="your@example.com" />
+            </div>
+            <div class="form-header-input-two">
+              <div class="form-header-par-two">
+                <p>Password</p>
+                <a href="#">forget password?</a>
+              </div>
+              <input type="password" placeholder="enter  your password" />
+            </div>
+            <div class="form-header-par-three">
+              <input type="checkbox" />
+              <p>Remember me</p>
+            </div>
+            <div class="form-btn-one">
+              <button type="submit">Login</button>
+            </div>
+            <div class="form-header-par-four">
+              <p>--------------- login with ---------------</p>
+            </div>
+            <div class="form-btn-two">
+              <button>
+                <img
+                  src="/Project/FrontEnd/src/css/img/facebook-icon.png"
+                  alt="facebook icon image"
+                />facebook
+              </button>
+              <button>
+                <img
+                  src="/Project/FrontEnd/src/css/img/google-icon.png"
+                  alt="google icon image"
+                />google
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
 
     <!-- ##################### Footer ######################## -->
 
