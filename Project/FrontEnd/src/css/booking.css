@@ -114,13 +114,14 @@
 
 
 /* ############################### contact us  form #################################*/
-.contact-us{
-    width: 450px;
+.some-detail{
+    width: 300px;
+    padding-right: 150px;
     display: flex;
     flex-direction: column;
 }
 
-.contact-us h1{
+.some-detail h1{
     color: #fff;
     font-size: 35px;
     font-family: "Itim", cursive;
@@ -128,37 +129,16 @@
 
 }
 
-/*
-.f-cont{
-    display: flex;
-    flex-direction: column;
-}
-
-.f-cont a{
-    text-decoration: none;
-    color: #f6b319;
-    font-size: 20px;
-    line-height: 50px;
-}
-
-.f-cont a i span{
-    color: #fff;
-    margin-left: 10px;
-    font-size: 15px;
-}
-
-.s-cont{
-    width: 100%;
-    display: flex;
-    justify-content: center;
+.som-dit-img{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     gap: 30px;
-    margin-top: 10px;
 }
 
-.s-cont a{
-    text-decoration: none;
-    color: #fff;
-    font-size: 30px;
-} */
-
-
+.som-dit-img img{
+    width: 150px;
+    height: 150px;
+    border: none;
+    border-radius: 10px;
+}
