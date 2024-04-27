@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- ################  CSS LINK   ################# -->
     <link rel="stylesheet" href="src/css/index.css" />
-    <link rel="stylesheet" href="src/css/about.css" />
+    <link rel="stylesheet" href="src/css/booking.css" />
 
     <!-- ################  Icon LINK   ################# -->
     <script
@@ -30,8 +30,8 @@
           <a href="menucat.html" class="act-menu"
             ><i class="fa-solid fa-bowl-food"></i>Menu</a
           >
-          <a href="cartorder.html" class="act-order"
-            ><i class="fa-solid fa-cart-shopping"></i>Order</a
+          <a href="#" class="act-booking"
+            ><i class="fa-solid fa-book"></i>Booking</a
           >
           <a href="#" class="act-about"
             ><i class="fa-solid fa-address-card"></i>About</a
@@ -62,15 +62,94 @@
       </div>
     </header>
 
-    <!--  ##################### cart button ######################## -->
-
-    <div class="cart-btn">
-      <button><i class="fa-solid fa-cart-shopping"></i></button>
-    </div>
-
     <!--  ##################### Main body ######################## -->
 
-    <main></main>
+    <main class="contact">
+      <div class="contact-cont">
+        <div class="feedback">
+          <form action="/" method="post">
+            <div class="contact-row" id="contact-nms">
+              <div class="contact-form">
+                <input
+                  class="contact-inpt"
+                  type="text"
+                  name="f-name"
+                  placeholder="First-Name"
+                  required
+                />
+              </div>
+              <div class="contact-form">
+                <input
+                  class="contact-inpt"
+                  type="text"
+                  name="l-name"
+                  placeholder="Last-Name"
+                  required
+                />
+              </div>
+            </div>
+            <div class="contact-form">
+              <input
+                class="contact-inpt"
+                type="email"
+                name="email"
+                placeholder="Email"
+                required
+              />
+            </div>
+            <div class="contact-form">
+              <input
+                class="contact-inpt"
+                type="text"
+                name="subject"
+                placeholder="Phone No."
+                required
+              />
+            </div>
+            <div class="contact-form">
+              <select name="free table" id="free-table">
+                <option class="select-table" value="Free Table">
+                  Select Table No.
+                </option>
+                <option value="table-1">Table - 01</option>
+                <option value="table-2">Table - 02</option>
+                <option value="table-3">Table - 03</option>
+                <option value="table-4">Table - 04</option>
+                <option value="table-5">Table - 05</option>
+                <option value="table-6">Table - 06</option>
+                <option value="table-7">Table - 07</option>
+                <option value="table-8">Table - 08</option>
+                <option value="table-9">Table - 09</option>
+              </select>
+            </div>
+            <div class="contact-form">
+              <input
+                class="contact-inpt"
+                type="number"
+                name="subject"
+                placeholder="No. Of Gust"
+                maxlength="7"
+                minlength="1"
+                required
+              />
+            </div>
+            <div class="contact-form">
+              <input class="contact-inpt" type="date" name="subject" required />
+            </div>
+            <div class="contact-form">
+              <input class="contact-inpt" type="time" name="subject" required />
+            </div>
+            <div class="btn">
+              <button type="submit">Book</button>
+            </div>
+          </form>
+        </div>
+
+        <div class="contact-us">
+          <h1>Some Details</h1>
+        </div>
+      </div>
+    </main>
 
     <!-- ##################### Footer ######################## -->
 
