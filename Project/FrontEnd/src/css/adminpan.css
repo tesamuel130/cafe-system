@@ -56,6 +56,37 @@
     background-color: #fff;
     text-decoration: none;
     margin-top: 10px;
+
+    font-family: "Itim", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.side-list a i{
+    font-size: 19px;
+    color: #f6b319;
+    padding-right: 15px;
+}
+
+.side-logout-btn{
+    width: 200px;
+    margin-top: 100px;
+}
+
+.side-logout-btn button{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 5px 0px 5px;
+
+    font-family: "Itim", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.side-logout-btn button:hover{
+    transform: translateY(-3px);
 }
 
 
