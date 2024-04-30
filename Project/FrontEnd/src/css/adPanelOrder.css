@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Itim&display=swap');
+
+/* ########################### ad panel order tabel css ###############################*/
+.admin-cont-right-body .ad-body-cont-vav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 50px 0 50px;
+}
+
+.admin-cont-right-body .ad-body-cont-vav .ad-nav-header{
+    margin-top: 30px;
+    line-height: 7px;
+}
+
+.ad-nav-header h1{
+    color: #363636;
+    font-size: 25px;
+    font-family: "Itim", cursive;
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: underline #f6b319;
+}
+
+.ad-nav-header p{
+    color: #a1a0a0;
+    font-size: 15px;
+    font-family: "Itim", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.ad-nav-filter #orderCal{
+    width: 100px;
+    padding: 3px;
+    padding-left: 20px;
+    border: none;
+    border-radius: 5px;
+}
+
+.ad-nav-filter .cal-icon{
+    position: absolute;
+    right: 147px;
+    margin-top: 3px;
+    pointer-events: none;
+}
+
+
+
+/* ########################### ad panel order tabel css ###############################*/
+.admin-cont-right-body .ad-body-cont-table{
+    align-self: center;
+    margin-top: -15px;
+}
+
+.ad-body-cont-table .order-table{
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    min-width: 950px;
+    border: none;
+    border-radius: 10px;
+    overflow: scroll;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.ad-body-cont-table .order-table thead tr{
+    color: #000;
+    text-align: left;
+    font-weight: bold;
+    border-bottom: 1px solid #ddd;
+
+    font-size: 15px;
+    font-family: "Itim", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.ad-body-cont-table .order-table th,
+.ad-body-cont-table .order-table td{
+    padding: 12px;
+    border: none;
+}
+
+.ad-body-cont-table .order-table tbody tr{
+    color: #a1a0a0;
+    border-bottom: 1px solid #ddd;
+    background-color: #fff;
+}
+
+.ad-body-cont-table .order-table tbody tr:nth-of-type(even){
+    color: #f6b319;
+    background-color: #fff;
+}
+
+.ad-body-cont-table .order-table tbody tr:last-of-type{
+    border-bottom: 1px solid #f6b319;
+}

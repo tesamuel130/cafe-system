@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Itim&display=swap');
+
+/* #################### admin panel dashbord css ##################### */
+.ad-body-cont-one{
+    width:  100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.ad-body-cont-one div{
+    width: 200px;
+    height: 150px;
+    margin-top: 50px;
+    background-color: #fff;
+}
+
+
+
+.ad-body-cont-two {
+    width: 100%;
+    height: auto;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.ad-body-cont-two .cont-two-left{
+    width: 60%;
+    height: 300px;
+    background-color: #fff;
+}
+
+.ad-body-cont-two .cont-two-right{
+    width: 30%;
+    height: 300px;
+    background-color: #fff;
+}
