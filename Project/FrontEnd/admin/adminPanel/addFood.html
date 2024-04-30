@@ -7,6 +7,7 @@
     <!-- ################  CSS LINK   ################# -->
     <link rel="stylesheet" href="/Project/FrontEnd/src/css/index.css" />
     <link rel="stylesheet" href="/Project/FrontEnd/src/css/adminpan.css" />
+    <link rel="stylesheet" href="/Project/FrontEnd/src/css/adAddFood.css" />
 
     <!-- ################  Icon LINK   ################# -->
     <script
@@ -28,15 +29,27 @@
               </button>
             </div>
             <div class="side-list">
-              <a href="#"><i class="fa-solid fa-house"></i>Dashbord</a>
-              <a href="#"><i class="fa-solid fa-cart-shopping"></i>Order</a>
-              <a href="#"><i class="fa-solid fa-book"></i>Booking</a>
-              <a href="#"><i class="fa-solid fa-utensils"></i>Add Food</a>
-              <a href="#"><i class="fa-solid fa-circle-info"></i>Help</a>
-              <a href="#"><i class="fa-solid fa-comment"></i>FeedBack</a>
+              <a href="dashbord.html"
+                ><i class="fa-solid fa-house"></i>Dashbord</a
+              >
+              <a href="orders.html"
+                ><i class="fa-solid fa-cart-shopping"></i>Order</a
+              >
+              <a href="booking.html"><i class="fa-solid fa-book"></i>Booking</a>
+              <a href="addFood.html"
+                ><i class="fa-solid fa-utensils"></i>Add Food</a
+              >
+              <a href="help.html"
+                ><i class="fa-solid fa-circle-info"></i>Help</a
+              >
+              <a href="feedback.html"
+                ><i class="fa-solid fa-comment"></i>FeedBack</a
+              >
             </div>
             <div class="side-logout-btn">
-              <button>LogOut</button>
+              <a href="/Project/FrontEnd/admin/adhome.html"
+                ><button>LogOut</button></a
+              >
             </div>
           </div>
           <div class="admin-cont-right">
@@ -60,9 +73,28 @@
             </div>
             <div class="admin-cont-right-body">
               <div class="ad-body-cont-one">
-              </div>
-
-              <div class="ad-body-cont-two">
+                <form action="/" method="post">
+                  <input type="text" placeholder="Enter food name" required />
+                  <input type="text" placeholder="Price" required />
+                  <select id="category" name="category">
+                    <option value="select catagory">Select Catagory</option>
+                    <option value="vegitable">vegitable</option>
+                    <option value="desert">Desert</option>
+                    <option value="apetizer">Apetizer</option>
+                    <option value="lanch">Lanch</option>
+                    <option value="brekfast">brekfast</option>
+                    <option value="dinner">dinner</option>
+                  </select>
+                  <input type="text" placeholder="image discription" required />
+                  <input
+                    type="file"
+                    name="imageInput"
+                    id="imgInput"
+                    accept="image/jpg, image/png, image/jpeg"
+                  />
+                  <br />
+                  <button>Submit</button>
+                </form>
               </div>
             </div>
           </div>

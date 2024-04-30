@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Itim&display=swap');
+
+/* ########################### ad panel add food css ###############################*/
+
+.ad-body-cont-one{
+    width: 700px;
+    height: 500px;
+    align-self: center;
+    margin-top: 50px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    background-color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ad-body-cont-one form{
+    display: flex;
+    flex-direction: column;
+}
