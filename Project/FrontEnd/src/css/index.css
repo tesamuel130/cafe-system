@@ -119,25 +119,51 @@ body{
 /* ##################### cart button ######################## */
 
 .cart-btn{
+    width: 40px;
+    height: 40px;
+    padding: 5px;
     position: fixed;
     top: 80%;
     right: 8%;
-}
+    z-index: 999;
 
-.cart-btn button{
-    padding: 15px;
+    display: flex;
+    align-items: center;
     border: none;
     border-radius: 50%;
-    background-color: #f6b319;
-    box-shadow: 3px 0px 3px #000;
+    background-color: #ffffff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
 }
 
-.cart-btn button i{
+.cart-btn a{
+    padding: 10px 5px;
+    border: none;
+    border-radius: 50%;
+
+    text-decoration: none;
+    color: #f6b319;
+    margin-top: 20px;
+}
+
+.cart-btn a i{
     font-size: 25px;
-    /* box-shadow: 3px 3px 3px #000; */
 }
 
-.cart-btn button:hover{
+.cart-btn .btn-one .noti-count{
+    position: relative;
+    top: -38px;
+    right: -23px;
+
+    padding: 3px 6px;
+    border: none;
+    border-radius: 50%;
+    background-color: red;
+
+    color: black;
+    font-size: 10px;
+}
+
+.cart-btn a:hover{
     color: #fff;
     transform: translateY(-5px);
 }

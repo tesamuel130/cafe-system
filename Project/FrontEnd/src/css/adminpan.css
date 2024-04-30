@@ -135,6 +135,20 @@
     border: none;
 }
 
+.info-comp .btn-one .noti-count{
+    top: -15px;
+    left: -10px;
+    position: relative;
+
+    padding: 3px 6px;
+    border: none;
+    border-radius: 50%;
+    background-color: red;
+
+    color: black;
+    font-size: 10px;
+}
+
 .info-comp .btn-two{
     border: none;
     border-radius: 50%;

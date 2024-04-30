@@ -131,3 +131,13 @@
     font-weight: 1000;
     font-style: normal;
 }
+
+.order-table tbody tr .lod{
+    color: #858484;
+    background-color: #f1e46b;
+
+    font-size: 15px;
+    font-family: "Itim", cursive;
+    font-weight: 1000;
+    font-style: normal;
+}
