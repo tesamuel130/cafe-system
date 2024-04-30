@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Itim&display=swap');
+
+/* side bar */
+.side-list .feedback{
+    width: 100%;
+    text-decoration: underline;
+    text-decoration-color: #f6b319;
+    text-decoration-thickness: 4px;
+    text-underline-offset: 5px;
+}
