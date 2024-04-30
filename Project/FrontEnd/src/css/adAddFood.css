@@ -1,6 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Itim&display=swap');
 
+/* side bar */
+.side-list .add-food{
+    width: 100%;
+    text-decoration: underline;
+    text-decoration-color: #f6b319;
+    text-decoration-thickness: 4px;
+    text-underline-offset: 5px;
+}
+
 /* ########################### ad panel add food css ###############################*/
 
 .ad-body-cont-one{
@@ -171,4 +180,9 @@ td .food-img img{
     font-family: "Itim", cursive;
     font-weight: 1000;
     font-style: normal;
+}
+
+.order-table tbody tr .cmd:hover{
+    color: #535353;
+    background-color: #48ff00;
 }

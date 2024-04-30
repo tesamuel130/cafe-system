@@ -164,7 +164,7 @@ body{
 }
 
 .cart-btn a:hover{
-    color: #fff;
+    color: #000;
     transform: translateY(-5px);
 }
 
