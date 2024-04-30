@@ -18,6 +18,7 @@
 .admin-cont-left{
     width: 20%;
     height: 100vh;
+    border-right: 2px solid #e6e1e1;
     background-color: #f6b319;
     
     display: flex;

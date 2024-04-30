@@ -123,7 +123,8 @@
 }
 
 .order-table tbody tr .ncmd{
-    color: #858484;
+    color: #f3f1f1;
+    background-color: #d85d5d;
 
     font-size: 15px;
     font-family: "Itim", cursive;

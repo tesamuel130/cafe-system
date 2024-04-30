@@ -7,6 +7,7 @@
     <!-- ################  CSS LINK   ################# -->
     <link rel="stylesheet" href="/Project/FrontEnd/src/css/index.css" />
     <link rel="stylesheet" href="/Project/FrontEnd/src/css/adminpan.css" />
+    <link rel="stylesheet" href="/Project/FrontEnd/src/css/adBooking.css" />
 
     <!-- ################  Icon LINK   ################# -->
     <script
@@ -28,12 +29,22 @@
               </button>
             </div>
             <div class="side-list">
-              <a href="#"><i class="fa-solid fa-house"></i>Dashbord</a>
-              <a href="#"><i class="fa-solid fa-cart-shopping"></i>Order</a>
-              <a href="#"><i class="fa-solid fa-book"></i>Booking</a>
-              <a href="#"><i class="fa-solid fa-utensils"></i>Add Food</a>
-              <a href="#"><i class="fa-solid fa-circle-info"></i>Help</a>
-              <a href="#"><i class="fa-solid fa-comment"></i>FeedBack</a>
+              <a href="dashbord.html"
+                ><i class="fa-solid fa-house"></i>Dashbord</a
+              >
+              <a href="orders.html"
+                ><i class="fa-solid fa-cart-shopping"></i>Order</a
+              >
+              <a href="booking.html"><i class="fa-solid fa-book"></i>Booking</a>
+              <a href="addFood.html"
+                ><i class="fa-solid fa-utensils"></i>Add Food</a
+              >
+              <a href="help.html"
+                ><i class="fa-solid fa-circle-info"></i>Help</a
+              >
+              <a href="feedback.html"
+                ><i class="fa-solid fa-comment"></i>FeedBack</a
+              >
             </div>
             <div class="side-logout-btn">
               <button>LogOut</button>
@@ -59,9 +70,95 @@
               </div>
             </div>
             <div class="admin-cont-right-body">
-              <div class="ad-body-cont-one"></div>
+              <div class="ad-body-cont-vav">
+                <div class="ad-nav-header">
+                  <h1>Booking</h1>
+                  <p>Hear is the booker list</p>
+                </div>
+                <div class="ad-nav-filter">
+                  <select name="order date" id="orderCal">
+                    <option value="today">today</option>
+                  </select>
+                  <span class="cal-icon"
+                    ><i class="fa-regular fa-calendar-days"></i
+                  ></span>
+                </div>
+              </div>
 
-              <div class="ad-body-cont-two"></div>
+              <div class="ad-body-cont-table">
+                <table class="order-table">
+                  <thead>
+                    <tr>
+                      <th>Booking Id</th>
+                      <th>Customer Name</th>
+                      <th>Date</th>
+                      <th>Time</th>
+                      <th>Table No.</th>
+                      <th>No. of gust</th>
+                      <th>Discription</th>
+                      <th>No. Booking Before</th>
+                      <th>Confirm</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>res/1234/aa</td>
+                      <td>Samuel</td>
+                      <td>10/10/10</td>
+                      <td>10:10</td>
+                      <td>5</td>
+                      <td>3</td>
+                      <td>VIP</td>
+                      <td>13</td>
+                      <td><button class="cmd">Coming</button></td>
+                    </tr>
+                    <tr>
+                      <td>res/1234/aa</td>
+                      <td>Samuel</td>
+                      <td>10/10/10</td>
+                      <td>10:10</td>
+                      <td>5</td>
+                      <td>8</td>
+                      <td>VIP</td>
+                      <td>1</td>
+                      <td><button class="ncmd">Not Coming</button></td>
+                    </tr>
+                    <tr>
+                      <td>res/1234/aa</td>
+                      <td>Samuel</td>
+                      <td>10/10/10</td>
+                      <td>10:10</td>
+                      <td>5</td>
+                      <td>3</td>
+                      <td>Normal</td>
+                      <td>5</td>
+                      <td><button class="ncmd">Not Coming</button></td>
+                    </tr>
+                    <tr>
+                      <td>res/1234/aa</td>
+                      <td>Samuel</td>
+                      <td>10/10/10</td>
+                      <td>10:10</td>
+                      <td>5</td>
+                      <td>2</td>
+                      <td>VVIP</td>
+                      <td>10</td>
+                      <td><button class="cmd">Coming</button></td>
+                    </tr>
+                    <tr>
+                      <td>res/1234/aa</td>
+                      <td>Samuel</td>
+                      <td>10/10/10</td>
+                      <td>10:10</td>
+                      <td>5</td>
+                      <td>5</td>
+                      <td>Normal</td>
+                      <td>6</td>
+                      <td><button class="cmd">Coming</button></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
             </div>
           </div>
         </div>
