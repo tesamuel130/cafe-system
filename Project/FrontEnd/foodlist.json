@@ -9,73 +9,121 @@
     },
     {
         "id": 2,
-        "name": "Today's Special",
-        "price": "25$",
-        "image": "src/css/img/tdspetial.png",
+        "name": "chekolet cake",
+        "price": "7$",
+        "image": "src/css/img/cake.png",
         "alt": "todays special food picture",
         "catagorys": "CAKE"
     },
     {
         "id": 3,
-        "name": "Today's Special",
+        "name": "apet",
         "price": "25$",
-        "image": "src/css/img/tdspetial.png",
+        "image": "src/css/img/appetizer.png",
         "alt": "todays special food picture",
         "catagorys": "APPETIZER"
     },
     {
         "id": 4,
-        "name": "Today's Special",
+        "name": "desserts",
         "price": "25$",
-        "image": "src/css/img/tdspetial.png",
+        "image": "src/css/img/dessert.png",
         "alt": "todays special food picture",
         "catagorys": "DESSRTS"
     },
     {
         "id": 5,
-        "name": "Today's Special",
+        "name": "fish cotelet",
         "price": "25$",
-        "image": "src/css/img/tdspetial.png",
+        "image": "src/css/img/luanch.png",
         "alt": "todays special food picture",
         "catagorys": "LUANCHS"
     },
     {
         "id": 6,
-        "name": "Today's Special",
+        "name": "combo",
         "price": "25$",
-        "image": "src/css/img/tdspetial.png",
+        "image": "src/css/img/diner.png",
         "alt": "todays special food picture",
         "catagorys": "DINERS"
     },
     {
         "id": 7,
-        "name": "Today's Special",
+        "name": "fruit panch",
         "price": "25$",
-        "image": "src/css/img/tdspetial.png",
+        "image": "src/css/img/fruits.png",
         "alt": "todays special food picture",
         "catagorys": "FRUITS"
     },
     {
         "id": 8,
-        "name": "Today's Special",
+        "name": "Kannur Cocktail",
         "price": "25$",
-        "image": "src/css/img/tdspetial.png",
+        "image": "src/css/img/kannurCocktail.png",
         "alt": "todays special food picture",
         "catagorys": "JUICES"
     },
     {
         "id": 9,
-        "name": "Today's Special",
+        "name": "Leclou Cocktail",
         "price": "25$",
-        "image": "src/css/img/tdspetial.png",
+        "image": "src/css/img/LeClouCocktail.png",
+        "alt": "todays special food picture",
+        "catagorys": "JUICES"
+    },
+    {
+        "id": 10,
+        "name": "Strawberry Shake",
+        "price": "25$",
+        "image": "src/css/img/strawberryShake.png",
+        "alt": "todays special food picture",
+        "catagorys": "JUICES"
+    },
+    {
+        "id": 11,
+        "name": "Watermelon Shake",
+        "price": "25$",
+        "image": "src/css/img/watermelonShake.png",
+        "alt": "todays special food picture",
+        "catagorys": "JUICES"
+    },
+    {
+        "id": 12,
+        "name": "softdrink",
+        "price": "25$",
+        "image": "src/css/img/softdrink.png",
         "alt": "todays special food picture",
         "catagorys": "SOFTDRINKS"
     },
     {
-        "id": 10,
-        "name": "Today's Special",
+        "id": 13,
+        "name": "Heniken Beer",
         "price": "25$",
-        "image": "src/css/img/tdspetial.png",
+        "image": "src/css/img/henikenAlco.png",
+        "alt": "todays special food picture",
+        "catagorys": "ALCOHOLIC-DRINKS"
+    },
+    {
+        "id": 14,
+        "name": "Donjulio",
+        "price": "25$",
+        "image": "src/css/img/donjulioAlco.png",
+        "alt": "todays special food picture",
+        "catagorys": "ALCOHOLIC-DRINKS"
+    },
+    {
+        "id": 15,
+        "name": "Bacardia",
+        "price": "25$",
+        "image": "src/css/img/bacardiAlco.png",
+        "alt": "todays special food picture",
+        "catagorys": "ALCOHOLIC-DRINKS"
+    },
+    {
+        "id": 13,
+        "name": "Wiski",
+        "price": "25$",
+        "image": "src/css/img/alcohol.png",
         "alt": "todays special food picture",
         "catagorys": "ALCOHOLIC-DRINKS"
     }
