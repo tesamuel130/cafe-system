@@ -112,11 +112,17 @@
 .ad-body-cont-two .cont-two-left{
     width: 60%;
     height: 300px;
+    border: none;
+    border-radius: 10px;
     background-color: #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
 }
 
 .ad-body-cont-two .cont-two-right{
     width: 30%;
     height: 300px;
+    border: none;
+    border-radius: 10px;
     background-color: #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
 }
