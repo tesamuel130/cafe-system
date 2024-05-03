@@ -64,6 +64,14 @@
     font-family: "Itim", cursive;
 }
 
+label{
+    color: #fff;
+    font-size: 15px;
+    font-family: "Itim", cursive;
+    font-weight: 700;
+    padding-left: 5px;
+}
+
 .contact-form select{
     width: 100%;
     padding: 9px;
@@ -113,7 +121,7 @@
 }
 
 
-/* ############################### contact us  form #################################*/
+/* ############################### some detail #################################*/
 .some-detail{
     width: 300px;
     padding-right: 150px;

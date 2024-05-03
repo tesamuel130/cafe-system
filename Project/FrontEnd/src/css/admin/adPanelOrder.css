@@ -105,7 +105,7 @@
 }
 
 .ad-body-cont-table .order-table tbody tr:nth-of-type(even){
-    color: #9e6f00;
+    color: #5E5E5E;
     background-color: #fff;
 }
 
@@ -122,7 +122,7 @@
 }
 
 .order-table tbody tr .cmd{
-    color: #3f3e3e;
+    color: #121111;
     background-color: #61bb3d;
 
     font-size: 15px;

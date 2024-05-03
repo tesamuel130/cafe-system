@@ -60,6 +60,15 @@
     gap: 15px;
 }
 
+.ad-body-cont-one form label{
+    color: #535353;
+    font-family: "Itim", cursive;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 5px;
+    padding-left: 5pxs;
+}
+
 .ad-body-cont-one form input{
     width: 100%;
     padding: 10px;
@@ -156,7 +165,7 @@ td .food-img img{
 }
 
 .ad-body-cont-table .order-table tbody tr:nth-of-type(even){
-    color: #9e6f00;
+    color: #5E5E5E;
     background-color: #fff;
 }
 
@@ -173,7 +182,7 @@ td .food-img img{
 }
 
 .order-table tbody tr .cmd{
-    color: #3f3e3e;
+    color: #121111;
     background-color: #61bb3d;
 
     font-size: 15px;
