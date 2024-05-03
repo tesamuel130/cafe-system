@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- ################  CSS LINK   ################# -->
-    <link rel="stylesheet" href="src/css/index.css" />
-    <link rel="stylesheet" href="src/css/signupUser.css" />
+    <link rel="stylesheet" href="/Project/FrontEnd/src/css/index.css" />
+    <link rel="stylesheet" href="/Project/FrontEnd/src/css/signupUser.css" />
 
     <!-- ################  Icon LINK   ################# -->
     <script
@@ -77,24 +77,37 @@
               </p>
             </div>
             <div class="form-header-input-one">
-              <p>Email or Username</p>
-              <input type="text" placeholder="your@example.com" />
+              <label for="email">Email or Username</label>
+              <input
+                id="email"
+                type="text"
+                placeholder="your@example.com"
+                required
+              />
             </div>
             <div class="form-header-input-two">
               <div class="form-header-par-two">
-                <p>Password</p>
+                <label for="fpass">Password</label>
               </div>
-              <input type="password" placeholder="enter  your password" />
+              <input
+                id="fpass"
+                type="password"
+                placeholder="enter  your password"
+              />
             </div>
             <div class="form-header-input-two">
               <div class="form-header-par-two">
-                <p>Confirm Password</p>
+                <label for="cpass">Confirm Password</label>
               </div>
-              <input type="password" placeholder="enter  your password" />
+              <input
+                id="cpass"
+                type="password"
+                placeholder="enter  your password"
+              />
             </div>
             <div class="form-header-par-three">
-              <input type="checkbox" />
-              <p>Remember me</p>
+              <input id="remb" type="checkbox" />
+              <label for="remb">Remind Me</label>
             </div>
             <div class="form-btn-one">
               <button type="submit">Login</button>
@@ -149,6 +162,6 @@
       </div>
     </footer>
 
-    <script type="module" src="src/js/index.js"></script>
+    <script type="module" src="/Project/FrontEnd/src/js/index.js"></script>
   </body>
 </html>

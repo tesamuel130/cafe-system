@@ -12,7 +12,7 @@
 
 .carts{
     width: 100%;
-    height: 450px;
+    height: 550px;
     overflow-y: auto;
     background-color: #f6b319;
     border-radius: 10px;
@@ -127,8 +127,15 @@
 .ord-info form{
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 10px;
     margin-top: 30px;
+}
+
+.ord-info form label{
+    font-size: 15px;
+    font-family: "Itim", cursive;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .ord-info form input{
@@ -136,6 +143,29 @@
     padding: 15px;
     border: none;
     border-radius: 10px;
+
+    font-size: 15px;
+    font-family: "Itim", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.ord-info form select{
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    margin-top: 15px;
+
+    color: #807e7e;
+    font-size: 15px;
+    font-family: "Itim", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.ord-info form select #hid{
+    display: none;
 }
 
 .ord-info form button{
@@ -143,7 +173,7 @@
     padding: 10px;
     border: none;
     border-radius: 10px;
-    /* background-color: #f6b319; */
+    margin-top: 15px;
 
     font-size: 15px;
     font-family: "Itim", cursive;

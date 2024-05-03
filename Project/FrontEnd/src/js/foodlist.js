@@ -1,36 +1,36 @@
-// data featching for the food list 
+// data featching for the food list
 
-function FoodList(){
-    let httpF = new XMLHttpRequest();
+function FoodList() {
+  let httpF = new XMLHttpRequest();
 
-httpF.open('GET', 'foodlist.json', true);
+  httpF.open("GET", "/Project/FrontEnd/src/js/foodlist.json", true);
 
-httpF.send();
+  httpF.send();
 
-httpF.onload = function() {
+  httpF.onload = function () {
     if (this.readyState == 4 && this.status == 200) {
-        let listsF = JSON.parse(this.responseText);
-        
-        // food catahory varibles
-        let tdsList = '';
-        let cakeList = '';
-        let appList = '';
-        let desList = '';
-        let luncList = '';
-        let dinList = '';
-        let fruList = '';
-        let jucList = '';
-        let sdirList = '';
-        let alcoList = '';
+      let listsF = JSON.parse(this.responseText);
 
-        for (let item of listsF) {
-            let catagory = `${item.catagorys}`
-            let capCatagory = catagory.toUpperCase()
-            // let products = document.getElementById(`${capCatagory}`)
+      // food catahory varibles
+      let tdsList = "";
+      let cakeList = "";
+      let appList = "";
+      let desList = "";
+      let luncList = "";
+      let dinList = "";
+      let fruList = "";
+      let jucList = "";
+      let sdirList = "";
+      let alcoList = "";
 
-            switch (capCatagory){
-                case "TODAYS-SPECIAL":
-                    tdsList += `
+      for (let item of listsF) {
+        let catagory = `${item.catagorys}`;
+        let capCatagory = catagory.toUpperCase();
+        // let products = document.getElementById(`${capCatagory}`)
+
+        switch (capCatagory) {
+          case "TODAYS-SPECIAL":
+            tdsList += `
                         <div class="menu-card" data-id="${item.id}">
                             <img src="${item.image}" alt="${item.alt}">
                             <h3>${item.name}</h3>
@@ -41,9 +41,9 @@ httpF.onload = function() {
                             <button>Order Now!</button>
                         </div>
                     `;
-                    break;
-                case "CAKE":
-                    cakeList += `
+            break;
+          case "CAKE":
+            cakeList += `
                         <div class="menu-card" data-id="${item.id}">
                             <img src="${item.image}" alt="${item.alt}">
                             <h3>${item.name}</h3>
@@ -54,9 +54,9 @@ httpF.onload = function() {
                             <button>Order Now!</button>
                         </div>
                     `;
-                    break;
-                case "APPETIZER":
-                    appList += `
+            break;
+          case "APPETIZER":
+            appList += `
                         <div class="menu-card" data-id="${item.id}">
                             <img src="${item.image}" alt="${item.alt}">
                             <h3>${item.name}</h3>
@@ -67,9 +67,9 @@ httpF.onload = function() {
                             <button>Order Now!</button>
                         </div>
                     `;
-                    break;
-                case "DESSRTS":
-                    desList += `
+            break;
+          case "DESSRTS":
+            desList += `
                         <div class="menu-card" data-id="${item.id}">
                             <img src="${item.image}" alt="${item.alt}">
                             <h3>${item.name}</h3>
@@ -80,9 +80,9 @@ httpF.onload = function() {
                             <button>Order Now!</button>
                         </div>
                     `;
-                    break;
-                case "LUANCHS":
-                    luncList += `
+            break;
+          case "LUANCHS":
+            luncList += `
                         <div class="menu-card" data-id="${item.id}">
                             <img src="${item.image}" alt="${item.alt}">
                             <h3>${item.name}</h3>
@@ -93,9 +93,9 @@ httpF.onload = function() {
                             <button>Order Now!</button>
                         </div>
                     `;
-                    break;
-                case "DINERS":
-                    dinList += `
+            break;
+          case "DINERS":
+            dinList += `
                         <div class="menu-card" data-id="${item.id}">
                             <img src="${item.image}" alt="${item.alt}">
                             <h3>${item.name}</h3>
@@ -106,9 +106,9 @@ httpF.onload = function() {
                             <button>Order Now!</button>
                         </div>
                     `;
-                    break;
-                case "FRUITS":
-                    fruList += `
+            break;
+          case "FRUITS":
+            fruList += `
                         <div class="menu-card" data-id="${item.id}">
                             <img src="${item.image}" alt="${item.alt}">
                             <h3>${item.name}</h3>
@@ -119,9 +119,9 @@ httpF.onload = function() {
                             <button>Order Now!</button>
                         </div>
                     `;
-                    break;
-                case "JUICES":
-                    jucList += `
+            break;
+          case "JUICES":
+            jucList += `
                         <div class="menu-card" data-id="${item.id}">
                             <img src="${item.image}" alt="${item.alt}">
                             <h3>${item.name}</h3>
@@ -132,9 +132,9 @@ httpF.onload = function() {
                             <button>Order Now!</button>
                         </div>
                     `;
-                    break;
-                case "SOFTDRINKS":
-                    sdirList += `
+            break;
+          case "SOFTDRINKS":
+            sdirList += `
                     <div class="menu-card" data-id="${item.id}">
                         <img src="${item.image}" alt="${item.alt}">
                         <h3>${item.name}</h3>
@@ -145,9 +145,9 @@ httpF.onload = function() {
                         <button>Order Now!</button>
                     </div>
                     `;
-                    break;
-                case "ALCOHOLIC-DRINKS":
-                    alcoList += `
+            break;
+          case "ALCOHOLIC-DRINKS":
+            alcoList += `
                     <div class="menu-card" data-id="${item.id}">
                         <img src="${item.image}" alt="${item.alt}">
                         <h3>${item.name}</h3>
@@ -158,26 +158,26 @@ httpF.onload = function() {
                         <button class='trycl'>Order Now!</button>
                     </div>
                     `;
-                    break;
-                default:
-                    break;
-            }
+            break;
+          default:
+            break;
         }
+      }
 
-        // output the foodlist on the foodlist.html folder
+      // output the foodlist on the foodlist.html folder
 
-        document.querySelector('.tdsList').innerHTML = tdsList;
-        document.querySelector('.cakeList').innerHTML = cakeList;
-        document.querySelector('.appetizerList').innerHTML = appList;
-        document.querySelector('.dessertList').innerHTML = desList;
-        document.querySelector('.luanchList').innerHTML = luncList;
-        document.querySelector('.dinerList').innerHTML = dinList;
-        document.querySelector('.fruitsList').innerHTML = fruList;
-        document.querySelector('.juicesList').innerHTML = jucList;
-        document.querySelector('.softdrinkList').innerHTML = sdirList;
-        document.querySelector('.alcoholdrinkList').innerHTML = alcoList;
+      document.querySelector(".tdsList").innerHTML = tdsList;
+      document.querySelector(".cakeList").innerHTML = cakeList;
+      document.querySelector(".appetizerList").innerHTML = appList;
+      document.querySelector(".dessertList").innerHTML = desList;
+      document.querySelector(".luanchList").innerHTML = luncList;
+      document.querySelector(".dinerList").innerHTML = dinList;
+      document.querySelector(".fruitsList").innerHTML = fruList;
+      document.querySelector(".juicesList").innerHTML = jucList;
+      document.querySelector(".softdrinkList").innerHTML = sdirList;
+      document.querySelector(".alcoholdrinkList").innerHTML = alcoList;
     }
-};
-};
+  };
+}
 
 export default FoodList;

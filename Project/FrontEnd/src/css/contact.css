@@ -77,18 +77,25 @@
     font-size: 15px;
 }
 
-.s-cont{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    margin-top: 10px;
+.f-cont a i:hover{
+    color: #fff;
+    transform: scale(1.1);
 }
 
-.s-cont a{
+.f-cont a i span:hover{
+    text-decoration: underline;
+    text-decoration-color: #f6b319;
+    text-decoration-thickness: 3px;
+}
+
+.contact-us .map a{
     text-decoration: none;
-    color: #fff;
-    font-size: 30px;
+}
+
+.contact-us .map img{
+    width: 300px;
+    height: 180px;
+    border-radius: 10px;
 }
 
 
@@ -101,6 +108,16 @@
     display:flex;
     justify-content: center;
     gap: 20px;
+}
+
+.contact-form label{
+    color: #fff;
+    font-size: 15px;
+    font-family: "Itim", cursive;
+    font-weight: 400;
+    font-style: normal;
+    
+    padding-left: 5px;
 }
 
 .contact-row .contact-form > .contact-inpt{

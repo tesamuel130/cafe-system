@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- ################  CSS LINK   ################# -->
-    <link rel="stylesheet" href="src/css/index.css" />
-    <link rel="stylesheet" href="src/css/cartorder.css" />
+    <link rel="stylesheet" href="/Project/FrontEnd/src/css/index.css" />
+    <link rel="stylesheet" href="/Project/FrontEnd/src/css/cartorder.css" />
 
     <!-- ################  Icon LINK   ################# -->
     <script
@@ -21,7 +21,7 @@
     <header>
       <div class="nav-bar">
         <div class="logo">
-          <h2><i class="fa-solid fa-utensils"></i></h2>
+          <i class="fa-solid fa-utensils"></i>
           <h3>Resturant</h3>
         </div>
         <div class="nav-link">
@@ -40,7 +40,7 @@
           <a href="contact.html" class="act-contact"
             ><i class="fa-solid fa-address-book"></i>Contact</a
           >
-          <a href="#" class="admin-link" id="openAdminModalBtn"
+          <a class="admin-link" id="openAdminModalBtn"
             ><i class="fa-solid fa-user-tie"></i
           ></a>
         </div>
@@ -116,11 +116,37 @@
           <div class="order">
             <div class="ord-info">
               <form action="/" method="post">
-                <input type="text" placeholder="Full Name" required />
-                <input type="text" placeholder="Table No." required />
-                <input type="text" placeholder="Amount Of Price" required />
-                <input type="text" placeholder="Discription" />
-                <input type="text" placeholder="Payment Method" />
+                <label for="fullName">Full Name</label>
+                <input
+                  id="fullName"
+                  type="text"
+                  placeholder="Full Name"
+                  required
+                />
+                <label for="tableNo">Table No.</label>
+                <input
+                  id="tableNo"
+                  type="text"
+                  placeholder="Table No."
+                  required
+                />
+                <label for="price">Price</label>
+                <input
+                  id="price"
+                  type="text"
+                  placeholder="Amount Of Price"
+                  required
+                />
+                <label for="discrip">Discription</label>
+                <input id="discrip" type="text" placeholder="Discription" />
+                <select name="payment method" id="payM">
+                  <option id="hid" value="hiden option">Payment Method</option>
+                  <option value="cbd">CBE</option>
+                  <option value="boa">Bank Of Abissinya</option>
+                  <option value="coop">COOP</option>
+                  <option value="telebirr">TeleBirr</option>
+                  <option value="visa">Visa Card</option>
+                </select>
                 <button>Order Now</button>
               </form>
             </div>
@@ -156,6 +182,6 @@
       </div>
     </footer>
 
-    <script type="module" src="src/js/index.js"></script>
+    <script type="module" src="/Project/FrontEnd/src/js/index.js"></script>
   </body>
 </html>
