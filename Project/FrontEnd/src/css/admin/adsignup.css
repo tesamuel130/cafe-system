@@ -17,13 +17,10 @@
 .login-body{
     width: 100%;
     height: 80vh;
-    background-image: url('img/hom2.jpg');
+    background-image: url('/Project/FrontEnd/src/css/img/hom2.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-
-    display: flex;
-    justify-content: flex-end;
 }
 
 .form-cont{
