@@ -99,13 +99,13 @@
 }
 
 .ad-body-cont-table .order-table tbody tr{
-    color: #a1a0a0;
+    color: #2c2c2c;
     border-bottom: 1px solid #ddd;
     background-color: #fff;
 }
 
 .ad-body-cont-table .order-table tbody tr:nth-of-type(even){
-    color: #f6b319;
+    color: #9e6f00;
     background-color: #fff;
 }
 
@@ -122,8 +122,8 @@
 }
 
 .order-table tbody tr .cmd{
-    color: #858484;
-    background-color: #7cd459;
+    color: #3f3e3e;
+    background-color: #61bb3d;
 
     font-size: 15px;
     font-family: "Itim", cursive;
@@ -138,7 +138,7 @@
 
 .order-table tbody tr .ncmd{
     color: #f3f1f1;
-    background-color: #d85d5d;
+    background-color: #b14343;
 
     font-size: 15px;
     font-family: "Itim", cursive;
@@ -148,12 +148,12 @@
 
 .order-table tbody tr .ncmd:hover{
     color: #fff;
-    background-color: #e90000;
+    background-color: #ff0000;
 }
 
 .order-table tbody tr .lod{
-    color: #858484;
-    background-color: #f1e46b;
+    color: #3a3a3a;
+    background-color: #f0e15c;
 
     font-size: 15px;
     font-family: "Itim", cursive;

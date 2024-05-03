@@ -80,13 +80,13 @@ td .person-img img{
 }
 
 .ad-body-cont-table .order-table tbody tr{
-    color: #a1a0a0;
+    color: #2c2c2c;
     border-bottom: 1px solid #ddd;
     background-color: #fff;
 }
 
 .ad-body-cont-table .order-table tbody tr:nth-of-type(even){
-    color: #f6b319;
+    color: #9e6f00;
     background-color: #fff;
 }
 

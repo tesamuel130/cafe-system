@@ -43,6 +43,10 @@
     font-family: "Cedarville Cursive", cursive;
 }
 
+.side-header button i{
+    font-size: 15px;
+}
+
 .side-list{
     display: flex;
     flex-direction: column;
