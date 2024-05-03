@@ -6,7 +6,10 @@
 
     <!-- ################  CSS LINK   ################# -->
     <link rel="stylesheet" href="/Project/FrontEnd/src/css/index.css" />
-    <link rel="stylesheet" href="/Project/FrontEnd/src/css/adsignin.css" />
+    <link
+      rel="stylesheet"
+      href="/Project/FrontEnd/src/css/admin/adsignin.css"
+    />
 
     <!-- ################  Icon LINK   ################# -->
     <script
@@ -60,9 +63,8 @@
               </p>
             </div>
             <div class="form-header-input-one">
-              <p>Restorant Branch</p>
-              <!-- <input type="text" placeholder="your@example.com" /> -->
-              <select name="branch" id="branch" required>
+              <label for="branch">Restorant Branch</label>
+              <select id="branch" name="branch" id="branch" required>
                 <option class="op-one" value="0">Select a branch...</option>
                 <option value="1">A.A 4Kilo</option>
                 <option value="2">A.A Bole</option>
@@ -72,7 +74,7 @@
               </select>
             </div>
             <div class="form-header-input-one">
-              <p>Email or Username</p>
+              <label for="email">Email or Username</label>
               <input type="text" placeholder="your@example.com" required />
             </div>
             <div class="form-header-input-two">
@@ -80,15 +82,17 @@
                 <p>Password</p>
                 <a href="#">forget password?</a>
               </div>
+              <label for="password"></label>
               <input
+                id="password"
                 type="password"
                 placeholder="enter  your password"
                 required
               />
             </div>
             <div class="form-header-par-three">
-              <input type="checkbox" />
-              <p>Remember me</p>
+              <input id="rem" type="checkbox" />
+              <label for="rem">Remind Me</label>
             </div>
             <div class="form-btn-one">
               <button type="submit">Login</button>

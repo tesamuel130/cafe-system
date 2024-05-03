@@ -9,3 +9,82 @@
     text-decoration-thickness: 4px;
     text-underline-offset: 5px;
 }
+
+/* ########################### ad panel order tabel css ###############################*/
+.admin-cont-right-body .ad-body-cont-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 50px 0 50px;
+}
+
+.admin-cont-right-body .ad-body-cont-nav{
+    margin-top: 30px;
+    line-height: 7px;
+}
+
+.ad-body-cont-nav h1{
+    color: #363636;
+    font-size: 25px;
+    font-family: "Itim", cursive;
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: underline #f6b319;
+}
+
+
+/* ########################### ad panel order tabel css ###############################*/
+.admin-cont-right-body .ad-body-cont-table{
+    align-self: center;
+    margin-top: -15px;
+}
+
+.ad-body-cont-table .order-table{
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    min-width: 950px;
+    border: none;
+    border-radius: 10px;
+    overflow: scroll;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.ad-body-cont-table .order-table thead tr{
+    color: #000;
+    text-align: left;
+    font-weight: bold;
+    border-bottom: 1px solid #ddd;
+
+    font-size: 15px;
+    font-family: "Itim", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.ad-body-cont-table .order-table th,
+.ad-body-cont-table .order-table td{
+    padding: 12px;
+    border: none;
+    max-width: 100px;
+
+    font-size: 15px;
+    font-family: "Itim", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.ad-body-cont-table .order-table tbody tr{
+    color: #a1a0a0;
+    border-bottom: 1px solid #ddd;
+    background-color: #fff;
+}
+
+.ad-body-cont-table .order-table tbody tr:nth-of-type(even){
+    color: #f6b319;
+    background-color: #fff;
+}
+
+.ad-body-cont-table .order-table tbody tr:last-of-type{
+    border-bottom: 1px solid #f6b319;
+}
