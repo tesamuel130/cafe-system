@@ -21,6 +21,69 @@
       crossorigin="anonymous"
     ></script>
 
+    <!-- ################### chart script ##################### -->
+    <!-- chart script one -->
+    <script
+      type="text/javascript"
+      src="https://www.gstatic.com/charts/loader.js"
+    ></script>
+    <script type="text/javascript">
+      google.charts.load("current", { packages: ["corechart"] });
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ["Year", "Sales", "Most"],
+          ["2024/01", 1000, 400],
+          ["2024/02", 1170, 460],
+          ["2024/03", 660, 1120],
+          ["2024/04", 1030, 540],
+        ]);
+
+        var options = {
+          title: "Most Selling Date",
+          curveType: "function",
+          legend: { position: "bottom" },
+        };
+
+        var chart = new google.visualization.LineChart(
+          document.getElementById("curve_chart")
+        );
+
+        chart.draw(data, options);
+      }
+    </script>
+
+    <!-- chart script two -->
+    <script
+      type="text/javascript"
+      src="https://www.gstatic.com/charts/loader.js"
+    ></script>
+    <script type="text/javascript">
+      google.charts.load("current", { packages: ["corechart"] });
+      google.charts.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ["Task", "Hours per Day"],
+          ["Burger", 11],
+          ["Pizza", 2],
+          ["Cake", 2],
+          ["Donat", 2],
+          ["Fish", 7],
+        ]);
+
+        var options = {
+          title: "Most selled Foods",
+          pieHole: 0.4,
+        };
+
+        var chart = new google.visualization.PieChart(
+          document.getElementById("donutchart")
+        );
+        chart.draw(data, options);
+      }
+    </script>
+
     <title>admin panel page</title>
   </head>
   <body>
@@ -125,8 +188,12 @@
               </div>
 
               <div class="ad-body-cont-two">
-                <div class="cont-two-left"></div>
-                <div class="cont-two-right"></div>
+                <div class="cont-two-left">
+                  <div id="curve_chart"></div>
+                </div>
+                <div class="cont-two-right">
+                  <div id="donutchart"></div>
+                </div>
               </div>
             </div>
           </div>
