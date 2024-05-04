@@ -22,6 +22,7 @@ function FoodList() {
       let jucList = "";
       let sdirList = "";
       let alcoList = "";
+      let hotDrinkList = "";
 
       for (let item of listsF) {
         let catagory = `${item.catagorys}`;
@@ -159,6 +160,19 @@ function FoodList() {
                     </div>
                     `;
             break;
+          case "HOT-DRINKS":
+            hotDrinkList += `
+                      <div class="menu-card" data-id="${item.id}">
+                          <img src="${item.image}" alt="${item.alt}">
+                          <h3>${item.name}</h3>
+                          <div class="price-rating">
+                              <p>price: <span>${item.price}</span></p>
+                              <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                          </div>
+                          <button class='trycl'>Order Now!</button>
+                      </div>
+                      `;
+            break;
           default:
             break;
         }
@@ -176,6 +190,7 @@ function FoodList() {
       document.querySelector(".juicesList").innerHTML = jucList;
       document.querySelector(".softdrinkList").innerHTML = sdirList;
       document.querySelector(".alcoholdrinkList").innerHTML = alcoList;
+      document.querySelector(".hotdrinkList").innerHTML = hotDrinkList;
     }
   };
 }

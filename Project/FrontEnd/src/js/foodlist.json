@@ -145,9 +145,9 @@
   },
   {
     "id": 19,
-    "name": "chikenwing-with-vegetable",
+    "name": "chikenwing",
     "price": "35$",
-    "image": "/Project/FrontEnd/src/css/img/chikenwing-with-vegi",
+    "image": "/Project/FrontEnd/src/css/img/chikenwing-with-vegi-removebg-preview.png",
     "alt": "chikenwing-with-vegi picture",
     "catagorys": "LUANCHS"
   },
@@ -161,19 +161,19 @@
   },
   {
     "id": 21,
-    "name": "COFEE",
+    "name": "Coffee",
     "price": "5$",
     "image": "/Project/FrontEnd/src/css/img/coffee-removebg-preview.png",
     "alt": "COFEE picture",
-    "catagorys": "LUANCHS"
+    "catagorys": "HOT-DRINKS"
   },
   {
     "id": 22,
-    "name": "coffee",
+    "name": "Dark coffee",
     "price": "5$",
     "image": "/Project/FrontEnd/src/css/img/darck-coffee-removebg-preview.png",
     "alt": "coffee picture",
-    "catagorys": "SOFTDRINKS"
+    "catagorys": "HOT-DRINKS"
   },
   {
     "id": 23,
@@ -193,7 +193,7 @@
   },
   {
     "id": 26,
-    "name": "punjab-grill-beverage",
+    "name": "Punjab",
     "price": "5$",
     "image": "/Project/FrontEnd/src/css/img/punjab-grill-beverage-removebg-preview.png",
     "alt": "punjab-grill-beverage picture",
