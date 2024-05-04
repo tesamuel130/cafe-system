@@ -120,11 +120,123 @@
         "catagorys": "ALCOHOLIC-DRINKS"
     },
     {
-        "id": 13,
+        "id": 16,
         "name": "Wiski",
         "price": "25$",
         "image": "/Project/FrontEnd/src/css/img/alcohol.png",
         "alt": "todays special food picture",
+        "catagorys": "ALCOHOLIC-DRINKS"
+    },
+     {
+        "id": 17,
+        "name": "pasta",
+        "price": "45$",
+        "image": "/Project/FrontEnd/src/css/img/pasta.jpg",
+        "alt": "pasta picture",
+        "catagorys": "LUANCHS"
+    },
+     {
+        "id": 18,
+        "name": "ananas-with-hinger-guss",
+        "price": "15$",
+        "image": "/Project/FrontEnd/src/css/img/anaswithginger-guss",
+        "alt": "pasta picture",
+        "catagorys": "JUICES"
+    },
+     {
+        "id": 19,
+        "name": "chikenwing-with-vegetable",
+        "price": "35$",
+        "image": "/Project/FrontEnd/src/css/img/chikenwing-with-vegi",
+        "alt": "chikenwing-with-vegi picture",
+        "catagorys": "LUANCHS"
+    },
+       {
+        "id": 20,
+        "name": "choclet-kack",
+        "price": "35$",
+        "image": "/Project/FrontEnd/src/css/img/choclet-kack",
+        "alt": "choclet-kack picture",
+        "catagorys": "CAKE"
+    },
+ {
+        "id": 21,
+        "name": "COFEE",
+        "price": "5$",
+        "image": "/Project/FrontEnd/src/css/img/COFEE",
+        "alt": "COFEE picture",
+        "catagorys": "LUANCHS"
+    },
+     {
+        "id": 22,
+        "name": "coffee",
+        "price": "5$",
+        "image": "/Project/FrontEnd/src/css/img/coffee",
+        "alt": "coffee picture",
+        "catagorys": "SOFTDRINKS"
+    },
+    {
+        "id": 23,
+        "name": "cupkake",
+        "price": "5$",
+        "image": "/Project/FrontEnd/src/css/img/cupkake",
+        "alt": "cupkake picture",
+        "catagorys": "CAKE"
+    },
+    {
+        "id": 24,
+        "name": "darck-coffee",
+        "price": "5$",
+        "image": "/Project/FrontEnd/src/css/img/darck-coffee",
+        "alt": "darck-coffee picture",
+        "catagorys": "SOFTDRINKS"
+    },
+     {
+        "id": 25,
+        "name": "pankake",
+        "price": "5$",
+        "image": "/Project/FrontEnd/src/css/img/pankake",
+        "alt": "pankake picture",
+        "catagorys": "CAKE"
+    },
+      {
+        "id": 26,
+        "name": "punjab-grill-beverage",
+        "price": "5$",
+        "image": "/Project/FrontEnd/src/css/img/punjab-grill-beverage",
+        "alt": "punjab-grill-beverage picture",
+        "catagorys": "ALCOHOLIC-DRINKS"
+    },
+       {
+        "id": 27,
+        "name": "sambusa",
+        "price": "5$",
+        "image": "/Project/FrontEnd/src/css/img/sambusae",
+        "alt": "sambusa picture",
+        "catagorys": "APPETIZER"
+    },
+      {
+        "id": 28,
+        "name": "spacial-sandwich",
+        "price": "5$",
+        "image": "/Project/FrontEnd/src/css/img/spacial-sandwich",
+        "alt": "spacial-sandwich picture",
+        "catagorys": "LUANCHS"
+    },
+     {
+        "id": 28,
+        "name": "stic-rost",
+        "price": "5$",
+        "image": "/Project/FrontEnd/src/css/img/stic-rost",
+        "alt": "stic-rost picture",
+        "catagorys": "DESSRTS"
+    },
+    {
+        "id": 29,
+        "name": "strobary-coctail",
+        "price": "5$",
+        "image": "/Project/FrontEnd/src/css/img/strobary-coctail",
+        "alt": "strobary-coctail",
         "catagorys": "ALCOHOLIC-DRINKS"
     }
 ]
