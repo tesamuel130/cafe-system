@@ -111,6 +111,11 @@
     font-style: normal;
 }
 
+.ad-body-cont-one form button:hover{
+    background-color: #ffb300;
+    transform: translateY(-3px);
+}
+
 
 /* ########################### edit and food table css ###############################*/
 .admin-cont-right-body .ad-body-cont-table{

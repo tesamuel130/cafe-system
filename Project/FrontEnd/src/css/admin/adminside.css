@@ -10,20 +10,33 @@
     text-underline-offset: 5px;
 }
 
-/* ########################### ad panel order tabel css ###############################*/
-.admin-cont-right-body .ad-body-cont-vav{
+/* ########################### ad panel add food css ###############################*/
+
+.ad-body-cont-one{
+    width: 700px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    align-self: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    background-color: white;
+
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    margin: 0 50px 0 50px;
 }
 
-.admin-cont-right-body .ad-body-cont-vav .ad-nav-header{
-    margin-top: 30px;
-    line-height: 7px;
+.add-food-body-header{
+    align-self: flex-start;
+    margin-left: 150px;
+    line-height: 5px;
 }
 
-.ad-nav-header h1{
+.add-food-body-header h1{
     color: #363636;
     font-size: 25px;
     font-family: "Itim", cursive;
@@ -32,10 +45,169 @@
     text-decoration: underline #f6b319;
 }
 
-.ad-nav-header p{
+.add-food-body-header p{
     color: #a1a0a0;
     font-size: 15px;
     font-family: "Itim", cursive;
     font-weight: 400;
     font-style: normal;
+}
+
+.ad-body-cont-one form{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.ad-body-cont-one form label{
+    color: #535353;
+    font-family: "Itim", cursive;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 5px;
+    padding-left: 5pxs;
+}
+
+.gender-rad{
+    display: flex;
+    align-self: flex-start;
+    align-items: center;
+    gap: 10px;
+}
+
+.gender-rad input{
+    margin-left: 20px;
+}
+
+.ad-body-cont-one form input{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ddd;
+
+    font-size: 15px;
+    font-family: "Itim", cursive;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.ad-body-cont-one form select{
+    width: 320px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ddd;
+
+    color: #858484;
+    font-size: 15px;
+    font-family: "Itim", cursive;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.ad-body-cont-one form button{
+    width: 320px;
+    padding: 8px;
+    margin-top: -25px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f6b319;
+
+    color: #fff;
+    font-size: 15px;
+    font-family: "Itim", cursive;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.ad-body-cont-one form button:hover{
+    background-color: #ffb300;
+    transform: translateY(-3px);
+}
+
+
+/* ########################### edit and food table css ###############################*/
+.admin-cont-right-body .ad-body-cont-table{
+    align-self: center;
+    margin-top: -15px;
+}
+
+.ad-body-cont-table .order-table{
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    min-width: 950px;
+    border: none;
+    border-radius: 10px;
+    overflow: scroll;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.ad-body-cont-table .order-table thead tr{
+    color: #000;
+    text-align: left;
+    font-weight: bold;
+    border-bottom: 1px solid #ddd;
+
+    font-size: 15px;
+    font-family: "Itim", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.ad-body-cont-table .order-table th,
+.ad-body-cont-table .order-table td{
+    padding: 12px;
+    border: none;
+    max-width: 90px;
+
+    font-size: 15px;
+    font-family: "Itim", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+td .food-img img{
+    width: 50px;
+    height: 50px;
+}
+
+.ad-body-cont-table .order-table tbody tr{
+    color: #2c2c2c;
+    border-bottom: 1px solid #ddd;
+    background-color: #fff;
+}
+
+.ad-body-cont-table .order-table tbody tr:nth-of-type(even){
+    color: #5E5E5E;
+    background-color: #fff;
+}
+
+.ad-body-cont-table .order-table tbody tr:last-of-type{
+    border-bottom: 1px solid #f6b319;
+}
+
+.order-table tbody tr button{
+    width: 80px;
+    text-align: center;
+    padding: 3px;
+    border: none;
+    border-radius: 5px;
+}
+
+.order-table tbody tr .cmd{
+    color: #121111;
+    background-color: #61bb3d;
+
+    font-size: 15px;
+    font-family: "Itim", cursive;
+    font-weight: 1000;
+    font-style: normal;
+}
+
+.order-table tbody tr .cmd:hover{
+    color: #535353;
+    background-color: #48ff00;
 }

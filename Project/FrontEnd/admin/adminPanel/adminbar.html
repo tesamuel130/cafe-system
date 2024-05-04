@@ -85,14 +85,182 @@
               </div>
             </div>
             <div class="admin-cont-right-body">
-              <div class="ad-body-cont-vav">
-                <div class="ad-nav-header">
-                  <h1>Booking</h1>
-                  <p>Hear is the booker list</p>
+              <div class="ad-body-cont-one">
+                <div class="add-food-body-header">
+                  <h1>Add employ</h1>
+                  <p>add new employ</p>
                 </div>
+                <form action="/" method="post">
+                  <label for="fname">First Name</label>
+                  <input
+                    id="fname"
+                    type="text"
+                    placeholder="Enter food name"
+                    required
+                  />
+                  <label for="lname">Last Name</label>
+                  <input
+                    id="lname"
+                    type="text"
+                    placeholder="Enter food name"
+                    required
+                  />
+                  <div class="gender-rad">
+                    <input type="radio" id="male" name="gender" value="Male" />
+                    <label for="male">Male</label>
+                    <input
+                      id="female"
+                      type="radio"
+                      id="female"
+                      name="gender"
+                      value="Female"
+                    />
+                    <label for="female">Female</label>
+                  </div>
+                  <label for="price">Date Of Birth</label>
+                  <input id="price" type="text" placeholder="DOB" required />
+                  <label for="price">Wage Before Vat</label>
+                  <input
+                    id="price"
+                    type="text"
+                    placeholder="Price before vat"
+                    required
+                  />
+                  <label for="catagory">Employed By</label>
+                  <select id="category" name="category">
+                    <option value="select catagory">Employed By</option>
+                    <option value="vegitable">Cooker</option>
+                    <option value="desert">Witer</option>
+                    <option value="apetizer">Cliner</option>
+                  </select>
+                  <label for="imgf">Only JPG, PNG, JPEG and PDF File</label>
+                  <input
+                    id="imgf"
+                    type="file"
+                    name="imageInput"
+                    id="imgInput"
+                    accept="image/jpg, image/png, image/jpeg, fil"
+                  />
+                  <br />
+                  <button>Submit</button>
+                </form>
               </div>
 
-              <div class="ad-body-cont-table"></div>
+              <div class="ad-body-cont-table">
+                <table class="order-table">
+                  <thead>
+                    <tr>
+                      <th>Employ Img</th>
+                      <th>Employ Full Name</th>
+                      <th>Gender</th>
+                      <th>DOB</th>
+                      <th>Wage Before Tax</th>
+                      <th>Wage After Tax</th>
+                      <th>Employ Date</th>
+                      <th>Employ Information</th>
+                      <th>Employed BY</th>
+                      <th>Edit</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <div class="food-img">
+                          <img
+                            src="/Project/FrontEnd/src/css/img/adminpanprofile.png"
+                            alt="appetizer img"
+                          />
+                        </div>
+                      </td>
+                      <td>abcd efgh</td>
+                      <td>M</td>
+                      <td>10/10/10</td>
+                      <td>$3000</td>
+                      <td>$2700</td>
+                      <td>20/20/2024</td>
+                      <td>file</td>
+                      <td>coocking</td>
+                      <td><button class="cmd">Edit</button></td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="food-img">
+                          <img
+                            src="/Project/FrontEnd/src/css/img/adminpanprofile.png"
+                            alt="appetizer img"
+                          />
+                        </div>
+                      </td>
+                      <td>abcd efgh</td>
+                      <td>M</td>
+                      <td>10/10/10</td>
+                      <td>$3000</td>
+                      <td>$2700</td>
+                      <td>20/20/2024</td>
+                      <td>file</td>
+                      <td>coocking</td>
+                      <td><button class="cmd">Edit</button></td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="food-img">
+                          <img
+                            src="/Project/FrontEnd/src/css/img/adminpanprofile.png"
+                            alt="appetizer img"
+                          />
+                        </div>
+                      </td>
+                      <td>abcd efgh</td>
+                      <td>M</td>
+                      <td>10/10/10</td>
+                      <td>$3000</td>
+                      <td>$2700</td>
+                      <td>20/20/2024</td>
+                      <td>file</td>
+                      <td>coocking</td>
+                      <td><button class="cmd">Edit</button></td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="food-img">
+                          <img
+                            src="/Project/FrontEnd/src/css/img/adminpanprofile.png"
+                            alt="appetizer img"
+                          />
+                        </div>
+                      </td>
+                      <td>abcd efgh</td>
+                      <td>M</td>
+                      <td>10/10/10</td>
+                      <td>$3000</td>
+                      <td>$2700</td>
+                      <td>20/20/2024</td>
+                      <td>file</td>
+                      <td>coocking</td>
+                      <td><button class="cmd">Edit</button></td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="food-img">
+                          <img
+                            src="/Project/FrontEnd/src/css/img/adminpanprofile.png"
+                            alt="appetizer img"
+                          />
+                        </div>
+                      </td>
+                      <td>abcd efgh</td>
+                      <td>M</td>
+                      <td>10/10/10</td>
+                      <td>$3000</td>
+                      <td>$2700</td>
+                      <td>20/20/2024</td>
+                      <td>file</td>
+                      <td>coocking</td>
+                      <td><button class="cmd">Edit</button></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
             </div>
           </div>
         </div>
