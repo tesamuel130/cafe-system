@@ -109,13 +109,13 @@
     font-weight: bolder;
 }
 
-.price-rating a{
+.price-rating i{
     text-align: center;
     text-decoration: none;
     color: #f6b319;
 }
 
-.price-rating a:hover{
+.price-rating i:hover{
     transform: rotateY(180deg);
 }
 

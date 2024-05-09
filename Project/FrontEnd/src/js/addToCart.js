@@ -1,27 +1,11 @@
-// function AddCart(){
-//     document.querySelector('.trycl').addEventListener('click', ()=>{
-//         document.querySelector('.carts').innerHTML = `
-//             <div class="cart-card-list">
-//                 <div class="cart-card">
-//                     <img src="/Project/FrontEnd/src/css/img/appetizer.png" alt="food image">
-//                     <div class="ord-dit">
-//                         <h1>appetizer</h1>
-//                         <p>price: 20$</p>
-//                     </div>
-//                 </div>
-//             </div>
-//         `
-//     })
-
-// }
-
+//add to cart js
 document.addEventListener("DOMContentLoaded", () => {
   const addToCartButtons = document.querySelectorAll(".add-to-cart");
   const cartItemCount = document.querySelector(".btn-one span");
-  const cartItemsList = document.querySelector(".cart-items");
-  const cartTotal = document.querySelector(".cart-total");
-  const cartIcon = document.querySelector(".cart-icons");
-  const sidebar = document.getElementById("sidebar");
+  const cartItemsList = document.querySelector(".carts");
+  const cartTotal = document.querySelector(".ord-info form #price");
+  // const cartIcon = document.querySelector(".cart-icons");
+  // const sidebar = document.getElementById("sidebar");
 
   let cartItems = [];
   let totalAmount = 0;
@@ -123,11 +107,11 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
 
-  cartIcon.addEventListener("click", () => {
-    if (sidebar) {
-      sidebar.classList.toggle("open");
-    }
-  });
+  // cartIcon.addEventListener("click", () => {
+  //   if (sidebar) {
+  //     sidebar.classList.toggle("open");
+  //   }
+  // });
 
   const closeButton = document.querySelector(".sidebar-close");
   if (closeButton) {
