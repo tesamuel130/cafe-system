@@ -73,8 +73,8 @@ document.addEventListener("DOMContentLoaded", () => {
     cartItemsList.innerHTML = "";
 
     cartItems.forEach((item, index) => {
-      const cartItem = document.createElement(`div`);
-      cartItem.classList.add("cart-item", "cart-card-list");
+      const cartItem = document.querySelector(".carts");
+      // cartItem.classList.add("cart-item", "cart-card-list");
       cartItem.innerHTML = `
           <div class="cart-card">
             <img
