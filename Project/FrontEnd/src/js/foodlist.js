@@ -34,9 +34,9 @@ function FoodList() {
             tdsList += `
                         <div class="menu-card" data-id="${item.id}">
                             <img src="${item.image}" alt="${item.alt}">
-                            <h3>${item.name}</h3>
+                            <h3 class="item-name">${item.name}</h3>
                             <div class="price-rating">
-                                <p>price: <span>${item.price}</span></p>
+                                <p>price: <span class="food-price">$${item.price}</span></p>
                                 <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
                             </div>
                             <button>Order Now!</button>
@@ -47,9 +47,9 @@ function FoodList() {
             cakeList += `
                         <div class="menu-card" data-id="${item.id}">
                             <img src="${item.image}" alt="${item.alt}">
-                            <h3>${item.name}</h3>
+                            <h3 class="item-name">${item.name}</h3>
                             <div class="price-rating">
-                                <p>price: <span>${item.price}</span></p>
+                                <p>price: <span class="food-price">$${item.price}</span></p>
                                 <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
                             </div>
                             <button>Order Now!</button>
@@ -60,9 +60,9 @@ function FoodList() {
             appList += `
                         <div class="menu-card" data-id="${item.id}">
                             <img src="${item.image}" alt="${item.alt}">
-                            <h3>${item.name}</h3>
+                            <h3 class="item-name">${item.name}</h3>
                             <div class="price-rating">
-                                <p>price: <span>${item.price}</span></p>
+                                <p>price: <span class="food-price">$${item.price}</span></p>
                                 <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
                             </div>
                             <button>Order Now!</button>
@@ -73,9 +73,9 @@ function FoodList() {
             desList += `
                         <div class="menu-card" data-id="${item.id}">
                             <img src="${item.image}" alt="${item.alt}">
-                            <h3>${item.name}</h3>
+                            <h3 class="item-name">${item.name}</h3>
                             <div class="price-rating">
-                                <p>price: <span>${item.price}</span></p>
+                                <p>price: <span class="food-price">$${item.price}</span></p>
                                 <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
                             </div>
                             <button>Order Now!</button>
@@ -86,9 +86,9 @@ function FoodList() {
             luncList += `
                         <div class="menu-card" data-id="${item.id}">
                             <img src="${item.image}" alt="${item.alt}">
-                            <h3>${item.name}</h3>
+                            <h3 class="item-name">${item.name}</h3>
                             <div class="price-rating">
-                                <p>price: <span>${item.price}</span></p>
+                                <p>price: <span class="food-price">$${item.price}</span></p>
                                 <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
                             </div>
                             <button>Order Now!</button>
@@ -99,9 +99,9 @@ function FoodList() {
             dinList += `
                         <div class="menu-card" data-id="${item.id}">
                             <img src="${item.image}" alt="${item.alt}">
-                            <h3>${item.name}</h3>
+                            <h3 class="item-name">${item.name}</h3>
                             <div class="price-rating">
-                                <p>price: <span>${item.price}</span></p>
+                                <p>price: <span class="food-price">$${item.price}</span></p>
                                 <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
                             </div>
                             <button>Order Now!</button>
@@ -112,9 +112,9 @@ function FoodList() {
             fruList += `
                         <div class="menu-card" data-id="${item.id}">
                             <img src="${item.image}" alt="${item.alt}">
-                            <h3>${item.name}</h3>
+                            <h3 class="item-name">${item.name}</h3>
                             <div class="price-rating">
-                                <p>price: <span>${item.price}</span></p>
+                                <p>price: <span class="food-price">$${item.price}</span></p>
                                 <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
                             </div>
                             <button>Order Now!</button>
@@ -125,9 +125,9 @@ function FoodList() {
             jucList += `
                         <div class="menu-card" data-id="${item.id}">
                             <img src="${item.image}" alt="${item.alt}">
-                            <h3>${item.name}</h3>
+                            <h3 class="item-name">${item.name}</h3>
                             <div class="price-rating">
-                                <p>price: <span>${item.price}</span></p>
+                                <p>price: <span class="food-price">$${item.price}</span></p>
                                 <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
                             </div>
                             <button>Order Now!</button>
@@ -138,9 +138,9 @@ function FoodList() {
             sdirList += `
                     <div class="menu-card" data-id="${item.id}">
                         <img src="${item.image}" alt="${item.alt}">
-                        <h3>${item.name}</h3>
+                        <h3 class="item-name">${item.name}</h3>
                         <div class="price-rating">
-                            <p>price: <span>${item.price}</span></p>
+                            <p>price: <span class="food-price">$${item.price}</span></p>
                             <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
                         </div>
                         <button>Order Now!</button>
@@ -151,9 +151,9 @@ function FoodList() {
             alcoList += `
                     <div class="menu-card" data-id="${item.id}">
                         <img src="${item.image}" alt="${item.alt}">
-                        <h3>${item.name}</h3>
+                        <h3 class="item-name">${item.name}</h3>
                         <div class="price-rating">
-                            <p>price: <span>${item.price}</span></p>
+                            <p>price: <span class="food-price">$${item.price}</span></p>
                             <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
                         </div>
                         <button class='trycl'>Order Now!</button>
@@ -164,9 +164,9 @@ function FoodList() {
             hotDrinkList += `
                       <div class="menu-card" data-id="${item.id}">
                           <img src="${item.image}" alt="${item.alt}">
-                          <h3>${item.name}</h3>
+                          <h3 class="item-name">${item.name}</h3>
                           <div class="price-rating">
-                              <p>price: <span>${item.price}</span></p>
+                              <p>price: <span class="food-price">$${item.price}</span></p>
                               <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
                           </div>
                           <button class='trycl'>Order Now!</button>

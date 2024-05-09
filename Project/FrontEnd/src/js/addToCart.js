@@ -17,7 +17,7 @@
 
 document.addEventListener("DOMContentLoaded", () => {
   const addToCartButtons = document.querySelectorAll(".add-to-cart");
-  const cartItemCount = document.querySelector(".cart-icons span");
+  const cartItemCount = document.querySelector(".btn-one span");
   const cartItemsList = document.querySelector(".cart-items");
   const cartTotal = document.querySelector(".cart-total");
   const cartIcon = document.querySelector(".cart-icons");
@@ -28,8 +28,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
   addToCartButtons.forEach((button, index) => {
     button.addEventListener("click", () => {
-      const itemNameElement =
-        document.querySelectorAll(".card .card--title")[index];
+      const itemNameElement = document.querySelectorAll(
+        ".menu-card .item-name"
+      )[index];
       const itemName = itemNameElement
         ? itemNameElement.textContent.trim()
         : null;
@@ -42,7 +43,7 @@ document.addEventListener("DOMContentLoaded", () => {
       const item = {
         name: itemName,
         price: parseFloat(
-          document.querySelectorAll(".price")[index].textContent.slice(1)
+          document.querySelectorAll(".food-price")[index].textContent.slice(1)
         ),
         quantity: 1,
       };
@@ -136,4 +137,4 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 });
 
-export default AddCart;
+// export default AddCart;

@@ -14,5 +14,5 @@ import FoodList from "./foodlist.js";
 FoodList();
 
 // add items to the cart
-import AddCart from "./addToCart.js";
-AddCart();
+// import AddCart from "./addToCart.js";
+// AddCart();
