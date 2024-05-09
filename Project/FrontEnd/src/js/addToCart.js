@@ -74,14 +74,27 @@ document.addEventListener("DOMContentLoaded", () => {
 
     cartItems.forEach((item, index) => {
       const cartItem = document.createElement(`div`);
-      cartItem.classList.add("cart-item", "individual-cart-item");
+      cartItem.classList.add("cart-item", "cart-card-list");
       cartItem.innerHTML = `
-          <span> (${item.quantity}x)${item.name} </span>
-          <span class="cart-item-price"> $${(
-            item.price * item.quantity
-          ).toFixed(2)} 
-          <button class="remove-btn" data-index="${index}"><i class="fa-solid fa-times"></i></button>
-          </span>
+          <div class="cart-card">
+            <img
+              src="${item.image}"
+              alt="${item.alt}"
+            />
+            <div class="ord-dit">
+              <h1>${item.name}</h1>
+              <p>
+                <span>price:</span> $20<br />
+                <span>vat:</span> +$3<br />
+                <span>Total: </span>$${item.price}
+              </p>
+            </div>
+            <div class="pl-btn">
+              <button>+</button>
+              <p>1</p>
+              <button>-</button>
+            </div>
+          </div> 
         `;
       cartItemsList.appendChild(cartItem);
 
@@ -121,4 +134,11 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 });
 
-// export default AddCart;
+{
+  /* <span> (${item.quantity}x)${item.name} </span>
+          <span class="cart-item-price"> $${(
+            item.price * item.quantity
+          ).toFixed(2)} 
+          <button class="remove-btn" data-index="${index}"><i class="fa-solid fa-times"></i></button>
+          </span> */
+}
