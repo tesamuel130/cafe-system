@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       if (!itemName) {
         console.error("Item name not found!");
-        return; // Exit function if item name is not found
+        return;
       }
 
       const item = {
@@ -118,19 +118,6 @@ document.addEventListener("DOMContentLoaded", () => {
     if (cartTotal) {
       cartTotal.textContent = `$${totalAmount.toFixed(2)}`;
     }
-  }
-
-  // cartIcon.addEventListener("click", () => {
-  //   if (sidebar) {
-  //     sidebar.classList.toggle("open");
-  //   }
-  // });
-
-  const closeButton = document.querySelector(".sidebar-close");
-  if (closeButton) {
-    closeButton.addEventListener("click", () => {
-      sidebar.classList.remove("open");
-    });
   }
 });
 
