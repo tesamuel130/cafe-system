@@ -35,7 +35,7 @@ httpF.onload = function () {
                             <img src="${item.image}" alt="${item.alt}">
                             <h3 class="item-name">${item.name}</h3>
                             <div class="price-rating">
-                                <p>price: <span class="food-price">$${item.price}</span></p>
+                                <p data-price="${item.price}">price: <span class="food-price">$${item.price}</span></p>
                                 <i class="fa-solid fa-cart-shopping add-to-cart"></i>
                             </div>
                             <button>Order Now!</button>
