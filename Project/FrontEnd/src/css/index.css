@@ -116,6 +116,24 @@ body{
     transition: transform 0.5s;
 }
 
+#navi{
+    margin-left: -30px;
+    margin-right: 10px;
+    display: none;
+}
+
+@media(max-width: 700px){
+    #navi{
+        display: block;
+    }
+    .nav-link a{
+        display: none;
+    }
+    .nav-link a i{
+        display: none;
+    }
+}
+
 /* ##################### cart button ######################## */
 
 .cart-btn{

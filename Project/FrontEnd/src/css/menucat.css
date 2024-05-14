@@ -13,12 +13,18 @@
 }
 
 /* ######################## menu catagory  ############################# */
+.container{
+    width: 100%;
+}
+
 .menu-cont{
     width: 100%;
     height: auto;
     display: flex;
     flex-direction: column;
 }
+
+
 
 /* ######################## menu catagory nav  ############################# */
 .menu-search{
@@ -29,12 +35,13 @@
     gap: 50px;
 }
 
-.menu-search i{
+.menu-search form input{
+    width: 100%;
     font-size: 25px;
 }
 
 .menu-search input{
-    width: 450px;
+    width: 100%;
     padding: 10px;
     border: 1px solid #f6b319;
     border-radius: 10px;

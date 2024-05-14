@@ -30,11 +30,14 @@
 }
 
 .home-cont{
-    width: 500px;
+    width: 90%;
     height: auto;
-    padding: 50px;
+    padding: 50px 30px 50px 30px;
     margin-top: 50px;
     margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
 }
 
@@ -121,10 +124,9 @@
 /* ############### home AD ###################### */
 
 .home-ad-list{
-    width: 100%;
+    max-width: 100%;
     height: 300px;
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
 }
@@ -133,6 +135,20 @@
     width: 100%;
     height: 200px;
     border-radius: 10px;
+}
+
+@media(max-width: 700px){
+    .home-ad-list{
+        width: 700px;
+        overflow-x: scroll;
+        gap: 30px;
+    }
+
+    .home-ad video{
+        width: 300px;
+        height: 200px;
+        border-radius: 10px;
+    }
 }
 
 .home-ad h1{
