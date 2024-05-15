@@ -5,13 +5,16 @@
 .cart-order-cont{
     width: 100%;
     height: auto;
+    margin-top: 70px;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
+    justify-content: space-around;
     gap: 20px;
 }
 
 .carts{
-    width: 100%;
+    width: 550px;
     height: 550px;
     overflow-y: auto;
     background-color: #f6b319;
@@ -108,7 +111,7 @@
 
 
 .order{
-    width: 100%;
+    width: 45%;
     height: auto;
     background-color: #f6b319;
     border-radius: 10px;
