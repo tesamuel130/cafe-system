@@ -134,6 +134,56 @@ body{
     }
 }
 
+.sub-list-nav{
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 5;
+    width: 50%;
+    display: none;
+    overflow: hidden;
+    transition: max-height 0.5s;
+}
+
+
+
+.sub-list-nav.open-nav{
+    display: block;
+}
+
+.listed-nav{
+    background-color: #e0d7bf;
+    padding: 20px;
+    border-radius: 5px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.listed-nav .navs{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.listed-nav .navs a{
+    color: #000;
+    font-family: "Itim", cursive;
+    font-weight: bold;
+    text-decoration: none;
+    line-height: 30px;
+}
+
+.listed-nav .navs a i{
+    color: #fff;
+    margin-right: 15px;
+}
+
+.listed-nav .navs a:hover{
+    transform: translateY(-3px);
+}
+
 /* ##################### cart button ######################## */
 
 .cart-btn{

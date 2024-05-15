@@ -18,3 +18,11 @@ document
 // add items to the cart
 // import AddCart from "./addToCart.js";
 // AddCart();
+
+//edit the navigation bar
+const navBar = document.getElementById("navi");
+const listedNav = document.getElementById("listedNav");
+
+navBar.addEventListener("click", () => {
+  listedNav.classList.toggle("open-nav");
+});
