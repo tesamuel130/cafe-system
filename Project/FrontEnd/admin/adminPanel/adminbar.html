@@ -180,7 +180,7 @@
                       <td>20/20/2024</td>
                       <td>file</td>
                       <td>coocking</td>
-                      <td><button class="cmd">Edit</button></td>
+                      <td><button class="edit-employer">Edit</button></td>
                     </tr>
                     <tr>
                       <td>
@@ -199,7 +199,7 @@
                       <td>20/20/2024</td>
                       <td>file</td>
                       <td>coocking</td>
-                      <td><button class="cmd">Edit</button></td>
+                      <td><button class="edit-employer">Edit</button></td>
                     </tr>
                     <tr>
                       <td>
@@ -218,7 +218,7 @@
                       <td>20/20/2024</td>
                       <td>file</td>
                       <td>coocking</td>
-                      <td><button class="cmd">Edit</button></td>
+                      <td><button class="edit-employer">Edit</button></td>
                     </tr>
                     <tr>
                       <td>
@@ -237,7 +237,7 @@
                       <td>20/20/2024</td>
                       <td>file</td>
                       <td>coocking</td>
-                      <td><button class="cmd">Edit</button></td>
+                      <td><button class="edit-employer">Edit</button></td>
                     </tr>
                     <tr>
                       <td>
@@ -256,7 +256,7 @@
                       <td>20/20/2024</td>
                       <td>file</td>
                       <td>coocking</td>
-                      <td><button class="cmd">Edit</button></td>
+                      <td><button class="edit-employer">Edit</button></td>
                     </tr>
                   </tbody>
                 </table>
@@ -265,6 +265,72 @@
           </div>
         </div>
       </div>
+
+      <!-- add stracture for edit food container that popup when onclick the edit bnt -->
+      <div class="edit-employ-container">
+        <div class="edit-employer-body-header">
+          <h1>Edit Food</h1>
+          <i id="editEmployClose" class="fa-solid fa-xmark"></i>
+        </div>
+        <div class="edit-employer-form-list">
+          <form action="/" method="post">
+            <label for="fname">First Name</label>
+            <input
+              id="fname"
+              type="text"
+              placeholder="Enter food name"
+              required
+            />
+            <label for="lname">Last Name</label>
+            <input
+              id="lname"
+              type="text"
+              placeholder="Enter food name"
+              required
+            />
+            <div class="gender-rad">
+              <input type="radio" id="male" name="gender" value="Male" />
+              <label for="male">Male</label>
+              <input
+                id="female"
+                type="radio"
+                id="female"
+                name="gender"
+                value="Female"
+              />
+              <label for="female">Female</label>
+            </div>
+            <label for="price">Date Of Birth</label>
+            <input id="price" type="text" placeholder="DOB" required />
+            <label for="price">Wage Before Vat</label>
+            <input
+              id="price"
+              type="text"
+              placeholder="Price before vat"
+              required
+            />
+            <label for="catagory">Employed By</label>
+            <select id="category" name="category">
+              <option value="select catagory">Employed By</option>
+              <option value="vegitable">Cooker</option>
+              <option value="desert">Witer</option>
+              <option value="apetizer">Cliner</option>
+            </select>
+            <label for="imgf">Only JPG, PNG, JPEG and PDF File</label>
+            <input
+              id="imgf"
+              type="file"
+              name="imageInput"
+              id="imgInput"
+              accept="image/jpg, image/png, image/jpeg, fil"
+            />
+            <br />
+            <button>Submit</button>
+          </form>
+        </div>
+      </div>
     </main>
+
+    <script src="/Project/FrontEnd/src/js/adminaddemploy.js"></script>
   </body>
 </html>
