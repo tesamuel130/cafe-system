@@ -21,6 +21,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-top: 50px;
     
     background-image: url('img/homeyab.jpg');
     background-size: cover;
@@ -119,6 +120,16 @@
 .home-icon i:hover{
     color: #f6b319;
     transform: translateY(-3px);
+}
+
+@media(max-width: 700px){
+    .home-icon i{
+        font-size: 15px;
+    }
+
+    .home-icon span{
+        font-size: 10px;
+    }
 }
 
 /* ############### home AD ###################### */
