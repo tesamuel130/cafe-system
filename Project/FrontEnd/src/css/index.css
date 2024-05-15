@@ -72,6 +72,7 @@ body{
 .sub-menu-wrap{
     position: absolute;
     right: 0;
+    z-index: 6;
     width: 160px;
     margin-top: 130px;
     max-height: 0px;

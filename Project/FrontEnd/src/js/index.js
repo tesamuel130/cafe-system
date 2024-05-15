@@ -26,3 +26,20 @@ const listedNav = document.getElementById("listedNav");
 navBar.addEventListener("click", () => {
   listedNav.classList.toggle("open-nav");
 });
+
+//edit the book history button
+const bookHisbtn = document.getElementById("bookHist");
+const boodDitCloseBtn = document.getElementById("hisDitClose");
+const bookDetail = document.getElementById("bookDetail");
+
+const openBookDet = () => {
+  bookDetail.classList.toggle("openBookDit");
+};
+
+const closeBookDet = () => {
+  bookDetail.classList.remove("openBookDit");
+};
+
+bookHisbtn.addEventListener("click", openBookDet);
+
+boodDitCloseBtn.addEventListener("click", closeBookDet);
