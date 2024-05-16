@@ -15,7 +15,9 @@
     width:  100%;
     height: auto;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
+    gap: 30px;
     margin-top: 50px;
 }
 
@@ -104,13 +106,15 @@
 .ad-body-cont-two {
     width: 100%;
     height: auto;
-    margin-top: 50px;
+    margin: 50px 0 0 40px;
     display: flex;
-    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: flex-start;
 }
 
 .ad-body-cont-two .cont-two-left{
-    width: 60%;
+    width: 600px;
     height: 300px;
     border: none;
     border-radius: 10px;
@@ -124,7 +128,7 @@
 }
 
 .ad-body-cont-two .cont-two-right{
-    width: 30%;
+    width: 300px;
     height: 200px;
     border: none;
     border-radius: 10px;
@@ -135,4 +139,17 @@
 .ad-body-cont-two #donutchart{
     width: 100%;
     height: 100%;
+}
+
+/* styling the responsivness for mobile*/
+@media(min-width: 300px) and (max-width: 600px){
+    .ad-body-cont-two .cont-two-left{
+        width: 300px;
+    }
+}
+
+@media(min-width: 600px) and (max-width: 767px){
+    .ad-body-cont-two .cont-two-left{
+        width: 500px;
+    }
 }

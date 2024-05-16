@@ -26,9 +26,9 @@
     justify-content: center;
 }
 .contact-cont{
-    width: 1000px;
+    width: 80%;
     height: auto;
-    margin-top: 50px;
+    margin-top: 100px;
     margin-bottom: 50px;
     padding: 30px;
 
@@ -40,12 +40,14 @@
     box-shadow: 0 8px 32px 0;
 
     display: flex;
+    flex-wrap: wrap-reverse;
     justify-content: space-between;
 }
 
 /* ############################### feed back form #################################*/
 .feedback{
     padding: 30px;
+    width: 40%;
 }
 
 .contact-row{
@@ -178,6 +180,8 @@ label{
     position: fixed;
     width: 60%;
     height: 80%;
+    top: 80px;
+    z-index: 5;
     background-color: #e9c25f;
 
     background: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0));
@@ -200,7 +204,7 @@ label{
 }
 
 .his-header h3{
-    color: #7c7575;
+    color: #fff;
     font-size: 25px;
     font-family: "Itim", cursive;
     font-weight: 700;
@@ -226,8 +230,26 @@ label{
 }
 
 .his-detail-list .his-det{
-    width: 400px;
+    width: 50%;
     height: 50px;
     background-color: #7c7575;
     border-radius: 10px;
+}
+
+@media(min-width: 300px) and (max-width: 600px){
+    .feedback{
+        width: 100%;
+    }
+    .some-detail{
+        width: 100%;
+    }
+}
+
+@media(min-width: 600px) and (max-width: 767px){
+    .feedback{
+        width: 100%;
+    }
+    .some-detail{
+        width: 100%;
+    }
 }
