@@ -14,7 +14,7 @@ form.addEventListener("submit", (event) => {
 const setError = (element, message) => {
   const inputControl = element.parentElement;
 
-  element.value = message;
+  alert(message);
   inputControl.classList.add("error");
   inputControl.classList.remove("success");
 };
@@ -67,17 +67,17 @@ const validateInput = () => {
   }
 
   if (passwordValue === "") {
-    setError(password, "");
+    setError(password, "password must be required");
   } else if (passwordValue.length < 8) {
-    setError(password, "");
+    setError(password, "password must be 8 character");
   } else {
     setSuccess(password);
   }
 
   if (password2Value === "") {
-    setError(password2, "");
+    setError(password2, "password must be required");
   } else if (password2Value !== passwordValue) {
-    setError(password2, "");
+    setError(password2, "confirm the password");
   } else {
     setSuccess(password2);
   }

@@ -93,42 +93,57 @@
                   <h1>Add employ</h1>
                   <p>add new employ</p>
                 </div>
-                <form action="/" method="post">
-                  <label for="fname">First Name</label>
-                  <input
-                    id="fname"
-                    type="text"
-                    placeholder="Enter food name"
-                    required
-                  />
-                  <label for="lname">Last Name</label>
-                  <input
-                    id="lname"
-                    type="text"
-                    placeholder="Enter food name"
-                    required
-                  />
+                <form id="form" action="/" method="post">
+                  <div>
+                    <label for="fname">First Name</label>
+                    <input
+                      id="fname"
+                      type="text"
+                      placeholder="Enter food name"
+                    />
+                  </div>
+
+                  <div>
+                    <label for="lname">Last Name</label>
+                    <input
+                      id="sname"
+                      type="text"
+                      placeholder="Enter food name"
+                    />
+                  </div>
+
                   <div class="gender-rad">
-                    <input type="radio" id="male" name="gender" value="Male" />
+                    <input
+                      id="male"
+                      type="radio"
+                      name="gender"
+                      value="Male"
+                      required
+                    />
                     <label for="male">Male</label>
                     <input
                       id="female"
                       type="radio"
-                      id="female"
                       name="gender"
                       value="Female"
+                      required
                     />
                     <label for="female">Female</label>
                   </div>
-                  <label for="price">Date Of Birth</label>
-                  <input id="price" type="text" placeholder="DOB" required />
-                  <label for="price">Wage Before Vat</label>
-                  <input
-                    id="price"
-                    type="text"
-                    placeholder="Price before vat"
-                    required
-                  />
+                  <div>
+                    <label for="dob">Date Of Birth</label>
+                    <input id="dob" type="date" placeholder="DOB" />
+                  </div>
+
+                  <div>
+                    <label for="price">Wage Before Vat</label>
+                    <input
+                      id="price"
+                      type="text"
+                      placeholder="Price before vat"
+                    />
+                  </div>
+
                   <label for="catagory">Employed By</label>
                   <select id="category" name="category">
                     <option value="select catagory">Employed By</option>
@@ -136,14 +151,17 @@
                     <option value="desert">Witer</option>
                     <option value="apetizer">Cliner</option>
                   </select>
-                  <label for="imgf">Only JPG, PNG, JPEG and PDF File</label>
-                  <input
-                    id="imgf"
-                    type="file"
-                    name="imageInput"
-                    id="imgInput"
-                    accept="image/jpg, image/png, image/jpeg, fil"
-                  />
+                  <div>
+                    <label for="imgf">Only JPG, PNG, JPEG and PDF File</label>
+                    <input
+                      id="imgfile"
+                      type="file"
+                      name="imageInput"
+                      id="imgInput"
+                      accept="image/jpg, image/png, image/jpeg, fil"
+                    />
+                  </div>
+
                   <br />
                   <button>Submit</button>
                 </form>
