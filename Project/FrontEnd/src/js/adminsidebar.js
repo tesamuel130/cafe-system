@@ -31,7 +31,6 @@ form.addEventListener("submit", (event) => {
 const setError = (element, message) => {
   const inputControl = element.parentElement;
 
-  alert(message);
   inputControl.classList.add("error");
   inputControl.classList.remove("success");
 };
@@ -44,7 +43,7 @@ const setSuccess = (element) => {
 };
 
 const isValidImageType = (file) => {
-  const validTypes = ["image/jpeg", "image/png", "image/jpeg"];
+  const validTypes = ["image/jpeg", "image/png", "image/jpeg", "image/pdf"];
   return validTypes.includes(file.type);
 };
 

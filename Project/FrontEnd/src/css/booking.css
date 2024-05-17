@@ -40,7 +40,7 @@
     box-shadow: 0 8px 32px 0;
 
     display: flex;
-    flex-wrap: wrap-reverse;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 

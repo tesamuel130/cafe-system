@@ -247,6 +247,10 @@
         margin-right: 10px;
     }
 
+    #adminNavi{
+        display: block;
+    }
+
     #closeAdminSide{
         display: block;
     }
@@ -263,6 +267,10 @@
 
     .right-header-comp{
         margin-right: 10px;
+    }
+
+    #adminNavi{
+        display: block;
     }
 
     #closeAdminSide{
