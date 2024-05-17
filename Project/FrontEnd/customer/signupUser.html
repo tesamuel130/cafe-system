@@ -99,7 +99,7 @@
     <main>
       <div class="login-body">
         <div class="form-cont">
-          <form action="/Project/FrontEnd/home.html" method="get">
+          <form id="form" action="/Project/FrontEnd/home.html" method="get">
             <h1>SignUp</h1>
             <div class="form-header-par-one">
               <p>
@@ -108,32 +108,52 @@
               </p>
             </div>
             <div class="form-header-input-one">
-              <label for="email">Email or Username</label>
+              <label for="username">Username</label>
+              <input
+                id="username"
+                type="text"
+                name="username"
+                placeholder="@jon"
+              />
+            </div>
+            <div class="form-header-input-one">
+              <label for="email">Email</label>
               <input
                 id="email"
-                type="text"
+                type="email"
+                name="email"
                 placeholder="your@example.com"
-                required
+              />
+            </div>
+            <div class="form-header-input-one">
+              <label for="phone">Phone No.</label>
+              <input
+                id="phone"
+                type="tel"
+                name="phoneNo"
+                placeholder="+251 9xx xxx xxx"
               />
             </div>
             <div class="form-header-input-two">
               <div class="form-header-par-two">
-                <label for="fpass">Password</label>
+                <label for="password">Password</label>
               </div>
               <input
-                id="fpass"
+                id="password"
                 type="password"
-                placeholder="enter  your password"
+                name="password"
+                placeholder="must be 8 character"
               />
             </div>
             <div class="form-header-input-two">
               <div class="form-header-par-two">
-                <label for="cpass">Confirm Password</label>
+                <label for="password2">Confirm Password</label>
               </div>
               <input
-                id="cpass"
+                id="password2"
                 type="password"
-                placeholder="enter  your password"
+                name="password2"
+                placeholder="confirm password"
               />
             </div>
             <div class="form-header-par-three">
@@ -193,6 +213,7 @@
       </div>
     </footer>
 
+    <script src="/Project/FrontEnd/src/js/formValidation.js"></script>
     <script type="module" src="/Project/FrontEnd/src/js/index.js"></script>
   </body>
 </html>
