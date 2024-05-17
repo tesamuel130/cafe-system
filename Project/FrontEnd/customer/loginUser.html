@@ -99,7 +99,7 @@
     <main>
       <div class="login-body">
         <div class="form-cont">
-          <form action="/Project/FrontEnd/home.html" method="get">
+          <form id="form" action="/Project/FrontEnd/home.html" method="get">
             <h1>SignIn</h1>
             <div class="form-header-par-one">
               <p>
@@ -110,10 +110,9 @@
             <div class="form-header-input-one">
               <label for="email">Email or Username</label>
               <input
-                id="email"
+                id="userOrEmail"
                 type="text"
                 placeholder="your@example.com"
-                required
               />
             </div>
             <div class="form-header-input-two">
@@ -125,7 +124,6 @@
                 id="password"
                 type="password"
                 placeholder="enter  your password"
-                required
               />
             </div>
             <div class="form-header-par-three">
@@ -185,6 +183,7 @@
       </div>
     </footer>
 
+    <script src="/Project/FrontEnd/src/js/formValidatorLogin.js"></script>
     <script type="module" src="/Project/FrontEnd/src/js/index.js"></script>
   </body>
 </html>

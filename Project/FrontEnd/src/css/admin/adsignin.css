@@ -216,6 +216,14 @@
     background-color: #f6b319;
 }
 
+#form>div.success input{
+    border: 2px solid #09c372;
+}
+
+#form>div.error input{
+    border: 2px solid #ff3860;
+}
+
 /* styling the responsivness for mobile*/
 @media(min-width: 300px) and (max-width: 600px){
     .form-cont{

@@ -2,6 +2,7 @@
 const form = document.getElementById("form");
 const username = document.getElementById("username");
 const email = document.getElementById("email");
+const phoneNumber = document.getElementById("phone");
 const password = document.getElementById("password");
 const password2 = document.getElementById("password2");
 
@@ -30,9 +31,16 @@ const isValidEmail = (email) => {
   return characters.test(String(email).toLowerCase());
 };
 
+const validatePhoneNumber = (phoneNumber) => {
+  const phoneRegex = /^(?:\+251|0)?9\d{8}$/;
+  const nextNumbs = phoneNumber.replace(/[\s-()]/g, "");
+  return phoneRegex.test(nextNumbs);
+};
+
 const validateInput = () => {
   const usernameValue = username.value.trim();
   const emailValue = email.value.trim();
+  const phoneNumberValue = phoneNumber.value.trim();
   const passwordValue = password.value.trim();
   const password2Value = password2.value.trim();
 
@@ -50,18 +58,26 @@ const validateInput = () => {
     setSuccess(email);
   }
 
+  if (phoneNumberValue === "") {
+    setSuccess(phoneNumber);
+  } else if (!validatePhoneNumber(phoneNumberValue)) {
+    setError(phoneNumber, "Enter a valid phone number");
+  } else {
+    setSuccess(phoneNumber);
+  }
+
   if (passwordValue === "") {
-    setError(password, "Password is required");
+    setError(password, "");
   } else if (passwordValue.length < 8) {
-    setError(password, "Password must be at least 8 characters");
+    setError(password, "");
   } else {
     setSuccess(password);
   }
 
   if (password2Value === "") {
-    setError(password2, "Password confirmation is required");
+    setError(password2, "");
   } else if (password2Value !== passwordValue) {
-    setError(password2, "Passwords do not match");
+    setError(password2, "");
   } else {
     setSuccess(password2);
   }
