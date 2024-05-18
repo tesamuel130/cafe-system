@@ -13,17 +13,25 @@
 }
 
 /* ######################## about page  ############################# */
-.about{
-    max-width:992px;
-    margin:50px auto;
-    
+.about-body{
+    width: 100%;
+    height: auto;
+    padding: 70px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
-.title{
+
+.aboutbod{
+    width:70%;
+    text-align: center;
+}
+.abouttitle{
     text-align:center;
     color:black;
     font-weight: bold;
     font-size: 28px;
-   
 }
 .about-explanation{
     text-align: center;
@@ -32,25 +40,29 @@
     color:black;
 }
 .rim{
-    display:grid;
-    grid-template-columns: auto auto auto;
-    width:992px;
+    width: 70%;
     height:auto;
-    margin:50px auto;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top:50px;
     background-color: #f6b319;
     border-radius: 25px;
 }
+
 .media{
-    margin-left: 50px;
-    padding:50px;
+    padding-top:50px;
 }
+
 iframe{
-    width:290px;
+    width:100%;
     height:200px;
 }
+
 audio{
     margin-top:30px;
 }
+
 .media-text{
     margin:50px;
     width:300px;
