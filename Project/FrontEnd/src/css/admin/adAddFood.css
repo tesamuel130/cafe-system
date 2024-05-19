@@ -119,7 +119,10 @@
 
 /* ########################### edit and food table css ###############################*/
 .admin-cont-right-body .ad-body-cont-table{
-    align-self: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin-top: -15px;
 }
 
@@ -127,7 +130,7 @@
     border-collapse: collapse;
     margin: 25px 0;
     font-size: 0.9em;
-    min-width: 950px;
+    width: 95%;
     border: none;
     border-radius: 10px;
     overflow: scroll;
