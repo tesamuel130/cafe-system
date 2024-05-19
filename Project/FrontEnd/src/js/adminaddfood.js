@@ -20,9 +20,8 @@ closeEditFoodBtn.addEventListener("click", closeFoodEdit);
 // Form validation for the addfood page
 const form = document.getElementById("form");
 const fname = document.getElementById("fname");
-const sname = document.getElementById("sname");
-const dob = document.getElementById("dob");
 const price = document.getElementById("price");
+const imgDis = document.getElementById("imgd");
 const file = document.getElementById("imgfile");
 
 form.addEventListener("submit", (event) => {
@@ -33,7 +32,6 @@ form.addEventListener("submit", (event) => {
 const setError = (element, message) => {
   const inputControl = element.parentElement;
 
-  alert(message);
   inputControl.classList.add("error");
   inputControl.classList.remove("success");
 };
@@ -57,9 +55,8 @@ const isValidFileSize = (file) => {
 
 const validateInput = () => {
   const fnameValue = fname.value.trim();
-  const snameValue = sname.value.trim();
-  const dobValue = dob.value.trim();
   const priceValue = price.value.trim();
+  const imgDisValue = imgDis.value.trim();
   const fileValue = file.files[0];
 
   if (fnameValue === "") {
@@ -68,22 +65,16 @@ const validateInput = () => {
     setSuccess(fname);
   }
 
-  if (snameValue === "") {
-    setError(sname, "Username is required");
-  } else {
-    setSuccess(sname);
-  }
-
-  if (dobValue === "") {
-    setError(dob, "Username is required");
-  } else {
-    setSuccess(dob);
-  }
-
   if (priceValue === "") {
-    setError(price, "Username is required");
+    setError(price, "price required");
   } else {
     setSuccess(price);
+  }
+
+  if (imgDisValue === "") {
+    setError(imgDis, "image discription is required");
+  } else {
+    setSuccess(imgDis);
   }
 
   if (!fileValue) {

@@ -93,21 +93,23 @@
                   <h1>Add Food</h1>
                   <p>add new food</p>
                 </div>
-                <form action="/" method="post">
-                  <label for="fname">Food Name</label>
-                  <input
-                    id="fname"
-                    type="text"
-                    placeholder="Enter food name"
-                    required
-                  />
-                  <label for="price">Price Before Vat</label>
-                  <input
-                    id="price"
-                    type="text"
-                    placeholder="Price before vat"
-                    required
-                  />
+                <form id="form" action="/" method="post">
+                  <div>
+                    <label for="fname">Food Name</label>
+                    <input
+                      id="fname"
+                      type="text"
+                      placeholder="Enter food name"
+                    />
+                  </div>
+                  <div>
+                    <label for="price">Price Before Vat</label>
+                    <input
+                      id="price"
+                      type="text"
+                      placeholder="Price before vat"
+                    />
+                  </div>
                   <select id="category" name="category">
                     <option value="select catagory">Select Catagory</option>
                     <option value="vegitable">vegitable</option>
@@ -117,21 +119,24 @@
                     <option value="brekfast">brekfast</option>
                     <option value="dinner">dinner</option>
                   </select>
-                  <label for="imgd">Image Discription</label>
-                  <input
-                    id="imgd"
-                    type="text"
-                    placeholder="image discription"
-                    required
-                  />
-                  <label for="imgf">Only JPG, PNG, JPEG File</label>
-                  <input
-                    id="imgf"
-                    type="file"
-                    name="imageInput"
-                    id="imgInput"
-                    accept="image/jpg, image/png, image/jpeg"
-                  />
+                  <div>
+                    <label for="imgd">Image Discription</label>
+                    <input
+                      id="imgd"
+                      type="text"
+                      placeholder="image discription"
+                    />
+                  </div>
+                  <div>
+                    <label for="imgfile">Only JPG, PNG, JPEG File</label>
+                    <input
+                      id="imgfile"
+                      type="file"
+                      name="imageInput"
+                      id="imgInput"
+                      accept="image/jpg, image/png, image/jpeg"
+                    />
+                  </div>
                   <br />
                   <button>Submit</button>
                 </form>

@@ -314,3 +314,12 @@ td .food-img img{
     background-color: #ffb300;
     transform: translateY(-3px);
 }
+
+/* form validator style */
+#form>div.success input{
+    border: 2px solid #09c372;
+}
+
+#form>div.error input{
+    border: 2px solid #ff3860;
+}
