@@ -33,6 +33,8 @@
                 <i class="fa-solid fa-utensils"></i>
                 <h3>Resturant</h3>
               </button>
+
+              <i id="closeAdminSide" class="fa-solid fa-xmark"></i>
             </div>
             <div class="side-list">
               <a class="dashbord" href="dashbord.html"
@@ -67,6 +69,7 @@
             <div class="admin-cont-right-header">
               <div class="right-header-comp">
                 <div class="search-comp">
+                  <i class="fa-solid fa-bars" id="adminNavi"></i>
                   <label for="search"></label>
                   <input id="search" type="search" placeholder="search" />
                 </div>
@@ -90,21 +93,23 @@
                   <h1>Add Food</h1>
                   <p>add new food</p>
                 </div>
-                <form action="/" method="post">
-                  <label for="fname">Food Name</label>
-                  <input
-                    id="fname"
-                    type="text"
-                    placeholder="Enter food name"
-                    required
-                  />
-                  <label for="price">Price Before Vat</label>
-                  <input
-                    id="price"
-                    type="text"
-                    placeholder="Price before vat"
-                    required
-                  />
+                <form id="form" action="/" method="post">
+                  <div>
+                    <label for="fname">Food Name</label>
+                    <input
+                      id="fname"
+                      type="text"
+                      placeholder="Enter food name"
+                    />
+                  </div>
+                  <div>
+                    <label for="price">Price Before Vat</label>
+                    <input
+                      id="price"
+                      type="text"
+                      placeholder="Price before vat"
+                    />
+                  </div>
                   <select id="category" name="category">
                     <option value="select catagory">Select Catagory</option>
                     <option value="vegitable">vegitable</option>
@@ -114,21 +119,24 @@
                     <option value="brekfast">brekfast</option>
                     <option value="dinner">dinner</option>
                   </select>
-                  <label for="imgd">Image Discription</label>
-                  <input
-                    id="imgd"
-                    type="text"
-                    placeholder="image discription"
-                    required
-                  />
-                  <label for="imgf">Only JPG, PNG, JPEG File</label>
-                  <input
-                    id="imgf"
-                    type="file"
-                    name="imageInput"
-                    id="imgInput"
-                    accept="image/jpg, image/png, image/jpeg"
-                  />
+                  <div>
+                    <label for="imgd">Image Discription</label>
+                    <input
+                      id="imgd"
+                      type="text"
+                      placeholder="image discription"
+                    />
+                  </div>
+                  <div>
+                    <label for="imgfile">Only JPG, PNG, JPEG File</label>
+                    <input
+                      id="imgfile"
+                      type="file"
+                      name="imageInput"
+                      id="imgInput"
+                      accept="image/jpg, image/png, image/jpeg"
+                    />
+                  </div>
                   <br />
                   <button>Submit</button>
                 </form>
@@ -168,7 +176,7 @@
                       <td>VIP</td>
                       <td>13</td>
                       <td>default</td>
-                      <td><button class="cmd">Edit</button></td>
+                      <td><button class="edit-food">Edit</button></td>
                     </tr>
                     <tr>
                       <td>
@@ -187,7 +195,7 @@
                       <td>VIP</td>
                       <td>1</td>
                       <td>default</td>
-                      <td><button class="cmd">Edit</button></td>
+                      <td><button class="edit-food">Edit</button></td>
                     </tr>
                     <tr>
                       <td>
@@ -206,7 +214,7 @@
                       <td>Normal</td>
                       <td>5</td>
                       <td>default</td>
-                      <td><button class="cmd">Edit</button></td>
+                      <td><button class="edit-food">Edit</button></td>
                     </tr>
                     <tr>
                       <td>
@@ -225,7 +233,7 @@
                       <td>VVIP</td>
                       <td>10</td>
                       <td>default</td>
-                      <td><button class="cmd">Edit</button></td>
+                      <td><button class="edit-food">Edit</button></td>
                     </tr>
                     <tr>
                       <td>
@@ -244,7 +252,7 @@
                       <td>Normal</td>
                       <td>6</td>
                       <td>default</td>
-                      <td><button class="cmd">Edit</button></td>
+                      <td><button class="edit-food">Edit</button></td>
                     </tr>
                   </tbody>
                 </table>
@@ -253,6 +261,61 @@
           </div>
         </div>
       </div>
+
+      <!-- add stracture for edit food container that popup when onclick the edit bnt -->
+      <div class="edit-food-container">
+        <div class="edit-food-body-header">
+          <h1>Edit Food</h1>
+          <i id="editFoodClose" class="fa-solid fa-xmark"></i>
+        </div>
+        <div class="edit-food-form-list">
+          <form action="/" method="post">
+            <label for="fname">Food Name</label>
+            <input
+              id="fname"
+              type="text"
+              placeholder="Enter food name"
+              required
+            />
+            <label for="price">Price Before Vat</label>
+            <input
+              id="price"
+              type="text"
+              placeholder="Price before vat"
+              required
+            />
+            <select id="category" name="category">
+              <option value="select catagory">Select Catagory</option>
+              <option value="vegitable">vegitable</option>
+              <option value="desert">Desert</option>
+              <option value="apetizer">Apetizer</option>
+              <option value="lanch">Lanch</option>
+              <option value="brekfast">brekfast</option>
+              <option value="dinner">dinner</option>
+            </select>
+            <label for="imgd">Image Discription</label>
+            <input
+              id="imgd"
+              type="text"
+              placeholder="image discription"
+              required
+            />
+            <label for="imgf">Only JPG, PNG, JPEG File</label>
+            <input
+              id="imgf"
+              type="file"
+              name="imageInput"
+              id="imgInput"
+              accept="image/jpg, image/png, image/jpeg"
+            />
+            <br />
+            <button>Submit</button>
+          </form>
+        </div>
+      </div>
     </main>
+
+    <script src="/Project/FrontEnd/src/js/adminsidebar.js"></script>
+    <script src="/Project/FrontEnd/src/js/adminaddfood.js"></script>
   </body>
 </html>

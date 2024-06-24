@@ -43,8 +43,10 @@
           <a class="admin-link" id="openAdminModalBtn"
             ><i class="fa-solid fa-user-tie"></i
           ></a>
+          <i class="fa-solid fa-bars" id="navi"></i>
         </div>
 
+        <!-- stracture for the admin log in and out -->
         <div class="sub-menu-wrap" id="subMenu">
           <div class="sub-menu">
             <div class="user-info">
@@ -60,6 +62,35 @@
             </div>
           </div>
         </div>
+
+        <!-- stracture for the navigarion list when it responsive -->
+        <div class="sub-list-nav" id="listedNav">
+          <div class="listed-nav">
+            <div class="navs">
+              <a href="home.html" class="act-home"
+                ><i class="fa-solid fa-house"></i>Home</a
+              >
+              <a href="menucat.html" class="act-menu"
+                ><i class="fa-solid fa-bowl-food"></i>Menu</a
+              >
+              <a href="booking.html" class="act-order"
+                ><i class="fa-solid fa-book"></i>Booking</a
+              >
+              <a href="about.html" class="act-about"
+                ><i class="fa-solid fa-address-card"></i>About</a
+              >
+              <a href="contact.html" class="act-contact"
+                ><i class="fa-solid fa-address-book"></i>Contact</a
+              >
+              <a
+                href="/Project/FrontEnd/customer/loginUser.html"
+                class="admin-link"
+                id="openAdminModalBtn"
+                ><i class="fa-solid fa-user-tie"></i>SignIn</a
+              >
+            </div>
+          </div>
+        </div>
       </div>
     </header>
 
@@ -68,74 +99,77 @@
     <div class="cart-btn">
       <a href="cartorder.html" class="btn-one">
         <i class="fa-solid fa-cart-shopping"></i>
-        <span class="noti-count">5</span>
+        <span class="noti-count">0</span>
       </a>
     </div>
 
     <!-- ##################### Main body ######################## -->
     <main>
-      <div class="container">
-        <div class="menu-cont">
-          <div class="menu-search">
-            <i class="fa-solid fa-list"></i>
-            <form action="/" method="get">
-              <label for="search"></label>
-              <input id="search" type="text" placeholder="search" />
-            </form>
+      <div class="menu-cont">
+        <div class="menu-search">
+          <i class="fa-solid fa-list"></i>
+          <form action="/" method="get">
+            <label for="search"></label>
+            <input id="search" type="text" placeholder="search" />
+          </form>
 
-            <i class="fa-solid fa-filter"><span>Filtur</span></i>
-          </div>
-          <div class="all-food-cat">
-            <div class="menu-cat-list">
-              <h1>Today's Spesial</h1>
-              <div class="food-card-list tdsList">
-                <!-- data featched from foodlist.json file -->
-              </div>
+          <i class="fa-solid fa-filter"><span>Filtur</span></i>
+        </div>
+        <div class="all-food-cat">
+          <div class="menu-cat-list">
+            <h1>Today's Spesial</h1>
+            <div class="food-card-list tdsList">
+              <!-- data featched from foodlist.json file -->
+            </div>
 
-              <h1>Cakes</h1>
-              <div class="food-card-list cakeList">
-                <!-- data featched from foodlist.json file -->
-              </div>
+            <h1>Cakes</h1>
+            <div class="food-card-list cakeList">
+              <!-- data featched from foodlist.json file -->
+            </div>
 
-              <h1>Appetizers</h1>
-              <div class="food-card-list appetizerList">
-                <!-- data featched from foodlist.json file -->
-              </div>
+            <h1>Appetizers</h1>
+            <div class="food-card-list appetizerList">
+              <!-- data featched from foodlist.json file -->
+            </div>
 
-              <h1>Desserts</h1>
-              <div class="food-card-list dessertList">
-                <!-- data featched from foodlist.json file -->
-              </div>
+            <h1>Desserts</h1>
+            <div class="food-card-list dessertList">
+              <!-- data featched from foodlist.json file -->
+            </div>
 
-              <h1>Luanchs</h1>
-              <div class="food-card-list luanchList">
-                <!-- data featched from foodlist.json file -->
-              </div>
+            <h1>Luanchs</h1>
+            <div class="food-card-list luanchList">
+              <!-- data featched from foodlist.json file -->
+            </div>
 
-              <h1>Diners</h1>
-              <div class="food-card-list dinerList">
-                <!-- data featched from foodlist.json file -->
-              </div>
+            <h1>Diners</h1>
+            <div class="food-card-list dinerList">
+              <!-- data featched from foodlist.json file -->
+            </div>
 
-              <h1>Fruits</h1>
-              <div class="food-card-list fruitsList">
-                <!-- data featched from foodlist.json file -->
-              </div>
+            <h1>Fruits</h1>
+            <div class="food-card-list fruitsList">
+              <!-- data featched from foodlist.json file -->
+            </div>
 
-              <h1>Juices</h1>
-              <div class="food-card-list juicesList">
-                <!-- data featched from foodlist.json file -->
-              </div>
+            <h1>Juices</h1>
+            <div class="food-card-list juicesList">
+              <!-- data featched from foodlist.json file -->
+            </div>
 
-              <h1>Softdrinks</h1>
-              <div class="food-card-list softdrinkList">
-                <!-- data featched from foodlist.json file -->
-              </div>
+            <h1>Softdrinks</h1>
+            <div class="food-card-list softdrinkList">
+              <!-- data featched from foodlist.json file -->
+            </div>
 
-              <h1>Alcoholic Drinks</h1>
-              <div class="food-card-list alcoholdrinkList">
-                <!-- data featched from foodlist.json file -->
-              </div>
+            <h1>Alcoholic Drinks</h1>
+            <div class="food-card-list alcoholdrinkList">
+              <!-- data featched from foodlist.json file -->
+            </div>
+
+            <h1>Hot Drinks</h1>
+            <div class="food-card-list hotdrinkList">
+              <!-- data featched from foodlist.json file -->
             </div>
           </div>
         </div>
@@ -170,5 +204,7 @@
     </footer>
 
     <script type="module" src="/Project/FrontEnd/src/js/index.js"></script>
+    <script src="/Project/FrontEnd/src/js/foodlist.js"></script>
+    <script src="/Project/FrontEnd/src/js/addToCart.js"></script>
   </body>
 </html>

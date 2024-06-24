@@ -119,7 +119,10 @@
 
 /* ########################### edit and food table css ###############################*/
 .admin-cont-right-body .ad-body-cont-table{
-    align-self: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin-top: -15px;
 }
 
@@ -127,7 +130,7 @@
     border-collapse: collapse;
     margin: 25px 0;
     font-size: 0.9em;
-    min-width: 950px;
+    width: 95%;
     border: none;
     border-radius: 10px;
     overflow: scroll;
@@ -186,7 +189,7 @@ td .food-img img{
     border-radius: 5px;
 }
 
-.order-table tbody tr .cmd{
+.order-table tbody tr .edit-food{
     color: #121111;
     background-color: #61bb3d;
 
@@ -196,7 +199,130 @@ td .food-img img{
     font-style: normal;
 }
 
-.order-table tbody tr .cmd:hover{
+.order-table tbody tr .edit-food:hover{
     color: #535353;
     background-color: #48ff00;
+}
+
+/* style edit food container that popup when onclick the edit bnt */
+.edit-food-container{
+    position: fixed;
+    top: 15%;
+    left: 30%;
+    width: 60%;
+    height: 70%;
+    background-color: #ddd;
+
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    background-color: white;
+
+    display: none;
+}
+
+.edit-food-container.open-edit-food{
+    display: block;
+}
+
+.edit-food-body-header{
+    padding: 0 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.edit-food-body-header h1{
+    color: #363636;
+    font-size: 25px;
+    font-family: "Itim", cursive;
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: underline #f6b319;
+}
+
+.edit-food-body-header i{
+    padding: 3px 4px;
+    color: #fff;
+    font-size: 15px;
+    background-color: rgb(233, 23, 23);
+    border-radius: 50%;
+}
+
+.edit-food-form-list{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.edit-food-container form{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.edit-food-container form label{
+    color: #535353;
+    font-family: "Itim", cursive;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 5px;
+    padding-left: 5pxs;
+}
+
+.edit-food-container form input{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ddd;
+
+    font-size: 15px;
+    font-family: "Itim", cursive;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.edit-food-container form select{
+    width: 320px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ddd;
+
+    color: #858484;
+    font-size: 15px;
+    font-family: "Itim", cursive;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.edit-food-container form button{
+    width: 320px;
+    padding: 8px;
+    margin-top: -25px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f6b319;
+
+    color: #fff;
+    font-size: 15px;
+    font-family: "Itim", cursive;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.edit-food-container form button:hover{
+    background-color: #ffb300;
+    transform: translateY(-3px);
+}
+
+/* form validator style */
+#form>div.success input{
+    border: 2px solid #09c372;
+}
+
+#form>div.error input{
+    border: 2px solid #ff3860;
 }

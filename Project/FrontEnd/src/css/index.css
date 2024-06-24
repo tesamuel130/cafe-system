@@ -16,8 +16,10 @@ body{
 }
 
 .nav-bar{
+    position: fixed;
     width: 100%;
     height: 60px;
+    z-index: 4;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -72,6 +74,7 @@ body{
 .sub-menu-wrap{
     position: absolute;
     right: 0;
+    z-index: 6;
     width: 160px;
     margin-top: 130px;
     max-height: 0px;
@@ -114,6 +117,74 @@ body{
 .user-info a:hover{
     font-size: 18px;
     transition: transform 0.5s;
+}
+
+#navi{
+    margin-left: -30px;
+    margin-right: 10px;
+    display: none;
+}
+
+@media(max-width: 900px){
+    #navi{
+        display: block;
+    }
+    .nav-link a{
+        display: none;
+    }
+    .nav-link a i{
+        display: none;
+    }
+}
+
+.sub-list-nav{
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 5;
+    width: 50%;
+    display: none;
+    overflow: hidden;
+    transition: max-height 0.5s;
+}
+
+
+
+.sub-list-nav.open-nav{
+    display: block;
+}
+
+.listed-nav{
+    background-color: #e0d7bf;
+    padding: 20px;
+    border-radius: 5px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.listed-nav .navs{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.listed-nav .navs a{
+    color: #000;
+    font-family: "Itim", cursive;
+    font-weight: bold;
+    text-decoration: none;
+    line-height: 30px;
+}
+
+.listed-nav .navs a i{
+    color: #fff;
+    margin-right: 15px;
+}
+
+.listed-nav .navs a:hover{
+    transform: translateY(-3px);
 }
 
 /* ##################### cart button ######################## */
@@ -216,4 +287,17 @@ footer{
 .foot-cont p span{
     color: #000;
     font-size: 17px;
+}
+
+@media(max-width: 700px){
+    .foot-cont{
+        display: flex;
+        flex-direction: column;
+    }
+    .foot-cont h3 i{
+        margin-left: 30px;
+    }
+    .foot-cont p{
+        margin-left: 40px;
+    }
 }

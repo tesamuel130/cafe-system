@@ -3,13 +3,13 @@
 
 
 /* ##################### nav content ####################### */
-.act-booking{
+.act-order{
     padding: 5px;
     border-radius: 5px;
     background-color: #e9c25f;
 }
 
-.act-booking i{
+.act-order i{
     color: #fff;
 }
 
@@ -26,9 +26,9 @@
     justify-content: center;
 }
 .contact-cont{
-    width: 1000px;
+    width: 80%;
     height: auto;
-    margin-top: 50px;
+    margin-top: 100px;
     margin-bottom: 50px;
     padding: 30px;
 
@@ -40,12 +40,14 @@
     box-shadow: 0 8px 32px 0;
 
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
 /* ############################### feed back form #################################*/
 .feedback{
     padding: 30px;
+    width: 40%;
 }
 
 .contact-row{
@@ -129,12 +131,33 @@ label{
     flex-direction: column;
 }
 
-.some-detail h1{
+.some-detail .detail-header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.some-detail .detail-header h1{
     color: #fff;
     font-size: 35px;
     font-family: "Itim", cursive;
     font-weight: 700;
 
+}
+
+.some-detail .detail-header i{
+    padding: 5px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    margin-right: -20px;
+    background-color: #7c7575;
+    border-radius: 50%;
+}
+
+.some-detail .detail-header i:hover{
+    color: #e9c25f;
 }
 
 .som-dit-img{
@@ -149,4 +172,84 @@ label{
     height: 150px;
     border: none;
     border-radius: 10px;
+}
+
+/* book history detail */
+.book-dit{
+    display: none;
+    position: fixed;
+    width: 60%;
+    height: 80%;
+    top: 80px;
+    z-index: 5;
+    background-color: #e9c25f;
+
+    background: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 8px 32px 0;
+}
+
+.book-dit.openBookDit{
+    display: block;
+}
+
+.his-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px 0 30px;
+}
+
+.his-header h3{
+    color: #fff;
+    font-size: 25px;
+    font-family: "Itim", cursive;
+    font-weight: 700;
+}
+
+.his-header i{
+    padding: 3px 4px 3px 4px;
+    color: #fff;
+    font-size: 15px;
+    background-color: rgb(233, 23, 23);
+    border-radius: 50%;
+}
+
+.his-header i:hover{
+    transform: scale(1.1);
+}
+
+.his-detail-list{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0 50px;
+}
+
+.his-detail-list .his-det{
+    width: 50%;
+    height: 50px;
+    background-color: #7c7575;
+    border-radius: 10px;
+}
+
+@media(min-width: 300px) and (max-width: 600px){
+    .feedback{
+        width: 100%;
+    }
+    .some-detail{
+        width: 100%;
+    }
+}
+
+@media(min-width: 600px) and (max-width: 767px){
+    .feedback{
+        width: 100%;
+    }
+    .some-detail{
+        width: 100%;
+    }
 }

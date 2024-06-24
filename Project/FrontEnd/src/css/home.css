@@ -17,10 +17,11 @@
 /* ##################### home content ####################### */
 .home{
     width: 100%;
-    height: auto;
+    height: 90vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-top: 80px;
     
     background-image: url('img/homeyab.jpg');
     background-size: cover;
@@ -30,11 +31,11 @@
 }
 
 .home-cont{
-    width: 500px;
-    height: auto;
-    padding: 50px;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    width: 100%;
+    margin-top: 50px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
 }
 
@@ -42,9 +43,11 @@
     /* background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px); */
+    width: 100%;
     border: none;
     border-radius: 10px;
     box-shadow: 0 8px 32px 0;
+    padding: 50px 0px;
 }
 
 .home-logo{
@@ -118,21 +121,46 @@
     transform: translateY(-3px);
 }
 
+@media(max-width: 700px){
+    .home-icon i{
+        font-size: 15px;
+    }
+
+    .home-icon span{
+        font-size: 10px;
+    }
+}
+
 /* ############### home AD ###################### */
 
 .home-ad-list{
-    width: 100%;
+    max-width: 100%;
     height: 300px;
+    overflow-x: scroll;
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
+    gap: 30px;
 }
 
 .home-ad video{
     width: 100%;
     height: 200px;
     border-radius: 10px;
+}
+
+@media(max-width: 1000px){
+    .home-ad-list{
+        width: 700px;
+        overflow-x: scroll;
+        gap: 30px;
+    }
+
+    .home-ad video{
+        width: 300px;
+        height: 200px;
+        border-radius: 10px;
+    }
 }
 
 .home-ad h1{

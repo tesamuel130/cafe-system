@@ -83,7 +83,7 @@
 .ad-body-cont-one form input{
     width: 100%;
     padding: 10px;
-    border: none;
+    border: 2px solid #fff;
     border-radius: 5px;
     background-color: #ddd;
 
@@ -96,7 +96,7 @@
 .ad-body-cont-one form select{
     width: 320px;
     padding: 10px;
-    border: none;
+    border: 2px solid #fff;
     border-radius: 5px;
     background-color: #ddd;
 
@@ -197,7 +197,7 @@ td .food-img img{
     border-radius: 5px;
 }
 
-.order-table tbody tr .cmd{
+.order-table tbody tr .edit-employer{
     color: #121111;
     background-color: #61bb3d;
 
@@ -207,7 +207,134 @@ td .food-img img{
     font-style: normal;
 }
 
-.order-table tbody tr .cmd:hover{
+.order-table tbody tr .edit-employer:hover{
     color: #535353;
     background-color: #48ff00;
+}
+
+/* style edit food container that popup when onclick the edit bnt */
+.edit-employ-container{
+    position: fixed;
+    top: 15%;
+    left: 30%;
+    width: 60%;
+    height: 70%;
+    overflow-y: scroll;
+    background-color: #ddd;
+
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    background-color: white;
+
+    display: none;
+}
+
+.edit-employ-container.open-edit-employer{
+    display: block;
+}
+
+.edit-employer-body-header{
+    padding: 0 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.edit-employer-body-header h1{
+    color: #363636;
+    font-size: 25px;
+    font-family: "Itim", cursive;
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: underline #f6b319;
+}
+
+.edit-employer-body-header i{
+    position: fixed;
+    right: 13%;
+    padding: 3px 4px;
+    color: #fff;
+    font-size: 15px;
+    background-color: rgb(233, 23, 23);
+    border-radius: 50%;
+}
+
+.edit-employer-form-list{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.edit-employ-container form{
+    width: 300px;
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.edit-employ-container form label{
+    color: #535353;
+    font-family: "Itim", cursive;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 5px;
+    padding-left: 5pxs;
+}
+
+.edit-employ-container form input{
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    background-color: #ddd;
+
+    font-size: 15px;
+    font-family: "Itim", cursive;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.edit-employ-container form select{
+    width: 320px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ddd;
+
+    color: #858484;
+    font-size: 15px;
+    font-family: "Itim", cursive;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.edit-employ-container form button{
+    width: 320px;
+    padding: 8px;
+    margin-top: -25px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f6b319;
+
+    color: #fff;
+    font-size: 15px;
+    font-family: "Itim", cursive;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.edit-employ-container form button:hover{
+    background-color: #ffb300;
+    transform: translateY(-3px);
+}
+
+/* form validator style */
+#form>div.success input{
+    border: 2px solid #09c372;
+}
+
+#form>div.error input{
+    border: 2px solid #ff3860;
 }

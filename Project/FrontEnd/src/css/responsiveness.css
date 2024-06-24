@@ -1,0 +1,436 @@
+ /* Responsive CSS for smaller screens */
+
+/* Adjustments for header */
+.nav-bar {
+    flex-direction: column;
+    align-items: center;
+}
+.nav-link {
+    margin-top: 10px;
+}
+
+.sub-menu-wrap {
+    display: none; /* Hide submenu for smaller screens */
+}
+
+/* Adjustments for main body */
+.login-body {
+    height: auto;
+    padding: 20px;
+}
+
+.form-cont {
+    width: 100%; /* Adjust width to fill the screen */
+}
+
+.form-cont form {
+    width: 100%; /* Adjust form width to fill the container */
+}
+
+/* Adjustments for form inputs */
+.form-header-input-one input,
+.form-header-input-two input {
+    width: 100%; /* Make input fields fill the width */
+}
+
+/* Adjustments for form buttons */
+.form-btn-one button,
+.form-btn-two button {
+    width: 100%; /* Make buttons fill the width */
+}
+
+.form-btn-two {
+    flex-direction: column; /* Stack buttons vertically */
+}
+
+.form-btn-two button {
+    margin-top: 10px; /* Add space between buttons */
+}
+
+/* Adjustments for menucat*/
+.menu-search {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.menu-search input {
+    width: 100%;
+    max-width: 300px;
+}
+
+/* Adjustments for menu category list */
+.menu-cat-list {
+    padding-left: 20px;
+}
+
+.menu-card {
+    width: calc(50% - 20px); /* Making it take up half the width with some gap */
+    margin-bottom: 20px; /* for spacing */
+}
+
+/* Adjustments for footer */
+.footer {
+    padding: 20px 10px; /* Reduce*/
+}
+/************************************************************/
+@media screen and (max-width: 600px) {
+
+
+    /***********menu cart******************/
+
+    .menu-cat-list {
+    padding-left: 10px; /*reduce*/
+    }
+
+    .menu-card {
+    width: 100%; /*take full width */
+    }
+
+    /* Adjustment */
+    .footer {
+    text-align: center; /* Center align footer content */
+    }
+}
+    .logo {
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    }
+    .sub-menu-wrap {
+    display: flex;
+    }
+
+    /* Adjustment*/
+    .form-cont {
+    padding: 10px;
+    }
+    .form-cont form h1 {
+    font-size: 25px;
+    }
+    .form-btn-one button,
+    .form-btn-two button {
+    padding: 10px;
+    font-size: 14px;
+    }
+    .logo {
+        flex-direction: column;
+        align-items: center;
+        }
+        
+/* Adjustments for navigation links */
+.nav-link {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+    }
+
+    /* Show submenu for smaller screens */
+    .sub-menu-wrap {
+    display: flex;
+    }
+
+    /* Adjustments for cart button */
+    .cart-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    }
+
+    /**********************home*********************** */
+    .home-cont {
+    width: 90%; /* Adjust width to fill the screen */
+    padding: 20px;
+    }
+    .home-logo {
+    width: 80px;
+    height: 80px;
+    line-height: 1;
+    }
+
+    .home-logo i {
+    font-size: 24px;
+    }
+
+    .home-logo h3 {
+    font-size: 10px;
+    }
+
+    /* Adjustments for order button */
+    .ord-btn {
+    width: 150px;
+    }
+
+    /* Adjustments for home icons */
+    .home-icon i {
+    font-size: 20px;
+    }
+
+    .home-icon span {
+    font-size: 12px;
+    }
+
+    /* Adjustments for home AD */
+    .home-ad-list {
+    height: auto;
+    }
+    .form-cont {
+        width: 80%; /* Adjust the width of the form container */
+        }
+
+    .home-ad video {
+    height: 150px;
+    }
+
+    /* Adjustments for news list */
+    .news-list {
+    gap: 20px;
+    }
+
+    
+    .news {
+    width: 100%;
+    max-width: 300px;
+    }
+
+    .news .n-img img {
+    width: 100%;
+    height: auto;
+    }
+/************contact***********************/
+    .nav-bar {
+        flex-direction: column;
+    }
+    .logo {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .nav-link {
+        justify-content: center;
+    }
+    .admin-link {
+        margin-top: 20px;
+    }
+    
+    /* Adjustments for the main body */
+    .contact-cont {
+        flex-direction: column;
+        align-items: center;
+    }
+    .contact-us,
+    .feedback {
+        width: 90%;
+    }
+    .contact-form label {
+        padding-left: 0; /* Adjust label alignment */
+    }
+    .contact-row {
+        flex-direction: column; /* Stack form rows vertically */
+    }
+    .contact-row .contact-form > .contact-inpt {
+        width: 100%; /* Full width for input fields */
+    }
+    .btn button {
+        width: 100%; /* Full width for buttons */
+    }
+    .contact-us .map img {
+        width: 100%;
+        height: auto;
+    }
+    /********************cartorder*************/
+    .nav-bar {
+        flex-direction: column;
+        }
+        .logo {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .nav-link {
+            justify-content: center;
+        }
+        .admin-link {
+            margin-top: 20px;
+        }
+        
+        /* Adjustments for the main body */
+        .cart-order-cont {
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+        .carts {
+            height: auto;
+        }
+        .cart-card-list {
+            flex-direction: column;
+            align-items: center;
+        }
+        .cart-card {
+            width: 90%;
+        }
+        .cart-card img {
+            width: 50%;
+            height: auto;
+        }
+        .ord-dit {
+            width: auto;
+            margin-left: 0;
+            text-align: center;
+            padding: 10px;
+        }
+        .ord-dit h1 {
+            font-size: 20px;
+        }
+        .ord-info form input,
+        .ord-info form select {
+            width: 90%;
+        }
+    /**********booking***************/
+            
+.admin-cont-left {
+    display: none; /* Hide the left sidebar*/
+}
+
+.admin-cont-right {
+    width: 100%;
+}
+.right-header-comp {
+    flex-direction: column;
+    align-items: center;
+}
+
+.search-comp {
+    margin-bottom: 20px;
+}
+.ad-body-cont-table {
+    overflow-x: auto; /* Add horizontal scroll for small screens */
+}
+
+.order-table {
+    min-width: 600px;
+}
+/************about**********/
+.about {
+    margin: 30px auto;
+}
+
+.title {
+    font-size: 24px;
+}
+
+.about-explanation {
+    font-size: 16px;
+}
+
+.rim {
+    grid-template-columns: auto;
+}
+
+.media,
+.media-text {
+    margin: 0 auto;
+}
+
+iframe {
+    width: 100%;
+    height: auto;
+}
+
+audio {
+    width: 100%;
+}
+
+.media-text {
+    margin-top: 30px;
+    width: auto;
+}
+/*************ad signup***********/
+
+.form-cont {
+width: 80%;
+}
+
+.form-cont form h1 {
+font-size: 28px;
+}
+
+.form-cont form .form-header-input-one input,
+.form-cont form .form-header-input-two input { width: 100%;
+}
+
+.form-cont form .form-btn-two button {
+width: 100%;
+}
+/*******ad sign in************/
+.form-cont {
+    width: 80%;
+}
+
+.form-cont form h1 {
+    font-size: 28px;
+}
+
+.form-cont form .form-header-input-one input {
+    width: 100%;
+}
+
+.form-cont form .form-header-input-one select,
+.form-cont form .form-header-input-one label {
+    width: 100%;
+}
+
+.form-cont form .form-header-input-two input {
+    width: 100%;
+}
+
+.form-cont form .form-header-par-three {
+    line-height: 25px;
+}
+/***orders***/
+.all-cont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+    
+    .admin-cont {
+        width: 90%;
+    }
+    
+    .admin-cont-left,
+    .admin-cont-right {
+        width: 100%;
+    }
+    
+    .side-header {
+        margin-bottom: 20px;
+    }
+    
+    .side-list {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .side-logout-btn {
+        margin-top: 20px;
+    }
+    
+    .admin-cont-right-header,
+    .admin-cont-right-body {
+        width: 100%;
+    }
+    
+    .admin-cont-right-header .right-header-comp {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .ad-body-cont-vav,
+    .ad-body-cont-table {
+        width: 100%;
+    }
+    
+    .ad-nav-filter,
+    .cal-icon {
+        display: none; /* Hide unnecessary elements*/
+    }

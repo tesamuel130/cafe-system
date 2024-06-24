@@ -13,6 +13,10 @@
 }
 
 /* ######################## menu catagory  ############################# */
+.container{
+    width: 100%;
+}
+
 .menu-cont{
     width: 100%;
     height: auto;
@@ -20,21 +24,25 @@
     flex-direction: column;
 }
 
+
+
 /* ######################## menu catagory nav  ############################# */
 .menu-search{
     width: 100%;
     display: flex;
+    margin-top: 80px;
     justify-content: center;
     align-items: center;
     gap: 50px;
 }
 
-.menu-search i{
+.menu-search form input{
+    width: 100%;
     font-size: 25px;
 }
 
 .menu-search input{
-    width: 450px;
+    width: 100%;
     padding: 10px;
     border: 1px solid #f6b319;
     border-radius: 10px;
@@ -58,6 +66,7 @@
 } */
 
 .menu-cat-list h1{
+    padding-left: 20px;
     font-size: 35px;
     font-family: "Itim", cursive;
     font-weight: 400;
@@ -65,9 +74,9 @@
 }
 
 .menu-card-list{
-    width: 100%;
+    width: 90%;
     height: auto;
-    padding-left: 50px;
+    padding-left: 80px;
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
@@ -111,4 +120,63 @@
 .menu-card button:hover{
     background-color: #ffb700;
     transform: translateY(-3px);
+}
+
+/* styling the responsivness for mobile*/
+@media(min-width: 300px) and (max-width: 600px){
+    .menu-cat-list h1{
+        font-size: 25px;
+        font-family: "Itim", cursive;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    .food-card-list{
+        gap: 50px;
+    }
+
+    .menu-card{
+        width: 150px;
+    }
+
+    .menu-card img{
+        width: 100px;
+        height: 100px;
+    }
+
+    .menu-card h3{
+        font-size: 20px;
+        font-family: "Itim", cursive;
+        font-weight: 400;
+        font-style: normal;
+    }
+}
+
+@media(min-width: 600px) and (max-width: 767px){
+    .menu-cat-list h1{
+        font-size: 25px;
+        font-family: "Itim", cursive;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    .food-card-list{
+        gap: 50px;
+    }
+
+    .menu-card{
+        width: 150px;
+    }
+
+    .menu-card img{
+        width: 100px;
+        height: 100px;
+    }
+
+    .menu-card h3{
+        font-size: 20px;
+        font-family: "Itim", cursive;
+        font-weight: 400;
+        font-style: normal;
+    }
 }

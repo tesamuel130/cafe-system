@@ -42,8 +42,10 @@
           <a class="admin-link" id="openAdminModalBtn"
             ><i class="fa-solid fa-user-tie"></i
           ></a>
+          <i class="fa-solid fa-bars" id="navi"></i>
         </div>
 
+        <!-- stracture for the admin log in and out -->
         <div class="sub-menu-wrap" id="subMenu">
           <div class="sub-menu">
             <div class="user-info">
@@ -55,6 +57,35 @@
             <div class="user-info">
               <a href="signupUser.html"
                 ><i class="fa-solid fa-user"></i>SignUp</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- stracture for the navigarion list when it responsive -->
+        <div class="sub-list-nav" id="listedNav">
+          <div class="listed-nav">
+            <div class="navs">
+              <a href="home.html" class="act-home"
+                ><i class="fa-solid fa-house"></i>Home</a
+              >
+              <a href="menucat.html" class="act-menu"
+                ><i class="fa-solid fa-bowl-food"></i>Menu</a
+              >
+              <a href="booking.html" class="act-order"
+                ><i class="fa-solid fa-book"></i>Booking</a
+              >
+              <a href="about.html" class="act-about"
+                ><i class="fa-solid fa-address-card"></i>About</a
+              >
+              <a href="contact.html" class="act-contact"
+                ><i class="fa-solid fa-address-book"></i>Contact</a
+              >
+              <a
+                href="/Project/FrontEnd/customer/loginUser.html"
+                class="admin-link"
+                id="openAdminModalBtn"
+                ><i class="fa-solid fa-user-tie"></i>SignIn</a
               >
             </div>
           </div>
@@ -172,7 +203,11 @@
         </div>
 
         <div class="some-detail">
-          <h1>Some Details</h1>
+          <div class="detail-header">
+            <h1>Some Details</h1>
+            <i id="bookHist" class="fa-solid fa-clock-rotate-left"></i>
+          </div>
+
           <div class="som-dit-img">
             <img
               src="/Project/FrontEnd/src/css/img/bookpromimg.jpg"
@@ -191,6 +226,20 @@
               alt="promotion image"
             />
           </div>
+        </div>
+      </div>
+
+      <!-- book history detail -->
+      <div id="bookDetail" class="book-dit">
+        <div class="his-header">
+          <h3>Booking History</h3>
+          <i id="hisDitClose" class="fa-solid fa-xmark"></i>
+        </div>
+        <div class="his-detail-list">
+          <div class="his-det">klasdf</div>
+          <div class="his-det">klasdf</div>
+          <div class="his-det">klasdf</div>
+          <div class="his-det">klasdf</div>
         </div>
       </div>
     </main>

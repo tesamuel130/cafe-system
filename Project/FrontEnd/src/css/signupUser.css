@@ -16,7 +16,8 @@
 
 .login-body{
     width: 100%;
-    height: 80vh;
+    height: auto;
+    padding-top: 50px;
     background-image: url('img/hom2.jpg');
     background-size: cover;
     background-position: center;
@@ -24,8 +25,9 @@
 }
 
 .form-cont{
-    width: 50%;
+    width: 60%;
     height: 100%;
+    padding: 60px 0;
     background-color: #fff;
     border: none;
 
@@ -81,7 +83,7 @@
 .form-cont form .form-header-input-one input{
     width: 300px;
     padding: 13px;
-    border: none;
+    border: 2px solid #fff;
     border-radius: 10px;
 }
 
@@ -108,7 +110,7 @@
 .form-cont form .form-header-input-two input{
     width: 300px;
     padding: 13px;
-    border: none;
+    border: 2px solid #fff;
     border-radius: 10px;
 }
 
@@ -175,4 +177,25 @@
 .form-cont form .form-btn-two button:hover{
     transform: translateY(-3px);
     background-color: #f6b319;
+}
+
+#form>div.success input{
+    border: 2px solid #09c372;
+}
+
+#form>div.error input{
+    border: 2px solid #ff3860;
+}
+
+/* styling the responsivness for mobile*/
+@media(min-width: 300px) and (max-width: 600px){
+    .form-cont{
+        width: 100%;
+    }
+}
+
+@media(min-width: 600px) and (max-width: 767px){
+    .form-cont{
+        width: 80%;
+    }
 }

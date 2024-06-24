@@ -26,9 +26,10 @@
     justify-content: center;
 }
 .contact-cont{
-    width: 1000px;
+    width: 80%;
     height: auto;
-    margin-top: 50px;
+    z-index: 0;
+    margin-top: 80px;
     margin-bottom: 50px;
     padding: 30px;
 
@@ -40,6 +41,7 @@
     box-shadow: 0 8px 32px 0;
 
     display: flex;
+    flex-wrap: wrap-reverse;
     justify-content: space-between;
 }
 
@@ -93,7 +95,7 @@
 }
 
 .contact-us .map img{
-    width: 300px;
+    width: 80%;
     height: 180px;
     border-radius: 10px;
 }
@@ -102,6 +104,14 @@
 /* ############################### feed back form #################################*/
 .feedback{
     padding: 30px;
+}
+
+.feedback h1{
+    color: #fff;
+    font-size: 35px;
+    font-family: "Itim", cursive;
+    font-weight: 700;
+
 }
 
 .contact-row{

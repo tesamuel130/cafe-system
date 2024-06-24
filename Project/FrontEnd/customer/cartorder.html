@@ -43,8 +43,10 @@
           <a class="admin-link" id="openAdminModalBtn"
             ><i class="fa-solid fa-user-tie"></i
           ></a>
+          <i class="fa-solid fa-bars" id="navi"></i>
         </div>
 
+        <!-- stracture for the admin log in and out -->
         <div class="sub-menu-wrap" id="subMenu">
           <div class="sub-menu">
             <div class="user-info">
@@ -60,6 +62,35 @@
             </div>
           </div>
         </div>
+
+        <!-- stracture for the navigarion list when it responsive -->
+        <div class="sub-list-nav" id="listedNav">
+          <div class="listed-nav">
+            <div class="navs">
+              <a href="home.html" class="act-home"
+                ><i class="fa-solid fa-house"></i>Home</a
+              >
+              <a href="menucat.html" class="act-menu"
+                ><i class="fa-solid fa-bowl-food"></i>Menu</a
+              >
+              <a href="booking.html" class="act-order"
+                ><i class="fa-solid fa-book"></i>Booking</a
+              >
+              <a href="about.html" class="act-about"
+                ><i class="fa-solid fa-address-card"></i>About</a
+              >
+              <a href="contact.html" class="act-contact"
+                ><i class="fa-solid fa-address-book"></i>Contact</a
+              >
+              <a
+                href="/Project/FrontEnd/customer/loginUser.html"
+                class="admin-link"
+                id="openAdminModalBtn"
+                ><i class="fa-solid fa-user-tie"></i>SignIn</a
+              >
+            </div>
+          </div>
+        </div>
       </div>
     </header>
 
@@ -67,7 +98,7 @@
     <main>
       <div class="container">
         <div class="cart-order-cont">
-          <div class="carts">
+          <div id="carts" class="carts">
             <div class="cart-card-list">
               <div class="cart-card">
                 <img
@@ -183,5 +214,6 @@
     </footer>
 
     <script type="module" src="/Project/FrontEnd/src/js/index.js"></script>
+    <script src="/Project/FrontEnd/src/js/addToCart.js"></script>
   </body>
 </html>

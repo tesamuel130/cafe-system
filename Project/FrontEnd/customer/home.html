@@ -25,7 +25,9 @@
           <h3>Resturant</h3>
         </div>
         <div class="nav-link">
-          <a href="#" class="act-home"><i class="fa-solid fa-house"></i>Home</a>
+          <a href="home.html" class="act-home"
+            ><i class="fa-solid fa-house"></i>Home</a
+          >
           <a href="menucat.html" class="act-menu"
             ><i class="fa-solid fa-bowl-food"></i>Menu</a
           >
@@ -41,8 +43,10 @@
           <a class="admin-link" id="openAdminModalBtn"
             ><i class="fa-solid fa-user-tie"></i
           ></a>
+          <i class="fa-solid fa-bars" id="navi"></i>
         </div>
 
+        <!-- stracture for the admin log in and out -->
         <div class="sub-menu-wrap" id="subMenu">
           <div class="sub-menu">
             <div class="user-info">
@@ -54,6 +58,35 @@
             <div class="user-info">
               <a href="signupUser.html"
                 ><i class="fa-solid fa-user"></i>SignUp</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- stracture for the navigarion list when it responsive -->
+        <div class="sub-list-nav" id="listedNav">
+          <div class="listed-nav">
+            <div class="navs">
+              <a href="home.html" class="act-home"
+                ><i class="fa-solid fa-house"></i>Home</a
+              >
+              <a href="menucat.html" class="act-menu"
+                ><i class="fa-solid fa-bowl-food"></i>Menu</a
+              >
+              <a href="booking.html" class="act-order"
+                ><i class="fa-solid fa-book"></i>Booking</a
+              >
+              <a href="about.html" class="act-about"
+                ><i class="fa-solid fa-address-card"></i>About</a
+              >
+              <a href="contact.html" class="act-contact"
+                ><i class="fa-solid fa-address-book"></i>Contact</a
+              >
+              <a
+                href="/Project/FrontEnd/customer/loginUser.html"
+                class="admin-link"
+                id="openAdminModalBtn"
+                ><i class="fa-solid fa-user-tie"></i>SignIn</a
               >
             </div>
           </div>
@@ -76,23 +109,27 @@
       <div class="home">
         <div class="container">
           <div class="home-cont blur-cont">
-            <button class="home-logo">
-              <i class="fa-solid fa-utensils"></i>
-              <h3>Resturant</h3>
-            </button>
+            <div class="home-cont-list">
+              <button class="home-logo">
+                <i class="fa-solid fa-utensils"></i>
+                <h3>Resturant</h3>
+              </button>
 
-            <h1>Resturant</h1>
-            <p>Enjoy<br />our service</p>
-            <a href="menucat.html"
-              ><button class="ord-btn">Order Now</button></a
-            >
-
-            <div class="home-icon">
-              <i class="fa-regular fa-clock"><br /><span>10pm to 11am</span></i>
-              <i class="fa-solid fa-location-dot"
-                ><br /><span>Addis Ababa</span></i
+              <h1>Resturant</h1>
+              <p>Enjoy<br />our service</p>
+              <a href="menucat.html"
+                ><button class="ord-btn">Order Now</button></a
               >
-              <i class="fa-solid fa-phone"><br /><span>+251 xxx-xxx</span></i>
+
+              <div class="home-icon">
+                <i class="fa-regular fa-clock"
+                  ><br /><span>10pm to 11am</span></i
+                >
+                <i class="fa-solid fa-location-dot"
+                  ><br /><span>Addis Ababa</span></i
+                >
+                <i class="fa-solid fa-phone"><br /><span>+251 xxx-xxx</span></i>
+              </div>
             </div>
           </div>
         </div>
